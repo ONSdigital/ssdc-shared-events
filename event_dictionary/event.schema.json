@@ -105,13 +105,11 @@
     },
     "payload": {
       "type": "object",
-      "properties": {
-        "oneOf": [
-          {"$ref": "#/definitions/respondentAuthenticated"},
-          {"$ref": "#/definitions/surveyLaunched"},
-          {"$ref": "#/definitions/refusal"}
-        ]
-      }
+      "oneOf": [
+        {"$ref": "#/definitions/respondentAuthenticated"},
+        {"$ref": "#/definitions/surveyLaunched"},
+        {"$ref": "#/definitions/refusal"}
+      ]
     }
   },
   "properties": {
@@ -121,5 +119,9 @@
     "payload": {
       "$ref": "#/definitions/payload"
     }
-  }
+  },
+  "required": [
+    "header",
+    "payload"
+  ]
 }
