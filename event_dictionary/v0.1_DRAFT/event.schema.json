@@ -7,6 +7,7 @@
     "payload": {
       "type": "object",
       "oneOf": [
+        { "$ref": "caseUpdate.schema.json" },
         { "$ref": "refusal.schema.json" },
         { "$ref": "surveyLaunch.schema.json" },
         { "$ref": "uacAuthentication.schema.json" }
