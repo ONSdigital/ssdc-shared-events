@@ -28,7 +28,7 @@
           "examples": [true, false]
         },
         "refusalReceived": {
-          "description": "The electronic questionnaire has been launched.",
+          "description": "This case has been refused by the respondent.",
           "type": "array",
           "items": {
             "type": "string",
