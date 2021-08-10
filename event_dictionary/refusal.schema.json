@@ -1,0 +1,28 @@
+{
+  "$id": "https://ons.gov.uk/refusal.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Refusal",
+  "type": "object",
+  "properties": {
+    "refusal": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case that is being refused.",
+          "type": "uuid",
+          "examples": ["acb61268-1f17-4811-b8f9-d6981a060ce5"]
+        },
+        "type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"]
+          },
+          "description": "The type of the refusal."
+        }
+      },
+      "required": ["caseId", "type"]
+    }
+  },
+  "required": ["refusal"]
+}

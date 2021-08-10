@@ -4,117 +4,18 @@
   "title": "Event",
   "type": "object",
   "definitions": {
-    "eventHeader": {
-      "type": "object",
-      "definitions": {
-        "version": {
-          "type": "string",
-          "description": "The version of the schema that this message conforms to.",
-          "examples": ["v1.0"]
-        },
-        "topic": {
-          "type": "string",
-          "description": "The Google Pub/Sub topic that this event was published to.",
-          "examples": ["event_survey-launched", "event_refusal"]
-        },
-        "type": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "CASE_CREATED",
-              "CASE_UPDATED",
-              "UAC_UPDATED",
-              "RESPONSE_RECEIVED",
-              "REFUSAL_RECEIVED",
-              "ADDRESS_NOT_VALID",
-              "SURVEY_LAUNCHED",
-              "RESPONDENT_AUTHENTICATED",
-              "FULFILMENT",
-              "DEACTIVATE_UAC",
-              "UPDATE_SAMPLE_SENSITIVE"
-            ]
-          },
-          "description": "The type of event."
-        },
-        "source": {
-          "type": "string",
-          "description": "The microservice which published this event.",
-          "examples": ["Case Processor", "EQ Runner"]
-        },
-        "channel": {
-          "description": "The product which published this event.",
-          "type": "string",
-          "examples": ["EQ", "RH", "RM"]
-        },
-        "dateTime": {
-          "description": "When the event happened (this might not be when it was published).",
-          "type": "date-time",
-          "examples": ["2021-08-09T10:55.31.431Z"]
-        },
-        "messageId": {
-          "description": "A unique identifier for this message.",
-          "type": "uuid",
-          "examples": ["ccb71268-1f17-4811-b8f9-d6981a060ce7"]
-        },
-        "correlationId": {
-          "description": "A unique identifier for everything that relates to this event end-to-end.",
-          "type": "uuid",
-          "examples": ["82426ee7-d34a-49e6-8bc5-5cea7c14e735"]
-        },
-        "originatingUser": {
-          "description": "The user that initiated this event, for audit trail.",
-          "type": "string",
-          "examples": ["fred.bloggs@ons.gov.uk"]
-        }
-      },
-      "required": [
-        "version",
-        "topic",
-        "type",
-        "source",
-        "channel",
-        "dateTime",
-        "messageId",
-        "correlationId"
-      ]
-    },
-    "respondentAuthenticated": {
-      "type": "object",
-      "properties": {
-        "foo": {
-          "type": "string"
-        }
-      }
-    },
-    "surveyLaunched": {
-      "type": "object",
-      "properties": {
-        "foo": {
-          "type": "string"
-        }
-      }
-    },
-    "refusal": {
-      "type": "object",
-      "properties": {
-        "foo": {
-          "type": "string"
-        }
-      }
-    },
     "payload": {
       "type": "object",
       "oneOf": [
-        {"$ref": "#/definitions/respondentAuthenticated"},
-        {"$ref": "#/definitions/surveyLaunched"},
-        {"$ref": "#/definitions/refusal"}
+        {"$ref": "refusal.schema.json"},
+        {"$ref": "surveyLaunch.schema.json"},
+        {"$ref": "uacAuthentication.schema.json"}
       ]
     }
   },
   "properties": {
     "header": {
-      "$ref": "#/definitions/eventHeader"
+      "$ref": "eventHeader.schema.json"
     },
     "payload": {
       "$ref": "#/definitions/payload"

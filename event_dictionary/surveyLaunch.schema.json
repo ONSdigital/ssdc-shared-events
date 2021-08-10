@@ -1,0 +1,20 @@
+{
+  "$id": "https://ons.gov.uk/surveyLaunch.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Survey Launch",
+  "type": "object",
+  "properties": {
+    "surveyLaunch": {
+      "type": "object",
+      "properties": {
+        "qid": {
+          "description": "The QID associated with the electronic questionnaire that has been launched.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        }
+      },
+      "required": ["qid"]
+    }
+  },
+  "required": ["surveyLaunch"]
+}
