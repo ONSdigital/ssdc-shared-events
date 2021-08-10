@@ -30,7 +30,8 @@
           "FULFILMENT",
           "DEACTIVATE_UAC",
           "UPDATE_SAMPLE_SENSITIVE"
-        ]
+        ],
+        "additionalProperties": false
       },
       "description": "The type of event."
     },

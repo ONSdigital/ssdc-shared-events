@@ -16,7 +16,8 @@
           "type": "array",
           "items": {
             "type": "string",
-            "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"]
+            "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"],
+            "additionalProperties": false
           },
           "description": "The type of the refusal."
         }
