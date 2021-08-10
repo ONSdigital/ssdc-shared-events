@@ -7,9 +7,9 @@
     "payload": {
       "type": "object",
       "oneOf": [
-        {"$ref": "refusal.schema.json"},
-        {"$ref": "surveyLaunch.schema.json"},
-        {"$ref": "uacAuthentication.schema.json"}
+        { "$ref": "refusal.schema.json" },
+        { "$ref": "surveyLaunch.schema.json" },
+        { "$ref": "uacAuthentication.schema.json" }
       ],
       "additionalProperties": false
     }
@@ -22,9 +22,6 @@
       "$ref": "#/definitions/payload"
     }
   },
-  "required": [
-    "header",
-    "payload"
-  ],
+  "required": ["header", "payload"],
   "additionalProperties": false
 }
