@@ -74,5 +74,6 @@
     "dateTime",
     "messageId",
     "correlationId"
-  ]
+  ],
+  "additionalProperties": false
 }

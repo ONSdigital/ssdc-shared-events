@@ -23,15 +23,13 @@
   - [2.3. Property `Event > payload > oneOf > uacAuthentication.schema.json`](#payload_oneOf_i2)
     - [2.3.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`](#payload_oneOf_i2_uacAuthentication)
       - [2.3.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`](#payload_oneOf_i2_uacAuthentication_qid)
-      - [2.3.1.2. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > required`](#payload_oneOf_i2_uacAuthentication_required)
-    - [2.3.2. Property `Event > payload > oneOf > UAC Authentication > required`](#payload_oneOf_i2_required)
 
 **Title:** Event
 
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
 
 | Property               | Pattern | Type   | Deprecated | Definition                 | Title/Description |
 | ---------------------- | ------- | ------ | ---------- | -------------------------- | ----------------- |
@@ -269,10 +267,10 @@ Must be one of:
 
 #### <a name="payload_oneOf_i0_refusal"></a>2.1.1. Property `Event > payload > oneOf > Refusal > refusal`
 
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
 
 | Property                                      | Pattern | Type                      | Deprecated | Definition | Title/Description                         |
 | --------------------------------------------- | ------- | ------------------------- | ---------- | ---------- | ----------------------------------------- |
@@ -345,10 +343,10 @@ Must be one of:
 
 #### <a name="payload_oneOf_i1_surveyLaunch"></a>2.2.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch`
 
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
 
 | Property                                     | Pattern | Type   | Deprecated | Definition | Title/Description                                                            |
 | -------------------------------------------- | ------- | ------ | ---------- | ---------- | ---------------------------------------------------------------------------- |
@@ -380,22 +378,20 @@ Must be one of:
 
 | Property                                                    | Pattern | Type   | Deprecated | Definition | Title/Description |
 | ----------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| - [uacAuthentication](#payload_oneOf_i2_uacAuthentication ) | No      | object | No         | -          | -                 |
-| - [required](#payload_oneOf_i2_required )                   | No      | object | No         | -          | -                 |
+| + [uacAuthentication](#payload_oneOf_i2_uacAuthentication ) | No      | object | No         | -          | -                 |
 |                                                             |         |        |            |            |                   |
 
 #### <a name="payload_oneOf_i2_uacAuthentication"></a>2.3.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`
 
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
 
-| Property                                                    | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
-| ----------------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
-| - [qid](#payload_oneOf_i2_uacAuthentication_qid )           | No      | string | No         | -          | The QID associated with the UAC which was used to authenticate. |
-| - [required](#payload_oneOf_i2_uacAuthentication_required ) | No      | object | No         | -          | -                                                               |
-|                                                             |         |        |            |            |                                                                 |
+| Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
+| ------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
+| + [qid](#payload_oneOf_i2_uacAuthentication_qid ) | No      | string | No         | -          | The QID associated with the UAC which was used to authenticate. |
+|                                                   |         |        |            |            |                                                                 |
 
 ##### <a name="payload_oneOf_i2_uacAuthentication_qid"></a>2.3.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`
 
@@ -412,19 +408,5 @@ Must be one of:
 "0130000000100142"
 ```
 
-##### <a name="payload_oneOf_i2_uacAuthentication_required"></a>2.3.1.2. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > required`
-
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-#### <a name="payload_oneOf_i2_required"></a>2.3.2. Property `Event > payload > oneOf > UAC Authentication > required`
-
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-10 at 08:30:20 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-10 at 08:41:12 +0100

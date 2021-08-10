@@ -13,8 +13,10 @@
           "examples": ["0130000000100142"]
         }
       },
-      "required": ["qid"]
+      "required": ["qid"],
+      "additionalProperties": false
     }
   },
-  "required": ["surveyLaunch"]
+  "required": ["surveyLaunch"],
+  "additionalProperties": false
 }

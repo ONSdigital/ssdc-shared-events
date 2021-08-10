@@ -11,10 +11,12 @@
           "description": "The QID associated with the UAC which was used to authenticate.",
           "type": "string",
           "examples": ["0130000000100142"]
-        },
-        "required": ["qid"]
-      }
-    },
-    "required": ["uacAuthentication"]
+        }
+      },
+      "required": ["qid"],
+      "additionalProperties": false
   }
+  },
+  "required": ["uacAuthentication"],
+  "additionalProperties": false
 }

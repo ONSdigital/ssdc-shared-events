@@ -21,8 +21,10 @@
           "description": "The type of the refusal."
         }
       },
-      "required": ["caseId", "type"]
+      "required": ["caseId", "type"],
+      "additionalProperties": false
     }
   },
-  "required": ["refusal"]
+  "required": ["refusal"],
+  "additionalProperties": false
 }

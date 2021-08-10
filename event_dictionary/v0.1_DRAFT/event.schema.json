@@ -10,7 +10,8 @@
         {"$ref": "refusal.schema.json"},
         {"$ref": "surveyLaunch.schema.json"},
         {"$ref": "uacAuthentication.schema.json"}
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "properties": {
@@ -24,5 +25,6 @@
   "required": [
     "header",
     "payload"
-  ]
+  ],
+  "additionalProperties": false
 }
