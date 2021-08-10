@@ -53,9 +53,29 @@
               "MARINA": "Port Hamble"
             }
           ]
+        },
+        "sampleSensitive": {
+          "description": "A redacted version of any Personally Identifiable Information (PII) that we hold.",
+          "type": "object",
+          "examples": [
+            {
+              "PHONE_NUMBER": "",
+              "EMAIL_ADDRESS": "REDACTED",
+              "FIRST_NAME": "",
+              "LAST_NAME": "REDACTED"
+            }
+          ]
         }
       },
-      "required": ["caseId", "receiptReceived", "invalid", "surveyLaunched", "refusalReceived", "sample"],
+      "required": [
+        "caseId",
+        "receiptReceived",
+        "invalid",
+        "surveyLaunched",
+        "refusalReceived",
+        "sample",
+        "sampleSensitive"
+      ],
       "additionalProperties": false
     }
   },
