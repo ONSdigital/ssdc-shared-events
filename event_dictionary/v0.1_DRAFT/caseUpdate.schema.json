@@ -18,19 +18,14 @@
           "examples": [true, false]
         },
         "refusalReceived": {
-          "description": "This case has been refused by the respondent.",
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              null,
-              "HARD_REFUSAL",
-              "EXTRAORDINARY_REFUSAL",
-              "SOFT_REFUSAL"
-            ],
-            "additionalProperties": false
-          },
-          "examples": ["HARD_REFUSAL", null]
+          "description": "If and why the case has been refused by the respondent.",
+          "type": "string",
+          "enum": [
+            null,
+            "HARD_REFUSAL",
+            "EXTRAORDINARY_REFUSAL",
+            "SOFT_REFUSAL"
+          ]
         },
         "sample": {
           "description": "The original sample data.",
@@ -59,9 +54,7 @@
       },
       "required": [
         "caseId",
-        "receiptReceived",
         "invalid",
-        "surveyLaunched",
         "refusalReceived",
         "sample",
         "sampleSensitive"

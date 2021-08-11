@@ -40,7 +40,14 @@
           "examples": [true, false]
         }
       },
-      "required": ["uacHash", "qid", "caseId"],
+      "required": [
+        "caseId",
+        "active",
+        "uacHash",
+        "qid",
+        "receiptReceived",
+        "surveyLaunched"
+      ],
       "additionalProperties": false
     }
   },

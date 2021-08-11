@@ -10,24 +10,20 @@
       "examples": ["v1.0"]
     },
     "topic": {
-      "type": "array",
+      "type": "string",
       "description": "The Google Pub/Sub topic that this event was published to.",
-      "items": {
-        "type": "string",
-        "enum": [
-          "event_case-update",
-          "event_deactivate-uac",
-          "event_invalid-case",
-          "event_print-fulfilment",
-          "event_receipt",
-          "event_refusal",
-          "event_survey-launch",
-          "event_uac-authentication",
-          "event_uac-update",
-          "event_update-sample-sensitive"
-        ],
-        "additionalProperties": false
-      }
+      "enum": [
+        "event_case-update",
+        "event_deactivate-uac",
+        "event_invalid-case",
+        "event_print-fulfilment",
+        "event_receipt",
+        "event_refusal",
+        "event_survey-launch",
+        "event_uac-authentication",
+        "event_uac-update",
+        "event_update-sample-sensitive"
+      ]
     },
     "source": {
       "type": "string",
@@ -37,7 +33,7 @@
     "channel": {
       "description": "The product which published this event.",
       "type": "string",
-      "examples": ["EQ", "RH", "RM"]
+      "enum": ["EQ", "RH", "RM"]
     },
     "dateTime": {
       "description": "When the event happened (this might not be when it was published).",

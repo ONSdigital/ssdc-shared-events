@@ -13,13 +13,9 @@
           "examples": ["acb61268-1f17-4811-b8f9-d6981a060ce5"]
         },
         "type": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"],
-            "additionalProperties": false
-          },
-          "description": "The type of the refusal."
+          "type": "string",
+          "description": "The type of the refusal.",
+          "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"]
         }
       },
       "required": ["caseId", "type"],
