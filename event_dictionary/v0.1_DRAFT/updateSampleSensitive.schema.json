@@ -4,7 +4,7 @@
   "title": "Update Sample Sensitive",
   "type": "object",
   "properties": {
-    "caseUpdate": {
+    "updateSampleSensitive": {
       "type": "object",
       "properties": {
         "caseId": {
