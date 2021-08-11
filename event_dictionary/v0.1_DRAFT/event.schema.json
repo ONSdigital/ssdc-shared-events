@@ -8,9 +8,15 @@
       "type": "object",
       "oneOf": [
         { "$ref": "caseUpdate.schema.json" },
+        { "$ref": "deactivateUac.schema.json" },
+        { "$ref": "invalidCase.schema.json" },
+        { "$ref": "printFulfilment.schema.json" },
+        { "$ref": "receipt.schema.json" },
         { "$ref": "refusal.schema.json" },
         { "$ref": "surveyLaunch.schema.json" },
-        { "$ref": "uacAuthentication.schema.json" }
+        { "$ref": "uacAuthentication.schema.json" },
+        { "$ref": "uacUpdate.schema.json" },
+        { "$ref": "updateSampleSensitive.schema.json" }
       ],
       "additionalProperties": false
     }

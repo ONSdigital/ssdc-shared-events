@@ -10,30 +10,24 @@
       "examples": ["v1.0"]
     },
     "topic": {
-      "type": "string",
-      "description": "The Google Pub/Sub topic that this event was published to.",
-      "examples": ["event_survey-launched", "event_refusal"]
-    },
-    "type": {
       "type": "array",
+      "description": "The Google Pub/Sub topic that this event was published to.",
       "items": {
         "type": "string",
         "enum": [
-          "CASE_CREATED",
-          "CASE_UPDATED",
-          "UAC_UPDATED",
-          "RESPONSE_RECEIVED",
-          "REFUSAL_RECEIVED",
-          "ADDRESS_NOT_VALID",
-          "SURVEY_LAUNCHED",
-          "RESPONDENT_AUTHENTICATED",
-          "FULFILMENT",
-          "DEACTIVATE_UAC",
-          "UPDATE_SAMPLE_SENSITIVE"
+          "event_case-update",
+          "event_deactivate-uac",
+          "event_invalid-case",
+          "event_print-fulfilment",
+          "event_receipt",
+          "event_refusal",
+          "event_survey-launch",
+          "event_uac-authentication",
+          "event_uac-update",
+          "event_update-sample-sensitive"
         ],
         "additionalProperties": false
-      },
-      "description": "The type of event."
+      }
     },
     "source": {
       "type": "string",

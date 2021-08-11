@@ -12,18 +12,8 @@
           "type": "uuid",
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
-        "receiptReceived": {
-          "description": "An EQ or paper questionnaire has been received.",
-          "type": "boolean",
-          "examples": [true, false]
-        },
         "invalid": {
           "description": "This case is not valid.",
-          "type": "boolean",
-          "examples": [true, false]
-        },
-        "surveyLaunched": {
-          "description": "The electronic questionnaire has been launched.",
           "type": "boolean",
           "examples": [true, false]
         },
