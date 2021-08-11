@@ -13,7 +13,7 @@
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
         "sampleSensitive": {
-          "description": "Any updates to Personally Identifiable Information (PII) required for GDPR compliance.",
+          "description": "Personally Identifiable Information (PII) updates for GDPR compliance.",
           "type": "object",
           "examples": [
             {

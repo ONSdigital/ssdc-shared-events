@@ -13,7 +13,7 @@
           "examples": ["acb61268-1f17-4811-b8f9-d6981a060ce5"]
         },
         "packCode": {
-          "description": "The pack code of the product in the product library to be printed & posted.",
+          "description": "Pack code of the product in the product library for print & post.",
           "type": "string",
           "examples": ["REPLACEMENT_UAC_LETTER", "INFORMATION_BOOKLET"]
         }

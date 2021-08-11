@@ -8,7 +8,7 @@
       "type": "object",
       "properties": {
         "qid": {
-          "description": "The QID associated with the electronic questionnaire that has been launched.",
+          "description": "QID linked to UAC used to launch EQ.",
           "type": "string",
           "examples": ["0130000000100142"]
         }

@@ -13,7 +13,7 @@
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
         "active": {
-          "description": "Set to true if this UAC can be used to launch EQ.",
+          "description": "True if this UAC can be used to launch EQ.",
           "type": "boolean",
           "examples": [true, false]
         },
@@ -30,12 +30,12 @@
           "examples": ["0130000000100142"]
         },
         "receiptReceived": {
-          "description": "Set to true if a completed EQ or paper questionnaire has been received using this UAC/QID.",
+          "description": "True if completed questionnaire received using this UAC/QID.",
           "type": "boolean",
           "examples": [true, false]
         },
         "surveyLaunched": {
-          "description": "Set to true if electronic questionnaire has been launched using this UAC.",
+          "description": "True if EQ has been launched using this UAC.",
           "type": "boolean",
           "examples": [true, false]
         }

@@ -8,7 +8,7 @@
       "type": "object",
       "properties": {
         "qid": {
-          "description": "The QID associated with the UAC which was used to authenticate.",
+          "description": "QID linked to UAC used to authenticate.",
           "type": "string",
           "examples": ["0130000000100142"]
         }

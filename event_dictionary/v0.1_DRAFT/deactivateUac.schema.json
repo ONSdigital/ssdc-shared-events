@@ -8,7 +8,7 @@
       "type": "object",
       "properties": {
         "qid": {
-          "description": "The QID associated with the UAC which should be deactivated.",
+          "description": "QID associated with the UAC which should be deactivated.",
           "type": "string",
           "examples": ["0130000000100142"]
         }

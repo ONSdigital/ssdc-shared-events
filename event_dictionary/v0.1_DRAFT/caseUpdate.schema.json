@@ -40,7 +40,7 @@
           ]
         },
         "sampleSensitive": {
-          "description": "A redacted version of any Personally Identifiable Information (PII) that we hold.",
+          "description": "Redacted Personally Identifiable Information (PII).",
           "type": "object",
           "examples": [
             {

@@ -262,14 +262,14 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                           | Pattern | Type                       | Deprecated | Definition | Title/Description                                                                    |
-| ------------------------------------------------------------------ | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                   | No      | uuid                       | No         | -          | The ID of the case.                                                                  |
-| + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                 | No      | boolean                    | No         | -          | This case is not valid.                                                              |
-| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived ) | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent.                              |
-| + [sample](#payload_oneOf_i0_caseUpdate_sample )                   | No      | object                     | No         | -          | The original sample data.                                                            |
-| + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive ) | No      | object                     | No         | -          | A redacted version of any Personally Identifiable Information (PII) that we hold ... |
-|                                                                    |         |                            |            |            |                                                                                      |
+| Property                                                           | Pattern | Type                       | Deprecated | Definition | Title/Description                                       |
+| ------------------------------------------------------------------ | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                   | No      | uuid                       | No         | -          | The ID of the case.                                     |
+| + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                 | No      | boolean                    | No         | -          | This case is not valid.                                 |
+| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived ) | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent. |
+| + [sample](#payload_oneOf_i0_caseUpdate_sample )                   | No      | object                     | No         | -          | The original sample data.                               |
+| + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive ) | No      | object                     | No         | -          | Redacted Personally Identifiable Information (PII).     |
+|                                                                    |         |                            |            |            |                                                         |
 
 ##### <a name="payload_oneOf_i0_caseUpdate_caseId"></a>2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`
 
@@ -347,7 +347,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** A redacted version of any Personally Identifiable Information (PII) that we hold.
+**Description:** Redacted Personally Identifiable Information (PII).
 
 **Example:** 
 
@@ -380,10 +380,10 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                            |
-| --------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------ |
-| + [qid](#payload_oneOf_i1_deactivateUac_qid ) | No      | string | No         | -          | The QID associated with the UAC which should be deactivated. |
-|                                               |         |        |            |            |                                                              |
+| Property                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                        |
+| --------------------------------------------- | ------- | ------ | ---------- | ---------- | -------------------------------------------------------- |
+| + [qid](#payload_oneOf_i1_deactivateUac_qid ) | No      | string | No         | -          | QID associated with the UAC which should be deactivated. |
+|                                               |         |        |            |            |                                                          |
 
 ##### <a name="payload_oneOf_i1_deactivateUac_qid"></a>2.2.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`
 
@@ -392,7 +392,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The QID associated with the UAC which should be deactivated.
+**Description:** QID associated with the UAC which should be deactivated.
 
 **Example:** 
 
@@ -480,11 +480,11 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                                           |
-| --------------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------------------- |
-| + [caseId](#payload_oneOf_i3_printFulfilment_caseId )     | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted.    |
-| + [packCode](#payload_oneOf_i3_printFulfilment_packCode ) | No      | string | No         | -          | The pack code of the product in the product library to be printed & posted. |
-|                                                           |         |        |            |            |                                                                             |
+| Property                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                                        |
+| --------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------ |
+| + [caseId](#payload_oneOf_i3_printFulfilment_caseId )     | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted. |
+| + [packCode](#payload_oneOf_i3_printFulfilment_packCode ) | No      | string | No         | -          | Pack code of the product in the product library for print & post.        |
+|                                                           |         |        |            |            |                                                                          |
 
 ##### <a name="payload_oneOf_i3_printFulfilment_caseId"></a>2.4.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`
 
@@ -508,7 +508,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The pack code of the product in the product library to be printed & posted.
+**Description:** Pack code of the product in the product library for print & post.
 
 **Examples:** 
 
@@ -540,10 +540,10 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                | Pattern | Type   | Deprecated | Definition | Title/Description                                                                    |
-| --------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------------------ |
-| + [qid](#payload_oneOf_i4_receipt_qid ) | No      | string | No         | -          | The QID associated with the electronic questionnaire that has been completed by  ... |
-|                                         |         |        |            |            |                                                                                      |
+| Property                                | Pattern | Type   | Deprecated | Definition | Title/Description               |
+| --------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------- |
+| + [qid](#payload_oneOf_i4_receipt_qid ) | No      | string | No         | -          | QID of completed questionnaire. |
+|                                         |         |        |            |            |                                 |
 
 ##### <a name="payload_oneOf_i4_receipt_qid"></a>2.5.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`
 
@@ -552,7 +552,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The QID associated with the electronic questionnaire that has been completed by the respondent.
+**Description:** QID of completed questionnaire.
 
 **Example:** 
 
@@ -635,10 +635,10 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                     | Pattern | Type   | Deprecated | Definition | Title/Description                                                            |
-| -------------------------------------------- | ------- | ------ | ---------- | ---------- | ---------------------------------------------------------------------------- |
-| + [qid](#payload_oneOf_i6_surveyLaunch_qid ) | No      | string | No         | -          | The QID associated with the electronic questionnaire that has been launched. |
-|                                              |         |        |            |            |                                                                              |
+| Property                                     | Pattern | Type   | Deprecated | Definition | Title/Description                    |
+| -------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------ |
+| + [qid](#payload_oneOf_i6_surveyLaunch_qid ) | No      | string | No         | -          | QID linked to UAC used to launch EQ. |
+|                                              |         |        |            |            |                                      |
 
 ##### <a name="payload_oneOf_i6_surveyLaunch_qid"></a>2.7.1.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch > qid`
 
@@ -647,7 +647,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The QID associated with the electronic questionnaire that has been launched.
+**Description:** QID linked to UAC used to launch EQ.
 
 **Example:** 
 
@@ -675,10 +675,10 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
-| ------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
-| + [qid](#payload_oneOf_i7_uacAuthentication_qid ) | No      | string | No         | -          | The QID associated with the UAC which was used to authenticate. |
-|                                                   |         |        |            |            |                                                                 |
+| Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description                       |
+| ------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------- |
+| + [qid](#payload_oneOf_i7_uacAuthentication_qid ) | No      | string | No         | -          | QID linked to UAC used to authenticate. |
+|                                                   |         |        |            |            |                                         |
 
 ##### <a name="payload_oneOf_i7_uacAuthentication_qid"></a>2.8.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`
 
@@ -687,7 +687,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The QID associated with the UAC which was used to authenticate.
+**Description:** QID linked to UAC used to authenticate.
 
 **Example:** 
 
@@ -715,15 +715,15 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                          | Pattern | Type    | Deprecated | Definition | Title/Description                                                                    |
-| ----------------------------------------------------------------- | ------- | ------- | ---------- | ---------- | ------------------------------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i8_uacUpdate_caseId )                   | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.                             |
-| + [active](#payload_oneOf_i8_uacUpdate_active )                   | No      | boolean | No         | -          | Set to true if this UAC can be used to launch EQ.                                    |
-| + [uacHash](#payload_oneOf_i8_uacUpdate_uacHash )                 | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                                         |
-| + [qid](#payload_oneOf_i8_uacUpdate_qid )                         | No      | string  | No         | -          | The QID linked to this UAC.                                                          |
-| + [receiptReceived](#payload_oneOf_i8_uacUpdate_receiptReceived ) | No      | boolean | No         | -          | Set to true if a completed EQ or paper questionnaire has been received using thi ... |
-| + [surveyLaunched](#payload_oneOf_i8_uacUpdate_surveyLaunched )   | No      | boolean | No         | -          | Set to true if electronic questionnaire has been launched using this UAC.            |
-|                                                                   |         |         |            |            |                                                                                      |
+| Property                                                          | Pattern | Type    | Deprecated | Definition | Title/Description                                            |
+| ----------------------------------------------------------------- | ------- | ------- | ---------- | ---------- | ------------------------------------------------------------ |
+| + [caseId](#payload_oneOf_i8_uacUpdate_caseId )                   | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.     |
+| + [active](#payload_oneOf_i8_uacUpdate_active )                   | No      | boolean | No         | -          | True if this UAC can be used to launch EQ.                   |
+| + [uacHash](#payload_oneOf_i8_uacUpdate_uacHash )                 | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                 |
+| + [qid](#payload_oneOf_i8_uacUpdate_qid )                         | No      | string  | No         | -          | The QID linked to this UAC.                                  |
+| + [receiptReceived](#payload_oneOf_i8_uacUpdate_receiptReceived ) | No      | boolean | No         | -          | True if completed questionnaire received using this UAC/QID. |
+| + [surveyLaunched](#payload_oneOf_i8_uacUpdate_surveyLaunched )   | No      | boolean | No         | -          | True if EQ has been launched using this UAC.                 |
+|                                                                   |         |         |            |            |                                                              |
 
 ##### <a name="payload_oneOf_i8_uacUpdate_caseId"></a>2.9.1.1. Property `Event > payload > oneOf > UAC Update > uacUpdate > caseId`
 
@@ -747,7 +747,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Set to true if this UAC can be used to launch EQ.
+**Description:** True if this UAC can be used to launch EQ.
 
 **Examples:** 
 
@@ -796,7 +796,7 @@ false
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Set to true if a completed EQ or paper questionnaire has been received using this UAC/QID.
+**Description:** True if completed questionnaire received using this UAC/QID.
 
 **Examples:** 
 
@@ -815,7 +815,7 @@ false
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Set to true if electronic questionnaire has been launched using this UAC.
+**Description:** True if EQ has been launched using this UAC.
 
 **Examples:** 
 
@@ -847,11 +847,11 @@ false
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                                                    |
-| ----------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i9_updateSampleSensitive_caseId )                   | No      | uuid   | No         | -          | The ID of the case which is being updated.                                           |
-| + [sampleSensitive](#payload_oneOf_i9_updateSampleSensitive_sampleSensitive ) | No      | object | No         | -          | Any updates to Personally Identifiable Information (PII) required for GDPR compl ... |
-|                                                                               |         |        |            |            |                                                                                      |
+| Property                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                                      |
+| ----------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ---------------------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i9_updateSampleSensitive_caseId )                   | No      | uuid   | No         | -          | The ID of the case which is being updated.                             |
+| + [sampleSensitive](#payload_oneOf_i9_updateSampleSensitive_sampleSensitive ) | No      | object | No         | -          | Personally Identifiable Information (PII) updates for GDPR compliance. |
+|                                                                               |         |        |            |            |                                                                        |
 
 ##### <a name="payload_oneOf_i9_updateSampleSensitive_caseId"></a>2.10.1.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > caseId`
 
@@ -875,7 +875,7 @@ false
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Any updates to Personally Identifiable Information (PII) required for GDPR compliance.
+**Description:** Personally Identifiable Information (PII) updates for GDPR compliance.
 
 **Example:** 
 
@@ -886,4 +886,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-11 at 09:40:48 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-11 at 09:49:23 +0100
