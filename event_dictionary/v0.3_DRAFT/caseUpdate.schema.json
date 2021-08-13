@@ -1,0 +1,67 @@
+{
+  "$id": "https://ons.gov.uk/caseUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Case Update",
+  "type": "object",
+  "properties": {
+    "caseUpdate": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "invalid": {
+          "description": "This case is not valid.",
+          "type": "boolean",
+          "examples": [true, false]
+        },
+        "refusalReceived": {
+          "description": "If and why the case has been refused by the respondent.",
+          "type": "string",
+          "enum": [
+            null,
+            "HARD_REFUSAL",
+            "EXTRAORDINARY_REFUSAL",
+            "SOFT_REFUSAL"
+          ]
+        },
+        "sample": {
+          "description": "The original sample data.",
+          "type": "object",
+          "examples": [
+            {
+              "VESSEL_NAME": "HMS Sailalot",
+              "MARINA_BERTH": "101 North",
+              "PONTOON": "West Basin",
+              "MARINA": "Port Hamble"
+            }
+          ]
+        },
+        "sampleSensitive": {
+          "description": "Redacted Personally Identifiable Information (PII).",
+          "type": "object",
+          "examples": [
+            {
+              "PHONE_NUMBER": "",
+              "EMAIL_ADDRESS": "REDACTED",
+              "FIRST_NAME": "",
+              "LAST_NAME": "REDACTED"
+            }
+          ]
+        }
+      },
+      "required": [
+        "caseId",
+        "invalid",
+        "refusalReceived",
+        "sample",
+        "sampleSensitive"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["caseUpdate"],
+  "additionalProperties": false
+}
