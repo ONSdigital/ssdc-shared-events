@@ -14,12 +14,14 @@
       "description": "The Google Pub/Sub topic that this event was published to.",
       "enum": [
         "event_case-update",
+        "event_collection-exercise-update",
         "event_deactivate-uac",
         "event_invalid-case",
         "event_print-fulfilment",
         "event_receipt",
         "event_refusal",
         "event_survey-launch",
+        "event_survey-update",
         "event_uac-authentication",
         "event_uac-update",
         "event_update-sample-sensitive"

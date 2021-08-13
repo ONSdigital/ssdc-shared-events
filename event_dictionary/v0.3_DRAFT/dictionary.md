@@ -129,12 +129,14 @@
 
 Must be one of:
 * "event_case-update"
+* "event_collection-exercise-update"
 * "event_deactivate-uac"
 * "event_invalid-case"
 * "event_print-fulfilment"
 * "event_receipt"
 * "event_refusal"
 * "event_survey-launch"
+* "event_survey-update"
 * "event_uac-authentication"
 * "event_uac-update"
 * "event_update-sample-sensitive"
@@ -1118,4 +1120,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-13 at 12:35:17 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-13 at 12:36:49 +0100
