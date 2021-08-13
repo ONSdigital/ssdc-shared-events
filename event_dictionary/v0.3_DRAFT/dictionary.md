@@ -859,7 +859,7 @@ Must be one of:
 
 |                      | Array restrictions |
 | -------------------- | ------------------ |
-| **Min items**        | N/A                |
+| **Min items**        | 1                  |
 | **Max items**        | N/A                |
 | **Items unicity**    | False              |
 | **Additional items** | False              |
@@ -1120,4 +1120,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-13 at 12:36:49 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-13 at 12:42:56 +0100
