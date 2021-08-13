@@ -12,6 +12,11 @@
           "type": "uuid",
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise this case belongs to.",
+          "type": "uuid",
+          "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
+        },
         "invalid": {
           "description": "This case is not valid.",
           "type": "boolean",

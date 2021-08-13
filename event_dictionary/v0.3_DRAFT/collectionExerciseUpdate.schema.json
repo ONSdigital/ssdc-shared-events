@@ -1,0 +1,35 @@
+{
+  "$id": "https://ons.gov.uk/collectionExerciseUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Collection Exercise Update",
+  "type": "object",
+  "properties": {
+    "collectionExerciseUpdate": {
+      "type": "object",
+      "properties": {
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise.",
+          "type": "uuid",
+          "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
+        },
+        "surveyId": {
+          "description": "The ID of the survey this collection exercise belongs to.",
+          "type": "uuid",
+          "examples": ["21ce842b-4359-402a-9311-973f07d2d253"]
+        },
+        "name": {
+          "description": "The name of the collection exercise.",
+          "type": "string",
+          "examples": ["Week 26", "September 2021", "202103", "Census 2026"]
+        }
+      },
+      "required": [
+        "collectionExerciseId",
+        "name"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["collectionExerciseUpdate"],
+  "additionalProperties": false
+}

@@ -14,46 +14,58 @@
   - [2.1. Property `Event > payload > oneOf > caseUpdate.schema.json`](#payload_oneOf_i0)
     - [2.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate`](#payload_oneOf_i0_caseUpdate)
       - [2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`](#payload_oneOf_i0_caseUpdate_caseId)
-      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
-      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
-      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
-      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
-  - [2.2. Property `Event > payload > oneOf > deactivateUac.schema.json`](#payload_oneOf_i1)
-    - [2.2.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac`](#payload_oneOf_i1_deactivateUac)
-      - [2.2.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`](#payload_oneOf_i1_deactivateUac_qid)
-  - [2.3. Property `Event > payload > oneOf > invalidCase.schema.json`](#payload_oneOf_i2)
-    - [2.3.1. Property `Event > payload > oneOf > Invalid Case > invalidCase`](#payload_oneOf_i2_invalidCase)
-      - [2.3.1.1. Property `Event > payload > oneOf > Invalid Case > invalidCase > caseId`](#payload_oneOf_i2_invalidCase_caseId)
-      - [2.3.1.2. Property `Event > payload > oneOf > Invalid Case > invalidCase > reason`](#payload_oneOf_i2_invalidCase_reason)
-  - [2.4. Property `Event > payload > oneOf > printFulfilment.schema.json`](#payload_oneOf_i3)
-    - [2.4.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment`](#payload_oneOf_i3_printFulfilment)
-      - [2.4.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`](#payload_oneOf_i3_printFulfilment_caseId)
-      - [2.4.1.2. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > packCode`](#payload_oneOf_i3_printFulfilment_packCode)
-  - [2.5. Property `Event > payload > oneOf > receipt.schema.json`](#payload_oneOf_i4)
-    - [2.5.1. Property `Event > payload > oneOf > Receipt > receipt`](#payload_oneOf_i4_receipt)
-      - [2.5.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`](#payload_oneOf_i4_receipt_qid)
-  - [2.6. Property `Event > payload > oneOf > refusal.schema.json`](#payload_oneOf_i5)
-    - [2.6.1. Property `Event > payload > oneOf > Refusal > refusal`](#payload_oneOf_i5_refusal)
-      - [2.6.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`](#payload_oneOf_i5_refusal_caseId)
-      - [2.6.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`](#payload_oneOf_i5_refusal_type)
-  - [2.7. Property `Event > payload > oneOf > surveyLaunch.schema.json`](#payload_oneOf_i6)
-    - [2.7.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch`](#payload_oneOf_i6_surveyLaunch)
-      - [2.7.1.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch > qid`](#payload_oneOf_i6_surveyLaunch_qid)
-  - [2.8. Property `Event > payload > oneOf > uacAuthentication.schema.json`](#payload_oneOf_i7)
-    - [2.8.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`](#payload_oneOf_i7_uacAuthentication)
-      - [2.8.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`](#payload_oneOf_i7_uacAuthentication_qid)
-  - [2.9. Property `Event > payload > oneOf > uacUpdate.schema.json`](#payload_oneOf_i8)
-    - [2.9.1. Property `Event > payload > oneOf > UAC Update > uacUpdate`](#payload_oneOf_i8_uacUpdate)
-      - [2.9.1.1. Property `Event > payload > oneOf > UAC Update > uacUpdate > caseId`](#payload_oneOf_i8_uacUpdate_caseId)
-      - [2.9.1.2. Property `Event > payload > oneOf > UAC Update > uacUpdate > active`](#payload_oneOf_i8_uacUpdate_active)
-      - [2.9.1.3. Property `Event > payload > oneOf > UAC Update > uacUpdate > uacHash`](#payload_oneOf_i8_uacUpdate_uacHash)
-      - [2.9.1.4. Property `Event > payload > oneOf > UAC Update > uacUpdate > qid`](#payload_oneOf_i8_uacUpdate_qid)
-      - [2.9.1.5. Property `Event > payload > oneOf > UAC Update > uacUpdate > receiptReceived`](#payload_oneOf_i8_uacUpdate_receiptReceived)
-      - [2.9.1.6. Property `Event > payload > oneOf > UAC Update > uacUpdate > surveyLaunched`](#payload_oneOf_i8_uacUpdate_surveyLaunched)
-  - [2.10. Property `Event > payload > oneOf > updateSampleSensitive.schema.json`](#payload_oneOf_i9)
-    - [2.10.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive`](#payload_oneOf_i9_updateSampleSensitive)
-      - [2.10.1.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > caseId`](#payload_oneOf_i9_updateSampleSensitive_caseId)
-      - [2.10.1.2. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > sampleSensitive`](#payload_oneOf_i9_updateSampleSensitive_sampleSensitive)
+      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`](#payload_oneOf_i0_caseUpdate_collectionExerciseId)
+      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
+      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
+      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
+      - [2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
+  - [2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`](#payload_oneOf_i1)
+    - [2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`](#payload_oneOf_i1_collectionExerciseUpdate)
+      - [2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId)
+      - [2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`](#payload_oneOf_i1_collectionExerciseUpdate_surveyId)
+      - [2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`](#payload_oneOf_i1_collectionExerciseUpdate_name)
+  - [2.3. Property `Event > payload > oneOf > deactivateUac.schema.json`](#payload_oneOf_i2)
+    - [2.3.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac`](#payload_oneOf_i2_deactivateUac)
+      - [2.3.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`](#payload_oneOf_i2_deactivateUac_qid)
+  - [2.4. Property `Event > payload > oneOf > invalidCase.schema.json`](#payload_oneOf_i3)
+    - [2.4.1. Property `Event > payload > oneOf > Invalid Case > invalidCase`](#payload_oneOf_i3_invalidCase)
+      - [2.4.1.1. Property `Event > payload > oneOf > Invalid Case > invalidCase > caseId`](#payload_oneOf_i3_invalidCase_caseId)
+      - [2.4.1.2. Property `Event > payload > oneOf > Invalid Case > invalidCase > reason`](#payload_oneOf_i3_invalidCase_reason)
+  - [2.5. Property `Event > payload > oneOf > printFulfilment.schema.json`](#payload_oneOf_i4)
+    - [2.5.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment`](#payload_oneOf_i4_printFulfilment)
+      - [2.5.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`](#payload_oneOf_i4_printFulfilment_caseId)
+      - [2.5.1.2. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > packCode`](#payload_oneOf_i4_printFulfilment_packCode)
+  - [2.6. Property `Event > payload > oneOf > receipt.schema.json`](#payload_oneOf_i5)
+    - [2.6.1. Property `Event > payload > oneOf > Receipt > receipt`](#payload_oneOf_i5_receipt)
+      - [2.6.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`](#payload_oneOf_i5_receipt_qid)
+  - [2.7. Property `Event > payload > oneOf > refusal.schema.json`](#payload_oneOf_i6)
+    - [2.7.1. Property `Event > payload > oneOf > Refusal > refusal`](#payload_oneOf_i6_refusal)
+      - [2.7.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`](#payload_oneOf_i6_refusal_caseId)
+      - [2.7.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`](#payload_oneOf_i6_refusal_type)
+  - [2.8. Property `Event > payload > oneOf > surveyLaunch.schema.json`](#payload_oneOf_i7)
+    - [2.8.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch`](#payload_oneOf_i7_surveyLaunch)
+      - [2.8.1.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch > qid`](#payload_oneOf_i7_surveyLaunch_qid)
+  - [2.9. Property `Event > payload > oneOf > surveyUpdate.schema.json`](#payload_oneOf_i8)
+    - [2.9.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate`](#payload_oneOf_i8_surveyUpdate)
+      - [2.9.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`](#payload_oneOf_i8_surveyUpdate_surveyId)
+      - [2.9.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > name`](#payload_oneOf_i8_surveyUpdate_name)
+      - [2.9.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns`](#payload_oneOf_i8_surveyUpdate_sampleColumns)
+        - [2.9.1.3.1. Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items](#autogenerated_heading_3)
+  - [2.10. Property `Event > payload > oneOf > uacAuthentication.schema.json`](#payload_oneOf_i9)
+    - [2.10.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`](#payload_oneOf_i9_uacAuthentication)
+      - [2.10.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`](#payload_oneOf_i9_uacAuthentication_qid)
+  - [2.11. Property `Event > payload > oneOf > uacUpdate.schema.json`](#payload_oneOf_i10)
+    - [2.11.1. Property `Event > payload > oneOf > UAC Update > uacUpdate`](#payload_oneOf_i10_uacUpdate)
+      - [2.11.1.1. Property `Event > payload > oneOf > UAC Update > uacUpdate > caseId`](#payload_oneOf_i10_uacUpdate_caseId)
+      - [2.11.1.2. Property `Event > payload > oneOf > UAC Update > uacUpdate > active`](#payload_oneOf_i10_uacUpdate_active)
+      - [2.11.1.3. Property `Event > payload > oneOf > UAC Update > uacUpdate > uacHash`](#payload_oneOf_i10_uacUpdate_uacHash)
+      - [2.11.1.4. Property `Event > payload > oneOf > UAC Update > uacUpdate > qid`](#payload_oneOf_i10_uacUpdate_qid)
+      - [2.11.1.5. Property `Event > payload > oneOf > UAC Update > uacUpdate > receiptReceived`](#payload_oneOf_i10_uacUpdate_receiptReceived)
+      - [2.11.1.6. Property `Event > payload > oneOf > UAC Update > uacUpdate > surveyLaunched`](#payload_oneOf_i10_uacUpdate_surveyLaunched)
+  - [2.12. Property `Event > payload > oneOf > updateSampleSensitive.schema.json`](#payload_oneOf_i11)
+    - [2.12.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive`](#payload_oneOf_i11_updateSampleSensitive)
+      - [2.12.1.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > caseId`](#payload_oneOf_i11_updateSampleSensitive_caseId)
+      - [2.12.1.2. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > sampleSensitive`](#payload_oneOf_i11_updateSampleSensitive_sampleSensitive)
 
 **Title:** Event
 
@@ -228,19 +240,21 @@ Must be one of:
 | **Defined in**            | #/definitions/payload                                                     |
 |                           |                                                                           |
 
-| One of(Option)                                         |
-| ------------------------------------------------------ |
-| [caseUpdate.schema.json](#payload_oneOf_i0)            |
-| [deactivateUac.schema.json](#payload_oneOf_i1)         |
-| [invalidCase.schema.json](#payload_oneOf_i2)           |
-| [printFulfilment.schema.json](#payload_oneOf_i3)       |
-| [receipt.schema.json](#payload_oneOf_i4)               |
-| [refusal.schema.json](#payload_oneOf_i5)               |
-| [surveyLaunch.schema.json](#payload_oneOf_i6)          |
-| [uacAuthentication.schema.json](#payload_oneOf_i7)     |
-| [uacUpdate.schema.json](#payload_oneOf_i8)             |
-| [updateSampleSensitive.schema.json](#payload_oneOf_i9) |
-|                                                        |
+| One of(Option)                                            |
+| --------------------------------------------------------- |
+| [caseUpdate.schema.json](#payload_oneOf_i0)               |
+| [collectionExerciseUpdate.schema.json](#payload_oneOf_i1) |
+| [deactivateUac.schema.json](#payload_oneOf_i2)            |
+| [invalidCase.schema.json](#payload_oneOf_i3)              |
+| [printFulfilment.schema.json](#payload_oneOf_i4)          |
+| [receipt.schema.json](#payload_oneOf_i5)                  |
+| [refusal.schema.json](#payload_oneOf_i6)                  |
+| [surveyLaunch.schema.json](#payload_oneOf_i7)             |
+| [surveyUpdate.schema.json](#payload_oneOf_i8)             |
+| [uacAuthentication.schema.json](#payload_oneOf_i9)        |
+| [uacUpdate.schema.json](#payload_oneOf_i10)               |
+| [updateSampleSensitive.schema.json](#payload_oneOf_i11)   |
+|                                                           |
 
 ### <a name="payload_oneOf_i0"></a>2.1. Property `Event > payload > oneOf > caseUpdate.schema.json`
 
@@ -262,14 +276,15 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                           | Pattern | Type                       | Deprecated | Definition | Title/Description                                       |
-| ------------------------------------------------------------------ | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------- |
-| + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                   | No      | uuid                       | No         | -          | The ID of the case.                                     |
-| + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                 | No      | boolean                    | No         | -          | This case is not valid.                                 |
-| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived ) | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent. |
-| + [sample](#payload_oneOf_i0_caseUpdate_sample )                   | No      | object                     | No         | -          | The original sample data.                               |
-| + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive ) | No      | object                     | No         | -          | Redacted Personally Identifiable Information (PII).     |
-|                                                                    |         |                            |            |            |                                                         |
+| Property                                                                     | Pattern | Type                       | Deprecated | Definition | Title/Description                                       |
+| ---------------------------------------------------------------------------- | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                             | No      | uuid                       | No         | -          | The ID of the case.                                     |
+| - [collectionExerciseId](#payload_oneOf_i0_caseUpdate_collectionExerciseId ) | No      | uuid                       | No         | -          | The ID of the collection exercise this case belongs to. |
+| + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                           | No      | boolean                    | No         | -          | This case is not valid.                                 |
+| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived )           | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent. |
+| + [sample](#payload_oneOf_i0_caseUpdate_sample )                             | No      | object                     | No         | -          | The original sample data.                               |
+| + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive )           | No      | object                     | No         | -          | Redacted Personally Identifiable Information (PII).     |
+|                                                                              |         |                            |            |            |                                                         |
 
 ##### <a name="payload_oneOf_i0_caseUpdate_caseId"></a>2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`
 
@@ -286,7 +301,22 @@ Must be one of:
 "bcb61268-1f17-4811-b8f9-e6981a060ce6"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
+##### <a name="payload_oneOf_i0_caseUpdate_collectionExerciseId"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`
+
+| Type                      | `uuid`                                                                    |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The ID of the collection exercise this case belongs to.
+
+**Example:** 
+
+```json
+"415fe420-80db-4ca6-a577-667fd6ba1463"
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -305,7 +335,7 @@ true
 false
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
+##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
 
 | Type                      | `enum (of string or string)`                                              |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -320,7 +350,7 @@ Must be one of:
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
 
-##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
+##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -340,7 +370,7 @@ Must be one of:
 }
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
+##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -360,7 +390,91 @@ Must be one of:
 }
 ```
 
-### <a name="payload_oneOf_i1"></a>2.2. Property `Event > payload > oneOf > deactivateUac.schema.json`
+### <a name="payload_oneOf_i1"></a>2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`
+
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+| **Defined in**            | collectionExerciseUpdate.schema.json                                      |
+|                           |                                                                           |
+
+| Property                                                                  | Pattern | Type   | Deprecated | Definition | Title/Description |
+| ------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
+| + [collectionExerciseUpdate](#payload_oneOf_i1_collectionExerciseUpdate ) | No      | object | No         | -          | -                 |
+|                                                                           |         |        |            |            |                   |
+
+#### <a name="payload_oneOf_i1_collectionExerciseUpdate"></a>2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`
+
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
+
+| Property                                                                                   | Pattern | Type   | Deprecated | Definition | Title/Description                                         |
+| ------------------------------------------------------------------------------------------ | ------- | ------ | ---------- | ---------- | --------------------------------------------------------- |
+| + [collectionExerciseId](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId ) | No      | uuid   | No         | -          | The ID of the collection exercise.                        |
+| - [surveyId](#payload_oneOf_i1_collectionExerciseUpdate_surveyId )                         | No      | uuid   | No         | -          | The ID of the survey this collection exercise belongs to. |
+| + [name](#payload_oneOf_i1_collectionExerciseUpdate_name )                                 | No      | string | No         | -          | The name of the collection exercise.                      |
+|                                                                                            |         |        |            |            |                                                           |
+
+##### <a name="payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId"></a>2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`
+
+| Type                      | `uuid`                                                                    |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The ID of the collection exercise.
+
+**Example:** 
+
+```json
+"415fe420-80db-4ca6-a577-667fd6ba1463"
+```
+
+##### <a name="payload_oneOf_i1_collectionExerciseUpdate_surveyId"></a>2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`
+
+| Type                      | `uuid`                                                                    |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The ID of the survey this collection exercise belongs to.
+
+**Example:** 
+
+```json
+"21ce842b-4359-402a-9311-973f07d2d253"
+```
+
+##### <a name="payload_oneOf_i1_collectionExerciseUpdate_name"></a>2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The name of the collection exercise.
+
+**Examples:** 
+
+```json
+"Week 26"
+```
+
+```json
+"September 2021"
+```
+
+```json
+"202103"
+```
+
+```json
+"Census 2026"
+```
+
+### <a name="payload_oneOf_i2"></a>2.3. Property `Event > payload > oneOf > deactivateUac.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -370,10 +484,10 @@ Must be one of:
 
 | Property                                            | Pattern | Type   | Deprecated | Definition | Title/Description |
 | --------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [deactivateUac](#payload_oneOf_i1_deactivateUac ) | No      | object | No         | -          | -                 |
+| + [deactivateUac](#payload_oneOf_i2_deactivateUac ) | No      | object | No         | -          | -                 |
 |                                                     |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i1_deactivateUac"></a>2.2.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac`
+#### <a name="payload_oneOf_i2_deactivateUac"></a>2.3.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -382,10 +496,10 @@ Must be one of:
 
 | Property                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                        |
 | --------------------------------------------- | ------- | ------ | ---------- | ---------- | -------------------------------------------------------- |
-| + [qid](#payload_oneOf_i1_deactivateUac_qid ) | No      | string | No         | -          | QID associated with the UAC which should be deactivated. |
+| + [qid](#payload_oneOf_i2_deactivateUac_qid ) | No      | string | No         | -          | QID associated with the UAC which should be deactivated. |
 |                                               |         |        |            |            |                                                          |
 
-##### <a name="payload_oneOf_i1_deactivateUac_qid"></a>2.2.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`
+##### <a name="payload_oneOf_i2_deactivateUac_qid"></a>2.3.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -400,7 +514,7 @@ Must be one of:
 "0130000000100142"
 ```
 
-### <a name="payload_oneOf_i2"></a>2.3. Property `Event > payload > oneOf > invalidCase.schema.json`
+### <a name="payload_oneOf_i3"></a>2.4. Property `Event > payload > oneOf > invalidCase.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -410,10 +524,10 @@ Must be one of:
 
 | Property                                        | Pattern | Type   | Deprecated | Definition | Title/Description |
 | ----------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [invalidCase](#payload_oneOf_i2_invalidCase ) | No      | object | No         | -          | -                 |
+| + [invalidCase](#payload_oneOf_i3_invalidCase ) | No      | object | No         | -          | -                 |
 |                                                 |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i2_invalidCase"></a>2.3.1. Property `Event > payload > oneOf > Invalid Case > invalidCase`
+#### <a name="payload_oneOf_i3_invalidCase"></a>2.4.1. Property `Event > payload > oneOf > Invalid Case > invalidCase`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -422,11 +536,11 @@ Must be one of:
 
 | Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description                   |
 | ------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------------------------- |
-| + [caseId](#payload_oneOf_i2_invalidCase_caseId ) | No      | uuid   | No         | -          | The ID of the case that is invalid. |
-| + [reason](#payload_oneOf_i2_invalidCase_reason ) | No      | string | No         | -          | The reason why the case is invalid. |
+| + [caseId](#payload_oneOf_i3_invalidCase_caseId ) | No      | uuid   | No         | -          | The ID of the case that is invalid. |
+| + [reason](#payload_oneOf_i3_invalidCase_reason ) | No      | string | No         | -          | The reason why the case is invalid. |
 |                                                   |         |        |            |            |                                     |
 
-##### <a name="payload_oneOf_i2_invalidCase_caseId"></a>2.3.1.1. Property `Event > payload > oneOf > Invalid Case > invalidCase > caseId`
+##### <a name="payload_oneOf_i3_invalidCase_caseId"></a>2.4.1.1. Property `Event > payload > oneOf > Invalid Case > invalidCase > caseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -441,7 +555,7 @@ Must be one of:
 "acb61268-1f17-4811-b8f9-d6981a060ce5"
 ```
 
-##### <a name="payload_oneOf_i2_invalidCase_reason"></a>2.3.1.2. Property `Event > payload > oneOf > Invalid Case > invalidCase > reason`
+##### <a name="payload_oneOf_i3_invalidCase_reason"></a>2.4.1.2. Property `Event > payload > oneOf > Invalid Case > invalidCase > reason`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -460,7 +574,7 @@ Must be one of:
 "Business has gone bankrupt"
 ```
 
-### <a name="payload_oneOf_i3"></a>2.4. Property `Event > payload > oneOf > printFulfilment.schema.json`
+### <a name="payload_oneOf_i4"></a>2.5. Property `Event > payload > oneOf > printFulfilment.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -470,10 +584,10 @@ Must be one of:
 
 | Property                                                | Pattern | Type   | Deprecated | Definition | Title/Description |
 | ------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [printFulfilment](#payload_oneOf_i3_printFulfilment ) | No      | object | No         | -          | -                 |
+| + [printFulfilment](#payload_oneOf_i4_printFulfilment ) | No      | object | No         | -          | -                 |
 |                                                         |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i3_printFulfilment"></a>2.4.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment`
+#### <a name="payload_oneOf_i4_printFulfilment"></a>2.5.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -482,11 +596,11 @@ Must be one of:
 
 | Property                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                                        |
 | --------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i3_printFulfilment_caseId )     | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted. |
-| + [packCode](#payload_oneOf_i3_printFulfilment_packCode ) | No      | string | No         | -          | Pack code of the product in the product library for print & post.        |
+| + [caseId](#payload_oneOf_i4_printFulfilment_caseId )     | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted. |
+| + [packCode](#payload_oneOf_i4_printFulfilment_packCode ) | No      | string | No         | -          | Pack code of the product in the product library for print & post.        |
 |                                                           |         |        |            |            |                                                                          |
 
-##### <a name="payload_oneOf_i3_printFulfilment_caseId"></a>2.4.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`
+##### <a name="payload_oneOf_i4_printFulfilment_caseId"></a>2.5.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -501,7 +615,7 @@ Must be one of:
 "acb61268-1f17-4811-b8f9-d6981a060ce5"
 ```
 
-##### <a name="payload_oneOf_i3_printFulfilment_packCode"></a>2.4.1.2. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > packCode`
+##### <a name="payload_oneOf_i4_printFulfilment_packCode"></a>2.5.1.2. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > packCode`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -520,7 +634,7 @@ Must be one of:
 "INFORMATION_BOOKLET"
 ```
 
-### <a name="payload_oneOf_i4"></a>2.5. Property `Event > payload > oneOf > receipt.schema.json`
+### <a name="payload_oneOf_i5"></a>2.6. Property `Event > payload > oneOf > receipt.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -530,10 +644,10 @@ Must be one of:
 
 | Property                                | Pattern | Type   | Deprecated | Definition | Title/Description |
 | --------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [receipt](#payload_oneOf_i4_receipt ) | No      | object | No         | -          | -                 |
+| + [receipt](#payload_oneOf_i5_receipt ) | No      | object | No         | -          | -                 |
 |                                         |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i4_receipt"></a>2.5.1. Property `Event > payload > oneOf > Receipt > receipt`
+#### <a name="payload_oneOf_i5_receipt"></a>2.6.1. Property `Event > payload > oneOf > Receipt > receipt`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -542,10 +656,10 @@ Must be one of:
 
 | Property                                | Pattern | Type   | Deprecated | Definition | Title/Description               |
 | --------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------- |
-| + [qid](#payload_oneOf_i4_receipt_qid ) | No      | string | No         | -          | QID of completed questionnaire. |
+| + [qid](#payload_oneOf_i5_receipt_qid ) | No      | string | No         | -          | QID of completed questionnaire. |
 |                                         |         |        |            |            |                                 |
 
-##### <a name="payload_oneOf_i4_receipt_qid"></a>2.5.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`
+##### <a name="payload_oneOf_i5_receipt_qid"></a>2.6.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -560,7 +674,7 @@ Must be one of:
 "0130000000100142"
 ```
 
-### <a name="payload_oneOf_i5"></a>2.6. Property `Event > payload > oneOf > refusal.schema.json`
+### <a name="payload_oneOf_i6"></a>2.7. Property `Event > payload > oneOf > refusal.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -570,10 +684,10 @@ Must be one of:
 
 | Property                                | Pattern | Type   | Deprecated | Definition | Title/Description |
 | --------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [refusal](#payload_oneOf_i5_refusal ) | No      | object | No         | -          | -                 |
+| + [refusal](#payload_oneOf_i6_refusal ) | No      | object | No         | -          | -                 |
 |                                         |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i5_refusal"></a>2.6.1. Property `Event > payload > oneOf > Refusal > refusal`
+#### <a name="payload_oneOf_i6_refusal"></a>2.7.1. Property `Event > payload > oneOf > Refusal > refusal`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -582,11 +696,11 @@ Must be one of:
 
 | Property                                      | Pattern | Type             | Deprecated | Definition | Title/Description                         |
 | --------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ----------------------------------------- |
-| + [caseId](#payload_oneOf_i5_refusal_caseId ) | No      | uuid             | No         | -          | The ID of the case that is being refused. |
-| + [type](#payload_oneOf_i5_refusal_type )     | No      | enum (of string) | No         | -          | The type of the refusal.                  |
+| + [caseId](#payload_oneOf_i6_refusal_caseId ) | No      | uuid             | No         | -          | The ID of the case that is being refused. |
+| + [type](#payload_oneOf_i6_refusal_type )     | No      | enum (of string) | No         | -          | The type of the refusal.                  |
 |                                               |         |                  |            |            |                                           |
 
-##### <a name="payload_oneOf_i5_refusal_caseId"></a>2.6.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`
+##### <a name="payload_oneOf_i6_refusal_caseId"></a>2.7.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -601,7 +715,7 @@ Must be one of:
 "acb61268-1f17-4811-b8f9-d6981a060ce5"
 ```
 
-##### <a name="payload_oneOf_i5_refusal_type"></a>2.6.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`
+##### <a name="payload_oneOf_i6_refusal_type"></a>2.7.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`
 
 | Type                      | `enum (of string)`                                                        |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -615,7 +729,7 @@ Must be one of:
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
 
-### <a name="payload_oneOf_i6"></a>2.7. Property `Event > payload > oneOf > surveyLaunch.schema.json`
+### <a name="payload_oneOf_i7"></a>2.8. Property `Event > payload > oneOf > surveyLaunch.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -625,10 +739,10 @@ Must be one of:
 
 | Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description |
 | ------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [surveyLaunch](#payload_oneOf_i6_surveyLaunch ) | No      | object | No         | -          | -                 |
+| + [surveyLaunch](#payload_oneOf_i7_surveyLaunch ) | No      | object | No         | -          | -                 |
 |                                                   |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i6_surveyLaunch"></a>2.7.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch`
+#### <a name="payload_oneOf_i7_surveyLaunch"></a>2.8.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -637,10 +751,10 @@ Must be one of:
 
 | Property                                     | Pattern | Type   | Deprecated | Definition | Title/Description                    |
 | -------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------ |
-| + [qid](#payload_oneOf_i6_surveyLaunch_qid ) | No      | string | No         | -          | QID linked to UAC used to launch EQ. |
+| + [qid](#payload_oneOf_i7_surveyLaunch_qid ) | No      | string | No         | -          | QID linked to UAC used to launch EQ. |
 |                                              |         |        |            |            |                                      |
 
-##### <a name="payload_oneOf_i6_surveyLaunch_qid"></a>2.7.1.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch > qid`
+##### <a name="payload_oneOf_i7_surveyLaunch_qid"></a>2.8.1.1. Property `Event > payload > oneOf > Survey Launch > surveyLaunch > qid`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -655,7 +769,125 @@ Must be one of:
 "0130000000100142"
 ```
 
-### <a name="payload_oneOf_i7"></a>2.8. Property `Event > payload > oneOf > uacAuthentication.schema.json`
+### <a name="payload_oneOf_i8"></a>2.9. Property `Event > payload > oneOf > surveyUpdate.schema.json`
+
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+| **Defined in**            | surveyUpdate.schema.json                                                  |
+|                           |                                                                           |
+
+| Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description |
+| ------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
+| + [surveyUpdate](#payload_oneOf_i8_surveyUpdate ) | No      | object | No         | -          | -                 |
+|                                                   |         |        |            |            |                   |
+
+#### <a name="payload_oneOf_i8_surveyUpdate"></a>2.9.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate`
+
+| Type                      | `object`                                                |
+| ------------------------- | ------------------------------------------------------- |
+| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
+|                           |                                                         |
+
+| Property                                                         | Pattern | Type            | Deprecated | Definition | Title/Description               |
+| ---------------------------------------------------------------- | ------- | --------------- | ---------- | ---------- | ------------------------------- |
+| + [surveyId](#payload_oneOf_i8_surveyUpdate_surveyId )           | No      | uuid            | No         | -          | The ID of the survey.           |
+| + [name](#payload_oneOf_i8_surveyUpdate_name )                   | No      | string          | No         | -          | The name of the survey.         |
+| + [sampleColumns](#payload_oneOf_i8_surveyUpdate_sampleColumns ) | No      | array of string | No         | -          | The columns in the sample file. |
+|                                                                  |         |                 |            |            |                                 |
+
+##### <a name="payload_oneOf_i8_surveyUpdate_surveyId"></a>2.9.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`
+
+| Type                      | `uuid`                                                                    |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The ID of the survey.
+
+**Example:** 
+
+```json
+"21ce842b-4359-402a-9311-973f07d2d253"
+```
+
+##### <a name="payload_oneOf_i8_surveyUpdate_name"></a>2.9.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > name`
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The name of the survey.
+
+**Examples:** 
+
+```json
+"LMS"
+```
+
+```json
+"OPN"
+```
+
+```json
+"RSI"
+```
+
+```json
+"MBS"
+```
+
+```json
+"Census"
+```
+
+```json
+"CCS"
+```
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns"></a>2.9.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns`
+
+| Type                      | `array of string`                                                         |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The columns in the sample file.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+|                      |                    |
+
+| Each item of this array must be                             | Description |
+| ----------------------------------------------------------- | ----------- |
+| [items](#payload_oneOf_i8_surveyUpdate_sampleColumns_items) | -           |
+|                                                             |             |
+
+##### <a name="autogenerated_heading_3"></a>2.9.1.3.1. Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Example:** 
+
+```json
+[
+    "VESSEL_NAME",
+    "MARINA_BERTH",
+    "PONTOON",
+    "PORT"
+]
+```
+
+### <a name="payload_oneOf_i9"></a>2.10. Property `Event > payload > oneOf > uacAuthentication.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -665,10 +897,10 @@ Must be one of:
 
 | Property                                                    | Pattern | Type   | Deprecated | Definition | Title/Description |
 | ----------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [uacAuthentication](#payload_oneOf_i7_uacAuthentication ) | No      | object | No         | -          | -                 |
+| + [uacAuthentication](#payload_oneOf_i9_uacAuthentication ) | No      | object | No         | -          | -                 |
 |                                                             |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i7_uacAuthentication"></a>2.8.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`
+#### <a name="payload_oneOf_i9_uacAuthentication"></a>2.10.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
@@ -677,10 +909,10 @@ Must be one of:
 
 | Property                                          | Pattern | Type   | Deprecated | Definition | Title/Description                       |
 | ------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------- |
-| + [qid](#payload_oneOf_i7_uacAuthentication_qid ) | No      | string | No         | -          | QID linked to UAC used to authenticate. |
+| + [qid](#payload_oneOf_i9_uacAuthentication_qid ) | No      | string | No         | -          | QID linked to UAC used to authenticate. |
 |                                                   |         |        |            |            |                                         |
 
-##### <a name="payload_oneOf_i7_uacAuthentication_qid"></a>2.8.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`
+##### <a name="payload_oneOf_i9_uacAuthentication_qid"></a>2.10.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -695,7 +927,7 @@ Must be one of:
 "0130000000100142"
 ```
 
-### <a name="payload_oneOf_i8"></a>2.9. Property `Event > payload > oneOf > uacUpdate.schema.json`
+### <a name="payload_oneOf_i10"></a>2.11. Property `Event > payload > oneOf > uacUpdate.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -703,29 +935,29 @@ Must be one of:
 | **Defined in**            | uacUpdate.schema.json                                                     |
 |                           |                                                                           |
 
-| Property                                    | Pattern | Type   | Deprecated | Definition | Title/Description |
-| ------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [uacUpdate](#payload_oneOf_i8_uacUpdate ) | No      | object | No         | -          | -                 |
-|                                             |         |        |            |            |                   |
+| Property                                     | Pattern | Type   | Deprecated | Definition | Title/Description |
+| -------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
+| + [uacUpdate](#payload_oneOf_i10_uacUpdate ) | No      | object | No         | -          | -                 |
+|                                              |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i8_uacUpdate"></a>2.9.1. Property `Event > payload > oneOf > UAC Update > uacUpdate`
+#### <a name="payload_oneOf_i10_uacUpdate"></a>2.11.1. Property `Event > payload > oneOf > UAC Update > uacUpdate`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                          | Pattern | Type    | Deprecated | Definition | Title/Description                                            |
-| ----------------------------------------------------------------- | ------- | ------- | ---------- | ---------- | ------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i8_uacUpdate_caseId )                   | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.     |
-| + [active](#payload_oneOf_i8_uacUpdate_active )                   | No      | boolean | No         | -          | True if this UAC can be used to launch EQ.                   |
-| + [uacHash](#payload_oneOf_i8_uacUpdate_uacHash )                 | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                 |
-| + [qid](#payload_oneOf_i8_uacUpdate_qid )                         | No      | string  | No         | -          | The QID linked to this UAC.                                  |
-| + [receiptReceived](#payload_oneOf_i8_uacUpdate_receiptReceived ) | No      | boolean | No         | -          | True if completed questionnaire received using this UAC/QID. |
-| + [surveyLaunched](#payload_oneOf_i8_uacUpdate_surveyLaunched )   | No      | boolean | No         | -          | True if EQ has been launched using this UAC.                 |
-|                                                                   |         |         |            |            |                                                              |
+| Property                                                           | Pattern | Type    | Deprecated | Definition | Title/Description                                            |
+| ------------------------------------------------------------------ | ------- | ------- | ---------- | ---------- | ------------------------------------------------------------ |
+| + [caseId](#payload_oneOf_i10_uacUpdate_caseId )                   | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.     |
+| + [active](#payload_oneOf_i10_uacUpdate_active )                   | No      | boolean | No         | -          | True if this UAC can be used to launch EQ.                   |
+| + [uacHash](#payload_oneOf_i10_uacUpdate_uacHash )                 | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                 |
+| + [qid](#payload_oneOf_i10_uacUpdate_qid )                         | No      | string  | No         | -          | The QID linked to this UAC.                                  |
+| + [receiptReceived](#payload_oneOf_i10_uacUpdate_receiptReceived ) | No      | boolean | No         | -          | True if completed questionnaire received using this UAC/QID. |
+| + [surveyLaunched](#payload_oneOf_i10_uacUpdate_surveyLaunched )   | No      | boolean | No         | -          | True if EQ has been launched using this UAC.                 |
+|                                                                    |         |         |            |            |                                                              |
 
-##### <a name="payload_oneOf_i8_uacUpdate_caseId"></a>2.9.1.1. Property `Event > payload > oneOf > UAC Update > uacUpdate > caseId`
+##### <a name="payload_oneOf_i10_uacUpdate_caseId"></a>2.11.1.1. Property `Event > payload > oneOf > UAC Update > uacUpdate > caseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -740,7 +972,7 @@ Must be one of:
 "bcb61268-1f17-4811-b8f9-e6981a060ce6"
 ```
 
-##### <a name="payload_oneOf_i8_uacUpdate_active"></a>2.9.1.2. Property `Event > payload > oneOf > UAC Update > uacUpdate > active`
+##### <a name="payload_oneOf_i10_uacUpdate_active"></a>2.11.1.2. Property `Event > payload > oneOf > UAC Update > uacUpdate > active`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -759,7 +991,7 @@ true
 false
 ```
 
-##### <a name="payload_oneOf_i8_uacUpdate_uacHash"></a>2.9.1.3. Property `Event > payload > oneOf > UAC Update > uacUpdate > uacHash`
+##### <a name="payload_oneOf_i10_uacUpdate_uacHash"></a>2.11.1.3. Property `Event > payload > oneOf > UAC Update > uacUpdate > uacHash`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -774,7 +1006,7 @@ false
 "bad079d8807e416719eca8502ce7b99cf0721a22373b1b6d74b03542dba3bf52"
 ```
 
-##### <a name="payload_oneOf_i8_uacUpdate_qid"></a>2.9.1.4. Property `Event > payload > oneOf > UAC Update > uacUpdate > qid`
+##### <a name="payload_oneOf_i10_uacUpdate_qid"></a>2.11.1.4. Property `Event > payload > oneOf > UAC Update > uacUpdate > qid`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -789,7 +1021,7 @@ false
 "0130000000100142"
 ```
 
-##### <a name="payload_oneOf_i8_uacUpdate_receiptReceived"></a>2.9.1.5. Property `Event > payload > oneOf > UAC Update > uacUpdate > receiptReceived`
+##### <a name="payload_oneOf_i10_uacUpdate_receiptReceived"></a>2.11.1.5. Property `Event > payload > oneOf > UAC Update > uacUpdate > receiptReceived`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -808,7 +1040,7 @@ true
 false
 ```
 
-##### <a name="payload_oneOf_i8_uacUpdate_surveyLaunched"></a>2.9.1.6. Property `Event > payload > oneOf > UAC Update > uacUpdate > surveyLaunched`
+##### <a name="payload_oneOf_i10_uacUpdate_surveyLaunched"></a>2.11.1.6. Property `Event > payload > oneOf > UAC Update > uacUpdate > surveyLaunched`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -827,7 +1059,7 @@ true
 false
 ```
 
-### <a name="payload_oneOf_i9"></a>2.10. Property `Event > payload > oneOf > updateSampleSensitive.schema.json`
+### <a name="payload_oneOf_i11"></a>2.12. Property `Event > payload > oneOf > updateSampleSensitive.schema.json`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -835,25 +1067,25 @@ false
 | **Defined in**            | updateSampleSensitive.schema.json                                         |
 |                           |                                                                           |
 
-| Property                                                            | Pattern | Type   | Deprecated | Definition | Title/Description |
-| ------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [updateSampleSensitive](#payload_oneOf_i9_updateSampleSensitive ) | No      | object | No         | -          | -                 |
-|                                                                     |         |        |            |            |                   |
+| Property                                                             | Pattern | Type   | Deprecated | Definition | Title/Description |
+| -------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
+| + [updateSampleSensitive](#payload_oneOf_i11_updateSampleSensitive ) | No      | object | No         | -          | -                 |
+|                                                                      |         |        |            |            |                   |
 
-#### <a name="payload_oneOf_i9_updateSampleSensitive"></a>2.10.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive`
+#### <a name="payload_oneOf_i11_updateSampleSensitive"></a>2.12.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive`
 
 | Type                      | `object`                                                |
 | ------------------------- | ------------------------------------------------------- |
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                                      |
-| ----------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ---------------------------------------------------------------------- |
-| + [caseId](#payload_oneOf_i9_updateSampleSensitive_caseId )                   | No      | uuid   | No         | -          | The ID of the case which is being updated.                             |
-| + [sampleSensitive](#payload_oneOf_i9_updateSampleSensitive_sampleSensitive ) | No      | object | No         | -          | Personally Identifiable Information (PII) updates for GDPR compliance. |
-|                                                                               |         |        |            |            |                                                                        |
+| Property                                                                       | Pattern | Type   | Deprecated | Definition | Title/Description                                                      |
+| ------------------------------------------------------------------------------ | ------- | ------ | ---------- | ---------- | ---------------------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i11_updateSampleSensitive_caseId )                   | No      | uuid   | No         | -          | The ID of the case which is being updated.                             |
+| + [sampleSensitive](#payload_oneOf_i11_updateSampleSensitive_sampleSensitive ) | No      | object | No         | -          | Personally Identifiable Information (PII) updates for GDPR compliance. |
+|                                                                                |         |        |            |            |                                                                        |
 
-##### <a name="payload_oneOf_i9_updateSampleSensitive_caseId"></a>2.10.1.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > caseId`
+##### <a name="payload_oneOf_i11_updateSampleSensitive_caseId"></a>2.12.1.1. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > caseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -868,7 +1100,7 @@ false
 "bcb61268-1f17-4811-b8f9-e6981a060ce6"
 ```
 
-##### <a name="payload_oneOf_i9_updateSampleSensitive_sampleSensitive"></a>2.10.1.2. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > sampleSensitive`
+##### <a name="payload_oneOf_i11_updateSampleSensitive_sampleSensitive"></a>2.12.1.2. Property `Event > payload > oneOf > Update Sample Sensitive > updateSampleSensitive > sampleSensitive`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -886,4 +1118,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-11 at 09:49:23 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-13 at 12:35:17 +0100
