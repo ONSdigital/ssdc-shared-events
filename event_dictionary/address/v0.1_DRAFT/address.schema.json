@@ -37,6 +37,11 @@
           "type": "string",
           "examples": ["NW5 1XX"]
         },
+        "region": {
+          "description": "The region of the UK (i.e. England, Wales or Northern Ireland).",
+          "type": "string",
+          "examples": ["E", "W", "N"]
+        },
         "uprn": {
           "description": "Unique Property Reference Number (UPRN).",
           "type": "string",

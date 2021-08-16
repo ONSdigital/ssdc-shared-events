@@ -28,7 +28,8 @@
             - [2.1.1.7.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine3`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3)
             - [2.1.1.7.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > townName`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName)
             - [2.1.1.7.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > postcode`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode)
-            - [2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn)
+            - [2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > region`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region)
+            - [2.1.1.7.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn)
   - [2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`](#payload_oneOf_i1)
     - [2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`](#payload_oneOf_i1_collectionExerciseUpdate)
       - [2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId)
@@ -436,16 +437,17 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                        |
-| --------------------------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | -------------------------------------------------------- |
-| + [version](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version )           | No      | string | No         | -          | The version of the schema that this address conforms to. |
-| + [addressLine1](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine1 ) | No      | string | No         | -          | The first line of the address.                           |
-| - [addressLine2](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine2 ) | No      | string | No         | -          | The second line of the address.                          |
-| - [addressLine3](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3 ) | No      | string | No         | -          | The third line of the address.                           |
-| + [townName](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName )         | No      | string | No         | -          | The name of the town or city.                            |
-| + [postcode](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode )         | No      | string | No         | -          | The postcode.                                            |
-| + [uprn](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn )                 | No      | string | No         | -          | Unique Property Reference Number (UPRN).                 |
-|                                                                                               |         |        |            |            |                                                          |
+| Property                                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
+| --------------------------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
+| + [version](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version )           | No      | string | No         | -          | The version of the schema that this address conforms to.        |
+| + [addressLine1](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine1 ) | No      | string | No         | -          | The first line of the address.                                  |
+| - [addressLine2](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine2 ) | No      | string | No         | -          | The second line of the address.                                 |
+| - [addressLine3](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3 ) | No      | string | No         | -          | The third line of the address.                                  |
+| + [townName](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName )         | No      | string | No         | -          | The name of the town or city.                                   |
+| + [postcode](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode )         | No      | string | No         | -          | The postcode.                                                   |
+| - [region](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region )             | No      | string | No         | -          | The region of the UK (i.e. England, Wales or Northern Ireland). |
+| + [uprn](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn )                 | No      | string | No         | -          | Unique Property Reference Number (UPRN).                        |
+|                                                                                               |         |        |            |            |                                                                 |
 
 ##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version"></a>2.1.1.7.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > version`
 
@@ -537,7 +539,30 @@ Must be one of:
 "NW5 1XX"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn"></a>2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`
+##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region"></a>2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > region`
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The region of the UK (i.e. England, Wales or Northern Ireland).
+
+**Examples:** 
+
+```json
+"E"
+```
+
+```json
+"W"
+```
+
+```json
+"N"
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn"></a>2.1.1.7.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -1300,4 +1325,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-16 at 08:43:09 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-16 at 09:27:52 +0100
