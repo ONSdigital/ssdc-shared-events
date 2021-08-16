@@ -24,14 +24,15 @@
           "items": {
             "type": "string"
           },
-          "examples": [["VESSEL_NAME","MARINA_BERTH","PONTOON","PORT"]]
+          "examples": [["VESSEL_NAME", "MARINA_BERTH", "PONTOON", "PORT"]]
+        },
+        "casesHaveAddress": {
+          "description": "True if the cases will have an address.",
+          "type": "boolean",
+          "examples": [true, false]
         }
       },
-      "required": [
-        "surveyId",
-        "name",
-        "sampleColumns"
-      ],
+      "required": ["surveyId", "name", "sampleColumns", "casesHaveAddress"],
       "additionalProperties": false
     }
   },

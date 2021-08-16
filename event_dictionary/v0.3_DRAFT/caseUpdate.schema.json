@@ -55,6 +55,11 @@
               "LAST_NAME": "REDACTED"
             }
           ]
+        },
+        "optionalAddress": {
+          "type": "object",
+          "oneOf": [{ "$ref": "../address/v0.1_DRAFT/address.schema.json" }],
+          "additionalProperties": false
         }
       },
       "required": [
