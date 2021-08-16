@@ -18,21 +18,53 @@
           "examples": ["LMS", "OPN", "RSI", "MBS", "Census", "CCS"]
         },
         "sampleColumns": {
-          "description": "The columns in the sample file.",
           "type": "array",
-          "minItems": 1,
           "items": {
-            "type": "string"
-          },
-          "examples": [["VESSEL_NAME", "MARINA_BERTH", "PONTOON", "PORT"]]
-        },
-        "casesHaveAddress": {
-          "description": "True if the cases will have an address.",
-          "type": "boolean",
-          "examples": [true, false]
+            "type": "object",
+            "properties": {
+              "columnName": {
+                "description": "Title of a column in the sample file.",
+                "type": "string",
+                "examples": ["HOUSE_NAME", "BUSINESS_NAME", "UPRN"]
+              },
+              "metadata": {
+                "description": "Extra information about this column.",
+                "type": "object",
+                "examples": [{"commonName":"uprn"}]
+              },
+              "rules": {
+                "description": "Rules governing this column.",
+                "type": "object",
+                "properties": {
+                  "mandatory": {
+                    "description": "True if the column is mandatory.",
+                    "type": "boolean",
+                    "examples": [true, false]
+                  },
+                  "type": {
+                    "description": "Enforced/validated type of column data.",
+                    "type": "string",
+                    "enum": ["INTEGER", "FLOAT", "STRING"]
+                  },
+                  "minLength": {
+                    "description": "Minimum length of column data.",
+                    "type": "integer",
+                    "examples": [1, 5, 10]
+                  },
+                  "maxLength": {
+                    "description": "Maximum length of column data.",
+                    "type": "integer",
+                    "examples": [1, 5, 10]
+                  }
+                },
+                "required": ["mandatory", "type"]
+              }
+            },
+            "required": ["columnName", "metadata", "rules"]
+          }
         }
       },
-      "required": ["surveyId", "name", "sampleColumns", "casesHaveAddress"],
+      "required": ["surveyId", "name", "sampleColumns"],
       "additionalProperties": false
     }
   },

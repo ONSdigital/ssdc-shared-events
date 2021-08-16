@@ -14,22 +14,12 @@
   - [2.1. Property `Event > payload > oneOf > caseUpdate.schema.json`](#payload_oneOf_i0)
     - [2.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate`](#payload_oneOf_i0_caseUpdate)
       - [2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`](#payload_oneOf_i0_caseUpdate_caseId)
-      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`](#payload_oneOf_i0_caseUpdate_collectionExerciseId)
-      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
-      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
-      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
-      - [2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
-      - [2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress`](#payload_oneOf_i0_caseUpdate_optionalAddress)
-        - [2.1.1.7.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > address.schema.json`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0)
-          - [2.1.1.7.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address)
-            - [2.1.1.7.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > version`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version)
-            - [2.1.1.7.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine1`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine1)
-            - [2.1.1.7.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine2`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine2)
-            - [2.1.1.7.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine3`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3)
-            - [2.1.1.7.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > townName`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName)
-            - [2.1.1.7.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > postcode`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode)
-            - [2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > region`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region)
-            - [2.1.1.7.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn)
+      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`](#payload_oneOf_i0_caseUpdate_surveyId)
+      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`](#payload_oneOf_i0_caseUpdate_collectionExerciseId)
+      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
+      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
+      - [2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
+      - [2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
   - [2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`](#payload_oneOf_i1)
     - [2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`](#payload_oneOf_i1_collectionExerciseUpdate)
       - [2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId)
@@ -62,7 +52,13 @@
       - [2.9.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > name`](#payload_oneOf_i8_surveyUpdate_name)
       - [2.9.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns`](#payload_oneOf_i8_surveyUpdate_sampleColumns)
         - [2.9.1.3.1. Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items](#autogenerated_heading_3)
-      - [2.9.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > casesHaveAddress`](#payload_oneOf_i8_surveyUpdate_casesHaveAddress)
+          - [2.9.1.3.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > columnName`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_columnName)
+          - [2.9.1.3.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > metadata`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_metadata)
+          - [2.9.1.3.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules)
+            - [2.9.1.3.1.3.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > mandatory`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_mandatory)
+            - [2.9.1.3.1.3.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > type`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_type)
+            - [2.9.1.3.1.3.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > minLength`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_minLength)
+            - [2.9.1.3.1.3.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > maxLength`](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_maxLength)
   - [2.10. Property `Event > payload > oneOf > uacAuthentication.schema.json`](#payload_oneOf_i9)
     - [2.10.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`](#payload_oneOf_i9_uacAuthentication)
       - [2.10.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`](#payload_oneOf_i9_uacAuthentication_qid)
@@ -293,12 +289,12 @@ Must be one of:
 | Property                                                                     | Pattern | Type                       | Deprecated | Definition | Title/Description                                       |
 | ---------------------------------------------------------------------------- | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------- |
 | + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                             | No      | uuid                       | No         | -          | The ID of the case.                                     |
-| - [collectionExerciseId](#payload_oneOf_i0_caseUpdate_collectionExerciseId ) | No      | uuid                       | No         | -          | The ID of the collection exercise this case belongs to. |
+| + [surveyId](#payload_oneOf_i0_caseUpdate_surveyId )                         | No      | uuid                       | No         | -          | The ID of the survey this case belongs to.              |
+| + [collectionExerciseId](#payload_oneOf_i0_caseUpdate_collectionExerciseId ) | No      | uuid                       | No         | -          | The ID of the collection exercise this case belongs to. |
 | + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                           | No      | boolean                    | No         | -          | This case is not valid.                                 |
 | + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived )           | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent. |
 | + [sample](#payload_oneOf_i0_caseUpdate_sample )                             | No      | object                     | No         | -          | The original sample data.                               |
 | + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive )           | No      | object                     | No         | -          | Redacted Personally Identifiable Information (PII).     |
-| - [optionalAddress](#payload_oneOf_i0_caseUpdate_optionalAddress )           | No      | Combination                | No         | -          | -                                                       |
 |                                                                              |         |                            |            |            |                                                         |
 
 ##### <a name="payload_oneOf_i0_caseUpdate_caseId"></a>2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`
@@ -316,7 +312,22 @@ Must be one of:
 "bcb61268-1f17-4811-b8f9-e6981a060ce6"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_collectionExerciseId"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`
+##### <a name="payload_oneOf_i0_caseUpdate_surveyId"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`
+
+| Type                      | `uuid`                                                                    |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The ID of the survey this case belongs to.
+
+**Example:** 
+
+```json
+"d62b7263-9943-4607-9d53-087c02002cef"
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_collectionExerciseId"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -331,7 +342,7 @@ Must be one of:
 "415fe420-80db-4ca6-a577-667fd6ba1463"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
+##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -350,7 +361,7 @@ true
 false
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
+##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
 
 | Type                      | `enum (of string or string)`                                              |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -365,7 +376,7 @@ Must be one of:
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
 
-##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
+##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -385,7 +396,7 @@ Must be one of:
 }
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
+##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -403,178 +414,6 @@ Must be one of:
     "FIRST_NAME": "",
     "LAST_NAME": "REDACTED"
 }
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress`
-
-| Type                      | `combining`                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-| One of(Option)                                                               |
-| ---------------------------------------------------------------------------- |
-| [address.schema.json](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0) |
-|                                                                              |
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0"></a>2.1.1.7.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > address.schema.json`
-
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-| **Defined in**            | ../address/v0.1_DRAFT/address.schema.json                                 |
-|                           |                                                                           |
-
-| Property                                                                    | Pattern | Type   | Deprecated | Definition | Title/Description |
-| --------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------- |
-| + [address](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address ) | No      | object | No         | -          | -                 |
-|                                                                             |         |        |            |            |                   |
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address"></a>2.1.1.7.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address`
-
-| Type                      | `object`                                                |
-| ------------------------- | ------------------------------------------------------- |
-| **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
-|                           |                                                         |
-
-| Property                                                                                      | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
-| --------------------------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
-| + [version](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version )           | No      | string | No         | -          | The version of the schema that this address conforms to.        |
-| + [addressLine1](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine1 ) | No      | string | No         | -          | The first line of the address.                                  |
-| - [addressLine2](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine2 ) | No      | string | No         | -          | The second line of the address.                                 |
-| - [addressLine3](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3 ) | No      | string | No         | -          | The third line of the address.                                  |
-| + [townName](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName )         | No      | string | No         | -          | The name of the town or city.                                   |
-| + [postcode](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode )         | No      | string | No         | -          | The postcode.                                                   |
-| - [region](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region )             | No      | string | No         | -          | The region of the UK (i.e. England, Wales or Northern Ireland). |
-| + [uprn](#payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn )                 | No      | string | No         | -          | Unique Property Reference Number (UPRN).                        |
-|                                                                                               |         |        |            |            |                                                                 |
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_version"></a>2.1.1.7.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > version`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The version of the schema that this address conforms to.
-
-**Example:** 
-
-```json
-"v0.1_DRAFT"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine1"></a>2.1.1.7.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine1`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The first line of the address.
-
-**Example:** 
-
-```json
-"Flat 2A, Greenslade Tower"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine2"></a>2.1.1.7.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine2`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The second line of the address.
-
-**Example:** 
-
-```json
-"123 The Avenue"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_addressLine3"></a>2.1.1.7.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > addressLine3`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The third line of the address.
-
-**Example:** 
-
-```json
-"Camden"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_townName"></a>2.1.1.7.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > townName`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The name of the town or city.
-
-**Example:** 
-
-```json
-"London"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_postcode"></a>2.1.1.7.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > postcode`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The postcode.
-
-**Example:** 
-
-```json
-"NW5 1XX"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_region"></a>2.1.1.7.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > region`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The region of the UK (i.e. England, Wales or Northern Ireland).
-
-**Examples:** 
-
-```json
-"E"
-```
-
-```json
-"W"
-```
-
-```json
-"N"
-```
-
-##### <a name="payload_oneOf_i0_caseUpdate_optionalAddress_oneOf_i0_address_uprn"></a>2.1.1.7.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > optionalAddress > oneOf > Address > address > uprn`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** Unique Property Reference Number (UPRN).
-
-**Example:** 
-
-```json
-"99999999999"
 ```
 
 ### <a name="payload_oneOf_i1"></a>2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`
@@ -976,13 +815,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                               | Pattern | Type            | Deprecated | Definition | Title/Description                       |
-| ---------------------------------------------------------------------- | ------- | --------------- | ---------- | ---------- | --------------------------------------- |
-| + [surveyId](#payload_oneOf_i8_surveyUpdate_surveyId )                 | No      | uuid            | No         | -          | The ID of the survey.                   |
-| + [name](#payload_oneOf_i8_surveyUpdate_name )                         | No      | string          | No         | -          | The name of the survey.                 |
-| + [sampleColumns](#payload_oneOf_i8_surveyUpdate_sampleColumns )       | No      | array of string | No         | -          | The columns in the sample file.         |
-| + [casesHaveAddress](#payload_oneOf_i8_surveyUpdate_casesHaveAddress ) | No      | boolean         | No         | -          | True if the cases will have an address. |
-|                                                                        |         |                 |            |            |                                         |
+| Property                                                         | Pattern | Type            | Deprecated | Definition | Title/Description       |
+| ---------------------------------------------------------------- | ------- | --------------- | ---------- | ---------- | ----------------------- |
+| + [surveyId](#payload_oneOf_i8_surveyUpdate_surveyId )           | No      | uuid            | No         | -          | The ID of the survey.   |
+| + [name](#payload_oneOf_i8_surveyUpdate_name )                   | No      | string          | No         | -          | The name of the survey. |
+| + [sampleColumns](#payload_oneOf_i8_surveyUpdate_sampleColumns ) | No      | array of object | No         | -          | -                       |
+|                                                                  |         |                 |            |            |                         |
 
 ##### <a name="payload_oneOf_i8_surveyUpdate_surveyId"></a>2.9.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`
 
@@ -1036,16 +874,14 @@ Must be one of:
 
 ##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns"></a>2.9.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns`
 
-| Type                      | `array of string`                                                         |
+| Type                      | `array of object`                                                         |
 | ------------------------- | ------------------------------------------------------------------------- |
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The columns in the sample file.
-
 |                      | Array restrictions |
 | -------------------- | ------------------ |
-| **Min items**        | 1                  |
+| **Min items**        | N/A                |
 | **Max items**        | N/A                |
 | **Items unicity**    | False              |
 | **Additional items** | False              |
@@ -1059,30 +895,83 @@ Must be one of:
 
 ##### <a name="autogenerated_heading_3"></a>2.9.1.3.1. Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items
 
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+| Property                                                                       | Pattern | Type   | Deprecated | Definition | Title/Description                     |
+| ------------------------------------------------------------------------------ | ------- | ------ | ---------- | ---------- | ------------------------------------- |
+| + [columnName](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_columnName ) | No      | string | No         | -          | Title of a column in the sample file. |
+| + [metadata](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_metadata )     | No      | object | No         | -          | Extra information about this column.  |
+| + [rules](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules )           | No      | object | No         | -          | Rules governing this column.          |
+|                                                                                |         |        |            |            |                                       |
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_columnName"></a>2.9.1.3.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > columnName`
+
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
+**Description:** Title of a column in the sample file.
+
+**Examples:** 
+
+```json
+"HOUSE_NAME"
+```
+
+```json
+"BUSINESS_NAME"
+```
+
+```json
+"UPRN"
+```
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_metadata"></a>2.9.1.3.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > metadata`
+
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Extra information about this column.
+
 **Example:** 
 
 ```json
-[
-    "VESSEL_NAME",
-    "MARINA_BERTH",
-    "PONTOON",
-    "PORT"
-]
+{
+    "commonName": "uprn"
+}
 ```
 
-##### <a name="payload_oneOf_i8_surveyUpdate_casesHaveAddress"></a>2.9.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > casesHaveAddress`
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules"></a>2.9.1.3.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules`
+
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Rules governing this column.
+
+| Property                                                                           | Pattern | Type             | Deprecated | Definition | Title/Description                       |
+| ---------------------------------------------------------------------------------- | ------- | ---------------- | ---------- | ---------- | --------------------------------------- |
+| + [mandatory](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_mandatory ) | No      | boolean          | No         | -          | True if the column is mandatory.        |
+| + [type](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_type )           | No      | enum (of string) | No         | -          | Enforced/validated type of column data. |
+| - [minLength](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_minLength ) | No      | integer          | No         | -          | Minimum length of column data.          |
+| - [maxLength](#payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_maxLength ) | No      | integer          | No         | -          | Maximum length of column data.          |
+|                                                                                    |         |                  |            |            |                                         |
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_mandatory"></a>2.9.1.3.1.3.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > mandatory`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** True if the cases will have an address.
+**Description:** True if the column is mandatory.
 
 **Examples:** 
 
@@ -1092,6 +981,66 @@ true
 
 ```json
 false
+```
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_type"></a>2.9.1.3.1.3.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > type`
+
+| Type                      | `enum (of string)`                                                        |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Enforced/validated type of column data.
+
+Must be one of:
+* "INTEGER"
+* "FLOAT"
+* "STRING"
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_minLength"></a>2.9.1.3.1.3.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > minLength`
+
+| Type                      | `integer`                                                                 |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Minimum length of column data.
+
+**Examples:** 
+
+```json
+1
+```
+
+```json
+5
+```
+
+```json
+10
+```
+
+##### <a name="payload_oneOf_i8_surveyUpdate_sampleColumns_items_rules_maxLength"></a>2.9.1.3.1.3.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleColumns > items > rules > maxLength`
+
+| Type                      | `integer`                                                                 |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Maximum length of column data.
+
+**Examples:** 
+
+```json
+1
+```
+
+```json
+5
+```
+
+```json
+10
 ```
 
 ### <a name="payload_oneOf_i9"></a>2.10. Property `Event > payload > oneOf > uacAuthentication.schema.json`
@@ -1325,4 +1274,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-16 at 09:27:52 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-08-16 at 14:35:50 +0100

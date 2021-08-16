@@ -12,6 +12,11 @@
           "type": "uuid",
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
+        "surveyId": {
+          "description": "The ID of the survey this case belongs to.",
+          "type": "uuid",
+          "examples": ["d62b7263-9943-4607-9d53-087c02002cef"]
+        },
         "collectionExerciseId": {
           "description": "The ID of the collection exercise this case belongs to.",
           "type": "uuid",
@@ -55,15 +60,12 @@
               "LAST_NAME": "REDACTED"
             }
           ]
-        },
-        "optionalAddress": {
-          "type": "object",
-          "oneOf": [{ "$ref": "../address/v0.1_DRAFT/address.schema.json" }],
-          "additionalProperties": false
         }
       },
       "required": [
         "caseId",
+        "surveyId",
+        "collectionExerciseId",
         "invalid",
         "refusalReceived",
         "sample",
