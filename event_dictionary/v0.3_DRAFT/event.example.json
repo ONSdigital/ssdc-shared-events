@@ -1,0 +1,17 @@
+{
+  "header": {
+    "version": "minim culpa do",
+    "topic": "event_invalid-case",
+    "source": "Ut ea eiusmod Duis deserunt",
+    "channel": "EQ",
+    "dateTime": "sint enim Duis",
+    "messageId": "magna et elit",
+    "correlationId": "laborum",
+    "originatingUser": "elit"
+  },
+  "payload": {
+    "uacAuthentication": {
+      "qid": "Duis eiusmod amet tempor cupidatat"
+    }
+  }
+}
