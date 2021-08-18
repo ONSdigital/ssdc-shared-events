@@ -30,7 +30,7 @@
               "metadata": {
                 "description": "Extra information about this column.",
                 "type": "object",
-                "examples": [{"commonName":"uprn"}]
+                "examples": [{ "commonName": "uprn" }]
               },
               "rules": {
                 "description": "Rules governing this column.",
