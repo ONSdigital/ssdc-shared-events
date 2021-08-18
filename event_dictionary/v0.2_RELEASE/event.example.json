@@ -1,0 +1,18 @@
+{
+  "header": {
+    "version": "aliquip",
+    "topic": "event_invalid-case",
+    "source": "do reprehenderit mollit sed",
+    "channel": "RM",
+    "dateTime": "in ut non",
+    "messageId": "deserunt exercitation",
+    "correlationId": "non enim sit",
+    "originatingUser": "est"
+  },
+  "payload": {
+    "refusal": {
+      "caseId": "officia ipsum labore",
+      "type": "SOFT_REFUSAL"
+    }
+  }
+}
