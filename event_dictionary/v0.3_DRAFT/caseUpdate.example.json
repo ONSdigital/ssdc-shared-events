@@ -3,16 +3,14 @@
     "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
     "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
     "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-    "invalid": true,
+    "invalid": false,
     "refusalReceived": "SOFT_REFUSAL",
     "sample": {
-      "ex_8fe": 81660596.92962566,
-      "sed5": "Ut eu in ea ut",
-      "eiusmod_26c": -72330016.37515746,
-      "mollit_ab": -90094825
+      "et6_d": 92506885,
+      "commodo_a": -69059616
     },
     "sampleSensitive": {
-      "reprehenderit6": 78326520.32888952
+      "anim_8": true
     }
   }
 }

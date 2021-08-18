@@ -23,7 +23,7 @@
           "examples": ["Week 26", "September 2021", "202103", "Census 2026"]
         }
       },
-      "required": ["collectionExerciseId", "name"],
+      "required": ["collectionExerciseId", "surveyId", "name"],
       "additionalProperties": false
     }
   },

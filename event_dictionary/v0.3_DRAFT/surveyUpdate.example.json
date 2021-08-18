@@ -1,28 +1,33 @@
 {
   "surveyUpdate": {
     "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-    "name": "nisi anim elit",
+    "name": "esse voluptate veniam Duis",
     "sampleColumns": [
       {
-        "columnName": "laboris exercitation aliquip",
+        "columnName": "sunt mollit in",
         "metadata": {
-          "ipsumaa1": true
-        },
-        "rules": {
-          "mandatory": true,
-          "type": "INTEGER"
-        }
-      },
-      {
-        "columnName": "fugiat officia",
-        "metadata": {
-          "est_03a": 97618044,
-          "none3f": true
+          "dolorf": -9421102.348329276,
+          "sit956": 99089068.30919766,
+          "sunt_25": -3417184.5036350787,
+          "fugiat_d9": -44567096.493130356,
+          "pariaturf": true
         },
         "rules": {
           "mandatory": false,
-          "type": "INTEGER",
-          "minLength": 93506739
+          "type": "FLOAT",
+          "minLength": -39121699,
+          "maxLength": 66308165
+        }
+      },
+      {
+        "columnName": "pariatur sit aliqua",
+        "metadata": {
+          "do_b": false
+        },
+        "rules": {
+          "mandatory": false,
+          "type": "STRING",
+          "maxLength": 85250498
         }
       }
     ]
