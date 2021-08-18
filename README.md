@@ -12,7 +12,9 @@ The contract is **VERSIONED** so any changes should be made to the latest DRAFT 
 
 Naturally, any breaking change a version would be considered a major version increment. Ideally, contract changes are non-breaking and backwards compatible, initially: attributes should me marked as deprecated, and only retired after a couple of releases.
 
-##  How to Validate the Schema and Re-Generate the Documentation & Example JSON
+##  How to Format, Validate the Schema and Re-Generate the Documentation & Example JSON
+Formatting is done in the correct version directory by running `npx prettier --write ./*.json`
+
 Install json-schema-for-humans by running: `pip install json-schema-for-humans`
 
 Then, in the correct version directory, run: `generate-schema-doc event.schema.json --config template_name=md dictionary.md`
