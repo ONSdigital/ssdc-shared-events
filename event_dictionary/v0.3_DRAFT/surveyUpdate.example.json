@@ -1,13 +1,12 @@
 {
   "surveyUpdate": {
-    "surveyId": "consequat ad in minim nisi",
-    "name": "exercitation fugiat sit",
+    "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "name": "nisi anim elit",
     "sampleColumns": [
       {
-        "columnName": "consectetur",
+        "columnName": "laboris exercitation aliquip",
         "metadata": {
-          "anim378": "enim incididunt id",
-          "anim_3": "magna adipisicing minim ea"
+          "ipsumaa1": true
         },
         "rules": {
           "mandatory": true,
@@ -15,54 +14,15 @@
         }
       },
       {
-        "columnName": "officia",
+        "columnName": "fugiat officia",
         "metadata": {
-          "cupidatat_0": true,
-          "incididunt955": false,
-          "nulla500": true,
-          "consectetur_3": -3534876
+          "est_03a": 97618044,
+          "none3f": true
         },
         "rules": {
           "mandatory": false,
           "type": "INTEGER",
-          "minLength": -66877051,
-          "maxLength": 74703114
-        }
-      },
-      {
-        "columnName": "deserunt et",
-        "metadata": {
-          "et__3": false,
-          "idc": true,
-          "ipsum34": 50803696
-        },
-        "rules": {
-          "mandatory": true,
-          "type": "FLOAT",
-          "maxLength": 92690928,
-          "minLength": 80572281
-        }
-      },
-      {
-        "columnName": "est esse exercitation minim adipisicing",
-        "metadata": {
-          "et_90d": "cillum reprehenderit",
-          "eu_a1e": true
-        },
-        "rules": {
-          "mandatory": true,
-          "type": "INTEGER"
-        }
-      },
-      {
-        "columnName": "cillum",
-        "metadata": {
-          "in_94b": -94634418.18254994,
-          "exercitation_ed5": -26623339.932221547
-        },
-        "rules": {
-          "mandatory": true,
-          "type": "INTEGER"
+          "minLength": 93506739
         }
       }
     ]
