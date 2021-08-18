@@ -8,9 +8,15 @@ Shared Google Pub/Sub topics, subscriptions and JSON schemas, which form the eve
 ## What's this all about then?
 The schema which all events flowing between products must conform to, [lives here](event_dictionary/v0.3_DRAFT/event.schema.json)
 
-It should be versioned, and products will implement a certain version of the schema, so edit with caution... you might break the interface contract!
+The contract is **VERSIONED** so any changes should be made to the latest DRAFT version. Please do not modify a RELEASE version, because it would break a contract which our software complies with.
 
-##  How to Validate the Schema and Re-Generate the Documentation
+Naturally, any breaking change a version would be considered a major version increment. Ideally, contract changes are non-breaking and backwards compatible, initially: attributes should me marked as deprecated, and only retired after a couple of releases.
+
+##  How to Validate the Schema and Re-Generate the Documentation & Example JSON
 Install json-schema-for-humans by running: `pip install json-schema-for-humans`
 
 Then, in the correct version directory, run: `generate-schema-doc event.schema.json --config template_name=md dictionary.md`
+
+Install fake-schema-cli by running: `npm install -g fake-schema-cli`
+
+Then, in the correct version directory, run: `../../generate_example_json.sh`
