@@ -1,33 +1,50 @@
 {
   "surveyUpdate": {
     "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-    "name": "esse voluptate veniam Duis",
+    "name": "nostrud anim Excepteur culpa labore",
     "sampleColumns": [
       {
-        "columnName": "sunt mollit in",
+        "columnName": "dolor do sed ea",
         "metadata": {
-          "dolorf": -9421102.348329276,
-          "sit956": 99089068.30919766,
-          "sunt_25": -3417184.5036350787,
-          "fugiat_d9": -44567096.493130356,
-          "pariaturf": true
+          "voluptateada": "fugiat ad voluptate nostrud esse",
+          "Excepteurfcc": true
+        },
+        "rules": {
+          "mandatory": false,
+          "type": "INTEGER",
+          "minLength": 12585209,
+          "maxLength": 34796834,
+          "sensitive": true
+        }
+      },
+      {
+        "columnName": "deserunt",
+        "metadata": {
+          "incididunt90c": 41602317,
+          "laboris7_": false
         },
         "rules": {
           "mandatory": false,
           "type": "FLOAT",
-          "minLength": -39121699,
-          "maxLength": 66308165
+          "maxLength": 21089113,
+          "minLength": -86895157,
+          "sensitive": false
         }
       },
       {
-        "columnName": "pariatur sit aliqua",
+        "columnName": "aliqua veniam sit",
         "metadata": {
-          "do_b": false
+          "sitf9": "id nulla Excepteur",
+          "suntbd": true,
+          "exercitation2": "id incididunt",
+          "ut_ad3": "proident aliquip dolor culpa aliqua"
         },
         "rules": {
-          "mandatory": false,
-          "type": "STRING",
-          "maxLength": 85250498
+          "mandatory": true,
+          "type": "FLOAT",
+          "sensitive": false,
+          "maxLength": 18019063,
+          "minLength": -21715362
         }
       }
     ]

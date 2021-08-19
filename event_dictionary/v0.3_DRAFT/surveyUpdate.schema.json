@@ -46,51 +46,10 @@
                     "type": "string",
                     "enum": ["INTEGER", "FLOAT", "STRING"]
                   },
-                  "minLength": {
-                    "description": "Minimum length of column data.",
-                    "type": "integer",
-                    "examples": [1, 5, 10]
-                  },
-                  "maxLength": {
-                    "description": "Maximum length of column data.",
-                    "type": "integer",
-                    "examples": [1, 5, 10]
-                  }
-                },
-                "required": ["mandatory", "type"]
-              }
-            },
-            "required": ["columnName", "metadata", "rules"]
-          }
-        },
-        "sampleSensitiveColumns": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "columnName": {
-                "description": "Title of a sensitve (PII) data column in the sample file.",
-                "type": "string",
-                "examples": ["PHONE_NUMBER", "EMAIL_ADDRESS", "SURNAME"]
-              },
-              "metadata": {
-                "description": "Extra information about this column.",
-                "type": "object",
-                "examples": [{ "commonName": "phoneNumber" }]
-              },
-              "rules": {
-                "description": "Rules governing this column.",
-                "type": "object",
-                "properties": {
-                  "mandatory": {
-                    "description": "True if the column is mandatory.",
+                  "sensitive": {
+                    "description": "True if the column contains sensitive (PII) data.",
                     "type": "boolean",
                     "examples": [true, false]
-                  },
-                  "type": {
-                    "description": "Enforced/validated type of column data.",
-                    "type": "string",
-                    "enum": ["INTEGER", "FLOAT", "STRING"]
                   },
                   "minLength": {
                     "description": "Minimum length of column data.",
