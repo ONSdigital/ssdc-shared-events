@@ -21,6 +21,8 @@ Naturally, any breaking changes will require a major version increment. Ideally,
 ## Where are JSON examples of messages?
 The main `Event` looks like [this](https://github.com/ONSdigital/ssdc-shared-events/blob/main/event_dictionary/v0.3_DRAFT/event.example.json) but be aware that the payload can be one of many different [types](https://github.com/ONSdigital/ssdc-shared-events/blob/main/event_dictionary/v0.3_DRAFT/dictionary.md#payload) so the example is by no means exhaustive.
 
+You'll find a JSON example of every part of the schema, as a file with a `.example.json` suffix, in [this directory](https://github.com/ONSdigital/ssdc-shared-events/tree/main/event_dictionary/v0.3_DRAFT).
+
 Also, because the examples are machine-generated, the values might not make sense... they're just random placeholders, so that the message structure can be understood. There's an example of what would be held in every field, in the schema itself, so you're often better referring to that instead of example JSON.
 
 ##  How to Format, Validate the Schema and Re-Generate the Documentation & Example JSON
