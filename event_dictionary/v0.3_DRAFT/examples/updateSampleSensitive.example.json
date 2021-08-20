@@ -2,18 +2,19 @@
   "header": {
     "version": "v0.3_DRAFT",
     "topic": "event_update-sample-sensitive",
-    "source": "culpa deserunt voluptate",
+    "source": "velit",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
-    "originatingUser": "culpa"
+    "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
     "updateSampleSensitive": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sampleSensitive": {
-        "ad46": 41887961
+        "incididunt5": -34660198.116308115,
+        "cillum_47": -7069173.835953623
       }
     }
   }
