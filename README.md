@@ -19,11 +19,9 @@ The contract is **VERSIONED** so any changes should be made to the latest DRAFT 
 Naturally, any breaking changes will require a major version increment. Ideally, contract changes are non-breaking and backwards compatible, initially: attributes should me marked as deprecated, and only retired after a couple of releases.
 
 ## Where are JSON examples of messages?
-The main `Event` looks like [this](https://github.com/ONSdigital/ssdc-shared-events/blob/main/event_dictionary/v0.3_DRAFT/event.example.json) but be aware that the payload can be one of many different [types](https://github.com/ONSdigital/ssdc-shared-events/blob/main/event_dictionary/v0.3_DRAFT/dictionary.md#payload) so the example is by no means exhaustive.
+You'll find a JSON example of every event type with a `.example.json` suffix, in [this directory](https://github.com/ONSdigital/ssdc-shared-events/tree/main/event_dictionary/v0.3_DRAFT/examples).
 
-You'll find a JSON example of every part of the schema, as a file with a `.example.json` suffix, in [this directory](https://github.com/ONSdigital/ssdc-shared-events/tree/main/event_dictionary/v0.3_DRAFT).
-
-Also, because the examples are machine-generated, the values might not make sense... they're just random placeholders, so that the message structure can be understood. There's an example of what would be held in every field, in the schema itself, so you're often better referring to that instead of example JSON.
+The examples are machine-generated, so the values might not make sense... they're just random placeholders, so that the message structure can be understood. You should refer to the [Event Dictionary](event_dictionary/v0.3_DRAFT/dictionary.md) for the specifics on particular JSON properties.
 
 ##  How to Format, Validate the Schema and Re-Generate the Documentation & Example JSON
 In a hurry? Just run `./regen.sh`
@@ -37,3 +35,5 @@ Then, in the correct version directory, run: `generate-schema-doc event.schema.j
 Install fake-schema-cli by running (requires NPM installed): `npm install -g fake-schema-cli`
 
 Then, in the correct version directory, run: `../../generate_example_json.sh`
+
+Final polishing is applied by running (requires Python 3): `../../generate_example_json.sh`
