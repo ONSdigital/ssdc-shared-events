@@ -1,0 +1,31 @@
+{
+  "header": {
+    "version": "v0.3_DRAFT",
+    "topic": "event_case-update",
+    "source": "culpa deserunt voluptate",
+    "channel": "EQ",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "culpa"
+  },
+  "payload": {
+    "caseUpdate": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "invalid": false,
+      "refusalReceived": "EXTRAORDINARY_REFUSAL",
+      "sample": {
+        "anim8e": -86000299,
+        "adipisicing_396": "ea exercitation qui dolore voluptate",
+        "deserunt4_c": 88371238.36268029
+      },
+      "sampleSensitive": {
+        "magna_75d": 22024742,
+        "irure_a": -81220341.86808808,
+        "esse_2_": false
+      }
+    }
+  }
+}

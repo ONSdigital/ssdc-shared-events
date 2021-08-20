@@ -1,0 +1,35 @@
+{
+  "header": {
+    "version": "v0.3_DRAFT",
+    "topic": "event_survey-update",
+    "source": "culpa deserunt voluptate",
+    "channel": "EQ",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "culpa"
+  },
+  "payload": {
+    "surveyUpdate": {
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "name": "non occaecat",
+      "sampleColumns": [
+        {
+          "columnName": "est in deserunt cupidatat",
+          "metadata": {
+            "cupidatatd0": true,
+            "ea4b2": true,
+            "occaecat_be": 63538845.530377716
+          },
+          "rules": {
+            "mandatory": false,
+            "type": "INTEGER",
+            "sensitive": true,
+            "maxLength": -92601546,
+            "minLength": 79667268
+          }
+        }
+      ]
+    }
+  }
+}

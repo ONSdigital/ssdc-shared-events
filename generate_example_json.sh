@@ -13,6 +13,7 @@ do
     fake-schema $i > $example_file_name
 done
 
+# Have to do this again because it fails the first time, due to dependency having unexpected types
 fake-schema event.schema.json > event.example.json
 
 cd ..
