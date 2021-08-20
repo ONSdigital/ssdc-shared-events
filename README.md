@@ -36,4 +36,4 @@ Install fake-schema-cli by running (requires NPM installed): `npm install -g fak
 
 Then, in the correct version directory, run: `../../generate_example_json.sh`
 
-Final polishing is applied by running (requires Python 3): `../../generate_example_json.sh`
+Final polishing is applied by running (requires Python 3): `python ../../polish_example_json.py`
