@@ -17,15 +17,16 @@
       "invalid": true,
       "refusalReceived": "HARD_REFUSAL",
       "sample": {
-        "exercitation_56": false,
-        "aute_60": "laborum irure ut cillum",
-        "in_c15": "dolore",
-        "adipisicing312": -85024180.39290652
+        "addressLine1": "Flat 987, Magical Apartments",
+        "addressLine2": "123 Fake Street",
+        "addressLine3": "Some Suburb",
+        "townName": "Fake Town",
+        "postcode": "AB1 2ZX",
+        "region": "W",
+        "uprn": "123456789"
       },
       "sampleSensitive": {
-        "laborum_f4": 94492575.19803318,
-        "adcaf": 59562310.018077195,
-        "id_98d": false
+        "phoneNumber": "REDACTED"
       }
     }
   }
