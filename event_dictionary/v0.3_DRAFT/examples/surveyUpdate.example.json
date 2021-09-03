@@ -2,8 +2,8 @@
   "header": {
     "version": "v0.3_DRAFT",
     "topic": "event_survey-update",
-    "source": "velit",
-    "channel": "EQ",
+    "source": "veniam deserunt in consectetur id",
+    "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,65 +12,7 @@
   "payload": {
     "surveyUpdate": {
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "dolor ad dolore culpa",
-      "sampleColumns": [
-        {
-          "columnName": "irure amet do deserunt",
-          "metadata": {
-            "eu_28": true
-          },
-          "rules": {
-            "mandatory": true,
-            "type": "FLOAT",
-            "sensitive": true,
-            "minLength": -80376689,
-            "maxLength": 7791101
-          }
-        },
-        {
-          "columnName": "id esse eiusmod Excepteur",
-          "metadata": {
-            "et_60": -73725318.75228025
-          },
-          "rules": {
-            "mandatory": true,
-            "type": "INTEGER",
-            "sensitive": false,
-            "maxLength": -89593499,
-            "minLength": -19354190
-          }
-        },
-        {
-          "columnName": "ut sit quis minim magna",
-          "metadata": {
-            "deseruntb_f": -51666562.05655578,
-            "reprehenderit_4b": 86291025,
-            "sit_a": false
-          },
-          "rules": {
-            "mandatory": true,
-            "type": "FLOAT",
-            "sensitive": true,
-            "minLength": 36107881,
-            "maxLength": 6900994
-          }
-        },
-        {
-          "columnName": "dolor sunt enim",
-          "metadata": {
-            "dolor_27": 56458586,
-            "commodo5": true,
-            "ada": -53370236,
-            "sint_b5d": 42785116.6037201
-          },
-          "rules": {
-            "mandatory": false,
-            "type": "INTEGER",
-            "minLength": 48998089,
-            "maxLength": 55265126
-          }
-        }
-      ]
+      "name": "Excepteur veniam"
     }
   }
 }

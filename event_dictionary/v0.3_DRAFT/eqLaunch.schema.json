@@ -1,10 +1,10 @@
 {
-  "$id": "https://ons.gov.uk/surveyLaunch.schema.json",
+  "$id": "https://ons.gov.uk/eqLaunch.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Survey Launch",
+  "title": "EQ Launch",
   "type": "object",
   "properties": {
-    "surveyLaunch": {
+    "eqLaunch": {
       "type": "object",
       "properties": {
         "qid": {
@@ -17,6 +17,6 @@
       "additionalProperties": false
     }
   },
-  "required": ["surveyLaunch"],
+  "required": ["eqLaunch"],
   "additionalProperties": false
 }
