@@ -34,7 +34,7 @@
           "type": "boolean",
           "examples": [true, false]
         },
-        "surveyLaunched": {
+        "eqLaunched": {
           "description": "True if EQ has been launched using this UAC.",
           "type": "boolean",
           "examples": [true, false]
