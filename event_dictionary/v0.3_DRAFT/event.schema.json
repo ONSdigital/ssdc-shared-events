@@ -12,6 +12,7 @@
         { "$ref": "deactivateUac.schema.json" },
         { "$ref": "eqLaunch.schema.json" },
         { "$ref": "invalidCase.schema.json" },
+        { "$ref": "newCase.schema.json" },
         { "$ref": "printFulfilment.schema.json" },
         { "$ref": "receipt.schema.json" },
         { "$ref": "refusal.schema.json" },

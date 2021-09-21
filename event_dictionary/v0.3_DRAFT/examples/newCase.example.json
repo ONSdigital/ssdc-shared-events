@@ -1,0 +1,28 @@
+{
+  "header": {
+    "version": "v0.3_DRAFT",
+    "topic": "event_new-case",
+    "source": "nostrud occaecat non incididunt est",
+    "channel": "RH",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "newCase": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "sample": {
+        "schoolId": "abc123",
+        "parentId": "ertyui234",
+        "studentId": "999xyz"
+      },
+      "sampleSensitive": {
+        "studentName": "Fred Bloggs",
+        "parentMobileNumber": "07123456789",
+        "parentEmailAddress": "joe.bloggs@domain.com"
+      }
+    }
+  }
+}

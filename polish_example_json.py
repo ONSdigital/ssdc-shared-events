@@ -41,5 +41,17 @@ with open('event.example.json', 'r') as event_file:
                     "phoneNumber": "REDACTED"
                 }
 
+            if event_item["event"] == 'newCase':
+                event["payload"]["newCase"]["sample"] = {
+                    "schoolId": "abc123",
+                    "parentId": "ertyui234",
+                    "studentId": "999xyz"
+                }
+                event["payload"]["newCase"]["sampleSensitive"] = {
+                    "studentName": "Fred Bloggs",
+                    "parentMobileNumber": "07123456789",
+                    "parentEmailAddress": "joe.bloggs@domain.com",
+                }
+
             with open(f'examples/{event_item["event"]}.example.json', 'w+') as example_file:
                 json.dump(event, example_file, indent=2)

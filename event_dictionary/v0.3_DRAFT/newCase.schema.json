@@ -1,0 +1,54 @@
+{
+  "$id": "https://ons.gov.uk/newCase.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "New Case",
+  "type": "object",
+  "properties": {
+    "newCase": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the new case.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise this case belongs to.",
+          "type": "uuid",
+          "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
+        },
+        "sample": {
+          "description": "The original sample data.",
+          "type": "object",
+          "examples": [
+            {
+              "schoolId": "abc123",
+              "parentId": "ertyu234",
+              "studentId": "999xyz"
+            }
+          ]
+        },
+        "sampleSensitive": {
+          "description": "Redacted Personally Identifiable Information (PII).",
+          "type": "object",
+          "examples": [
+            {
+              "studentName": "Fred Bloggs",
+              "parentMobileNumber": "07123456789",
+              "parentEmailAddress": "joe.bloggs@domain.com"
+            }
+          ]
+        }
+      },
+      "required": [
+        "caseId",
+        "collectionExerciseId",
+        "sample",
+        "sampleSensitive"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["newCase"],
+  "additionalProperties": false
+}

@@ -18,6 +18,7 @@
         "event_deactivate-uac",
         "event_eq-launch",
         "event_invalid-case",
+        "event_new-case",
         "event_print-fulfilment",
         "event_receipt",
         "event_refusal",
