@@ -660,13 +660,13 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                       |
-| ------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------- |
-| + [caseId](#payload_oneOf_i5_newCase_caseId )                             | No      | uuid   | No         | -          | The ID of the new case.                                 |
-| + [collectionExerciseId](#payload_oneOf_i5_newCase_collectionExerciseId ) | No      | uuid   | No         | -          | The ID of the collection exercise this case belongs to. |
-| + [sample](#payload_oneOf_i5_newCase_sample )                             | No      | object | No         | -          | The original sample data.                               |
-| + [sampleSensitive](#payload_oneOf_i5_newCase_sampleSensitive )           | No      | object | No         | -          | Redacted Personally Identifiable Information (PII).     |
-|                                                                           |         |        |            |            |                                                         |
+| Property                                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                               |
+| ------------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | --------------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i5_newCase_caseId )                             | No      | uuid   | No         | -          | The ID of the new case.                                         |
+| + [collectionExerciseId](#payload_oneOf_i5_newCase_collectionExerciseId ) | No      | uuid   | No         | -          | The ID of the collection exercise this new case will belong to. |
+| + [sample](#payload_oneOf_i5_newCase_sample )                             | No      | object | No         | -          | The sample data.                                                |
+| + [sampleSensitive](#payload_oneOf_i5_newCase_sampleSensitive )           | No      | object | No         | -          | Personally Identifiable Information (PII).                      |
+|                                                                           |         |        |            |            |                                                                 |
 
 ##### <a name="payload_oneOf_i5_newCase_caseId"></a>2.6.1.1. Property `Event > payload > oneOf > New Case > newCase > caseId`
 
@@ -690,7 +690,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The ID of the collection exercise this case belongs to.
+**Description:** The ID of the collection exercise this new case will belong to.
 
 **Example:** 
 
@@ -705,7 +705,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The original sample data.
+**Description:** The sample data.
 
 **Example:** 
 
@@ -724,7 +724,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Redacted Personally Identifiable Information (PII).
+**Description:** Personally Identifiable Information (PII).
 
 **Example:** 
 
@@ -1201,4 +1201,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-21 at 13:46:59 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-21 at 14:12:27 +0100
