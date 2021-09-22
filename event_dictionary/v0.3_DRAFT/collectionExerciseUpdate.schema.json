@@ -12,6 +12,11 @@
           "type": "uuid",
           "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
         },
+        "reference": {
+          "description": "The reference of the collection exercise"
+          "type": "string",
+          "examples": ["MVP012021"]
+        },
         "surveyId": {
           "description": "The ID of the survey this collection exercise belongs to.",
           "type": "uuid",
@@ -21,9 +26,31 @@
           "description": "The name of the collection exercise.",
           "type": "string",
           "examples": ["Week 26", "September 2021", "202103", "Census 2026"]
-        }
+        },
+        "startDate": {
+          "description":"Date the collection exercise starts",
+          "type":"date-time",
+          "examples": ["2021-09-17T23:59:59.999Z"]
+        },
+        "endDate": {
+          "description":"Date the collection exercise ends",
+          "type":"date-time",
+          "examples": ["2021-09-17T23:59:59.999Z"]
+        },
+        "metadata": {
+          "description": "metadata about the collection exercise",
+          "type": "object",
+          "examples": [
+            {
+              "numberOfWaves": "3",
+              "waveLength": "2",
+              "cohorts": "3",
+              "cohortSchedule": "7"
+            }
+          ]
+        },
       },
-      "required": ["collectionExerciseId", "surveyId", "name"],
+      "required": ["collectionExerciseId", "reference", "surveyId", "name", "startDate", "endDate"],
       "additionalProperties": false
     }
   },
