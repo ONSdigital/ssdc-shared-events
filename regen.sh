@@ -1,4 +1,22 @@
-#!/bin/sh
+#!/bin/bash
+
+if ! command -v npx &> /dev/null
+then
+    echo "command 'npx' could not be found. Did you forget to install NodeJS?"
+    exit
+fi
+
+if ! command -v generate-schema-doc &> /dev/null
+then
+    echo "command 'generate-schema-doc' could not be found. Did you forget to install it?"
+    exit
+fi
+
+if ! command -v python3 &> /dev/null
+then
+    echo "command 'python3' could not be found. Did you forget to install it?"
+    exit
+fi
 
 cd event_dictionary/v0.3_DRAFT/
 npx prettier --write ./*.json
