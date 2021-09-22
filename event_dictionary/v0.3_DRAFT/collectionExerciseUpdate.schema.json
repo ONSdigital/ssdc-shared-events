@@ -13,7 +13,7 @@
           "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
         },
         "reference": {
-          "description": "The reference of the collection exercise"
+          "description": "The reference of the collection exercise",
           "type": "string",
           "examples": ["MVP012021"]
         },
