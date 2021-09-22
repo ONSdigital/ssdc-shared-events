@@ -28,13 +28,13 @@
           "examples": ["Week 26", "September 2021", "202103", "Census 2026"]
         },
         "startDate": {
-          "description":"Date the collection exercise starts",
-          "type":"date-time",
+          "description": "Date the collection exercise starts",
+          "type": "date-time",
           "examples": ["2021-09-17T23:59:59.999Z"]
         },
         "endDate": {
-          "description":"Date the collection exercise ends",
-          "type":"date-time",
+          "description": "Date the collection exercise ends",
+          "type": "date-time",
           "examples": ["2021-09-17T23:59:59.999Z"]
         },
         "metadata": {
@@ -48,9 +48,16 @@
               "cohortSchedule": "7"
             }
           ]
-        },
+        }
       },
-      "required": ["collectionExerciseId", "reference", "surveyId", "name", "startDate", "endDate"],
+      "required": [
+        "collectionExerciseId",
+        "reference",
+        "surveyId",
+        "name",
+        "startDate",
+        "endDate"
+      ],
       "additionalProperties": false
     }
   },
