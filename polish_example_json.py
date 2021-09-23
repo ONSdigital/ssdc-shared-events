@@ -44,13 +44,22 @@ with open('event.example.json', 'r') as event_file:
             if event_item["event"] == 'newCase':
                 event["payload"]["newCase"]["sample"] = {
                     "schoolId": "abc123",
-                    "parentId": "ertyui234",
-                    "studentId": "999xyz"
+                    "schoolName": "Chesterthorps High School",
+                    "consentGivenTest": "true",
+                    "consentGivenSurvey": "true"
                 }
                 event["payload"]["newCase"]["sampleSensitive"] = {
-                    "studentName": "Fred Bloggs",
+                    "firstName": "Fred",
+                    "lastName": "Bloggs",
+                    "childFirstName": "Jo",
+                    "childMiddleNames": "Rose May",
+                    "childLastName": "Pinker",
+                    "childDob": "2001-12-31",
+                    "additionalInfo": "Class 2A",
+                    "childMobileNumber": "07123456789",
+                    "childEmailAddress": "jo.rose.may.pinker@domain.com",
                     "parentMobileNumber": "07123456789",
-                    "parentEmailAddress": "joe.bloggs@domain.com",
+                    "parentEmailAddress": "fred.bloggs@domain.com",
                 }
 
             with open(f'examples/{event_item["event"]}.example.json', 'w+') as example_file:

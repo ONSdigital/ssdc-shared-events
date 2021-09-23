@@ -2,8 +2,8 @@
   "header": {
     "version": "v0.3_DRAFT",
     "topic": "event_new-case",
-    "source": "nostrud occaecat non incididunt est",
-    "channel": "RH",
+    "source": "cupidatat",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -15,13 +15,22 @@
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sample": {
         "schoolId": "abc123",
-        "parentId": "ertyui234",
-        "studentId": "999xyz"
+        "schoolName": "Chesterthorps High School",
+        "consentGivenTest": "true",
+        "consentGivenSurvey": "true"
       },
       "sampleSensitive": {
-        "studentName": "Fred Bloggs",
+        "firstName": "Fred",
+        "lastName": "Bloggs",
+        "childFirstName": "Jo",
+        "childMiddleNames": "Rose May",
+        "childLastName": "Pinker",
+        "childDob": "2001-12-31",
+        "additionalInfo": "Class 2A",
+        "childMobileNumber": "07123456789",
+        "childEmailAddress": "jo.rose.may.pinker@domain.com",
         "parentMobileNumber": "07123456789",
-        "parentEmailAddress": "joe.bloggs@domain.com"
+        "parentEmailAddress": "fred.bloggs@domain.com"
       }
     }
   }
