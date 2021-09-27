@@ -712,8 +712,9 @@ Must be one of:
 ```json
 {
     "schoolId": "abc123",
-    "parentId": "ertyu234",
-    "studentId": "999xyz"
+    "schoolName": "Chesterthorps High School",
+    "consentGivenTest": "true",
+    "consentGivenSurvey": "true"
 }
 ```
 
@@ -730,9 +731,17 @@ Must be one of:
 
 ```json
 {
-    "studentName": "Fred Bloggs",
+    "firstName": "Fred",
+    "lastName": "Bloggs",
+    "childFirstName": "Jo",
+    "childMiddleNames": "Rose May",
+    "childLastName": "Pinker",
+    "childDob": "2001-12-31",
+    "additionalInfo": "Class 2A",
+    "childMobileNumber": "07123456789",
+    "childEmailAddress": "jo.rose.may.pinker@domain.com",
     "parentMobileNumber": "07123456789",
-    "parentEmailAddress": "joe.bloggs@domain.com"
+    "parentEmailAddress": "fred.bloggs@domain.com"
 }
 ```
 
@@ -1201,4 +1210,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-21 at 14:12:27 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-27 at 14:05:41 +0100
