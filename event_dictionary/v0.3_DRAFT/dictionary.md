@@ -23,12 +23,8 @@
   - [2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`](#payload_oneOf_i1)
     - [2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`](#payload_oneOf_i1_collectionExerciseUpdate)
       - [2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId)
-      - [2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > reference`](#payload_oneOf_i1_collectionExerciseUpdate_reference)
-      - [2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`](#payload_oneOf_i1_collectionExerciseUpdate_surveyId)
-      - [2.2.1.4. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`](#payload_oneOf_i1_collectionExerciseUpdate_name)
-      - [2.2.1.5. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > startDate`](#payload_oneOf_i1_collectionExerciseUpdate_startDate)
-      - [2.2.1.6. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > endDate`](#payload_oneOf_i1_collectionExerciseUpdate_endDate)
-      - [2.2.1.7. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > metadata`](#payload_oneOf_i1_collectionExerciseUpdate_metadata)
+      - [2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`](#payload_oneOf_i1_collectionExerciseUpdate_surveyId)
+      - [2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`](#payload_oneOf_i1_collectionExerciseUpdate_name)
   - [2.3. Property `Event > payload > oneOf > deactivateUac.schema.json`](#payload_oneOf_i2)
     - [2.3.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac`](#payload_oneOf_i2_deactivateUac)
       - [2.3.1.1. Property `Event > payload > oneOf > Deactivate UAC > deactivateUac > qid`](#payload_oneOf_i2_deactivateUac_qid)
@@ -440,16 +436,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                                   | Pattern | Type      | Deprecated | Definition | Title/Description                                         |
-| ------------------------------------------------------------------------------------------ | ------- | --------- | ---------- | ---------- | --------------------------------------------------------- |
-| + [collectionExerciseId](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId ) | No      | uuid      | No         | -          | The ID of the collection exercise.                        |
-| + [reference](#payload_oneOf_i1_collectionExerciseUpdate_reference )                       | No      | string    | No         | -          | The reference of the collection exercise                  |
-| + [surveyId](#payload_oneOf_i1_collectionExerciseUpdate_surveyId )                         | No      | uuid      | No         | -          | The ID of the survey this collection exercise belongs to. |
-| + [name](#payload_oneOf_i1_collectionExerciseUpdate_name )                                 | No      | string    | No         | -          | The name of the collection exercise.                      |
-| + [startDate](#payload_oneOf_i1_collectionExerciseUpdate_startDate )                       | No      | date-time | No         | -          | Date the collection exercise starts                       |
-| + [endDate](#payload_oneOf_i1_collectionExerciseUpdate_endDate )                           | No      | date-time | No         | -          | Date the collection exercise ends                         |
-| - [metadata](#payload_oneOf_i1_collectionExerciseUpdate_metadata )                         | No      | object    | No         | -          | metadata about the collection exercise                    |
-|                                                                                            |         |           |            |            |                                                           |
+| Property                                                                                   | Pattern | Type   | Deprecated | Definition | Title/Description                                         |
+| ------------------------------------------------------------------------------------------ | ------- | ------ | ---------- | ---------- | --------------------------------------------------------- |
+| + [collectionExerciseId](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId ) | No      | uuid   | No         | -          | The ID of the collection exercise.                        |
+| + [surveyId](#payload_oneOf_i1_collectionExerciseUpdate_surveyId )                         | No      | uuid   | No         | -          | The ID of the survey this collection exercise belongs to. |
+| + [name](#payload_oneOf_i1_collectionExerciseUpdate_name )                                 | No      | string | No         | -          | The name of the collection exercise.                      |
+|                                                                                            |         |        |            |            |                                                           |
 
 ##### <a name="payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId"></a>2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`
 
@@ -466,22 +458,7 @@ Must be one of:
 "415fe420-80db-4ca6-a577-667fd6ba1463"
 ```
 
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_reference"></a>2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > reference`
-
-| Type                      | `string`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** The reference of the collection exercise
-
-**Example:** 
-
-```json
-"MVP012021"
-```
-
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_surveyId"></a>2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`
+##### <a name="payload_oneOf_i1_collectionExerciseUpdate_surveyId"></a>2.2.1.2. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > surveyId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -496,7 +473,7 @@ Must be one of:
 "21ce842b-4359-402a-9311-973f07d2d253"
 ```
 
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_name"></a>2.2.1.4. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`
+##### <a name="payload_oneOf_i1_collectionExerciseUpdate_name"></a>2.2.1.3. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > name`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -521,56 +498,6 @@ Must be one of:
 
 ```json
 "Census 2026"
-```
-
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_startDate"></a>2.2.1.5. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > startDate`
-
-| Type                      | `date-time`                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** Date the collection exercise starts
-
-**Example:** 
-
-```json
-"2021-09-17T23:59:59.999Z"
-```
-
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_endDate"></a>2.2.1.6. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > endDate`
-
-| Type                      | `date-time`                                                               |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** Date the collection exercise ends
-
-**Example:** 
-
-```json
-"2021-09-17T23:59:59.999Z"
-```
-
-##### <a name="payload_oneOf_i1_collectionExerciseUpdate_metadata"></a>2.2.1.7. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > metadata`
-
-| Type                      | `object`                                                                  |
-| ------------------------- | ------------------------------------------------------------------------- |
-| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
-|                           |                                                                           |
-
-**Description:** metadata about the collection exercise
-
-**Example:** 
-
-```json
-{
-    "numberOfWaves": "3",
-    "waveLength": "2",
-    "cohorts": "3",
-    "cohortSchedule": "7"
-}
 ```
 
 ### <a name="payload_oneOf_i2"></a>2.3. Property `Event > payload > oneOf > deactivateUac.schema.json`
@@ -785,8 +712,9 @@ Must be one of:
 ```json
 {
     "schoolId": "abc123",
-    "parentId": "ertyu234",
-    "studentId": "999xyz"
+    "schoolName": "Chesterthorps High School",
+    "consentGivenTest": "true",
+    "consentGivenSurvey": "true"
 }
 ```
 
@@ -803,9 +731,17 @@ Must be one of:
 
 ```json
 {
-    "studentName": "Fred Bloggs",
+    "firstName": "Fred",
+    "lastName": "Bloggs",
+    "childFirstName": "Jo",
+    "childMiddleNames": "Rose May",
+    "childLastName": "Pinker",
+    "childDob": "2001-12-31",
+    "additionalInfo": "Class 2A",
+    "childMobileNumber": "07123456789",
+    "childEmailAddress": "jo.rose.may.pinker@domain.com",
     "parentMobileNumber": "07123456789",
-    "parentEmailAddress": "joe.bloggs@domain.com"
+    "parentEmailAddress": "fred.bloggs@domain.com"
 }
 ```
 
@@ -1274,4 +1210,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-22 at 16:16:40 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-09-27 at 14:05:41 +0100

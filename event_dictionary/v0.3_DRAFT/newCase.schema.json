@@ -23,8 +23,9 @@
           "examples": [
             {
               "schoolId": "abc123",
-              "parentId": "ertyu234",
-              "studentId": "999xyz"
+              "schoolName": "Chesterthorps High School",
+              "consentGivenTest": "true",
+              "consentGivenSurvey": "true"
             }
           ]
         },
@@ -33,9 +34,17 @@
           "type": "object",
           "examples": [
             {
-              "studentName": "Fred Bloggs",
+              "firstName": "Fred",
+              "lastName": "Bloggs",
+              "childFirstName": "Jo",
+              "childMiddleNames": "Rose May",
+              "childLastName": "Pinker",
+              "childDob": "2001-12-31",
+              "additionalInfo": "Class 2A",
+              "childMobileNumber": "07123456789",
+              "childEmailAddress": "jo.rose.may.pinker@domain.com",
               "parentMobileNumber": "07123456789",
-              "parentEmailAddress": "joe.bloggs@domain.com"
+              "parentEmailAddress": "fred.bloggs@domain.com"
             }
           ]
         }
