@@ -64,19 +64,19 @@ with open('event.example.json', 'r') as event_file:
 
             if event_item["event"] == 'collectionExerciseUpdate':
                 event["payload"]["collectionExerciseUpdate"] = {
-		    "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      		    "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      		    "name": "velit",
-		    "reference": "MVP012021",
-		    "startDate": "2021-09-17T23:59:59.999Z",
-		    "endDate": "2021-09-27T23:59:59.999Z",
-     		    "metadata": {
-        		"numberOfWaves": "3",
-		        "waveLength": "2",
-		        "cohorts": "3",
-        		"cohortSchedule": "7"
-      		   }
-		}
+                    "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+                    "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+                    "name": "velit",
+                    "reference": "MVP012021",
+                    "startDate": "2021-09-17T23:59:59.999Z",
+                    "endDate": "2021-09-27T23:59:59.999Z",
+                    "metadata": {
+                        "numberOfWaves": "3",
+                        "waveLength": "2",
+                        "cohorts": "3",
+                        "cohortSchedule": "7"
+                    }
+                }
 
             with open(f'examples/{event_item["event"]}.example.json', 'w+') as example_file:
                 json.dump(event, example_file, indent=2)
