@@ -19,7 +19,7 @@ with open('eventHeader.schema.json', 'r') as event_header_file:
 
 with open('event.example.json', 'r') as event_file:
     event = json.load(event_file)
-    event["header"]["version"] = 'v0.3_DRAFT'
+    event["header"]["version"] = 'v0.4_DRAFT'
     event["header"]["originatingUser"] = 'foo.bar@ons.gov.uk'
 
     for event_item in events:

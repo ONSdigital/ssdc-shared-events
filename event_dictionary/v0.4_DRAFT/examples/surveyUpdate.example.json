@@ -1,8 +1,8 @@
 {
   "header": {
-    "version": "v0.3_DRAFT",
+    "version": "v0.4_DRAFT",
     "topic": "event_survey-update",
-    "source": "est dolor",
+    "source": "sint Duis tempor dolor veniam",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,10 +12,10 @@
   "payload": {
     "surveyUpdate": {
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "voluptate magna eu nisi",
-      "sampleSchema": "voluptate irure",
+      "name": "laborum reprehenderit laboris velit labore",
+      "sampleSchema": "laboris",
       "metadata": {
-        "cupidatate89": 35267308.104971826
+        "non94": 93194206
       }
     }
   }

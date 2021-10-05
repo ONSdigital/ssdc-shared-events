@@ -23,9 +23,9 @@
           "examples": ["true", "false"]
         },
         "consentGivenSurvey": {
-          "description": "The third line of the address.",
+          "description": "Whether or not consent is given for survey.",
           "type": "string",
-          "examples": ["Fake Town"]
+          "examples": ["true", "false"]
         }
       },
       "required": ["schoolId", "schoolName", "consentGivenTest", "consentGivenSurvey"],
