@@ -1,0 +1,45 @@
+{
+  "$id": "https://ons.gov.uk/surveyUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Survey Update",
+  "type": "object",
+  "properties": {
+    "surveyUpdate": {
+      "type": "object",
+      "properties": {
+        "surveyId": {
+          "description": "The ID of the survey.",
+          "type": "uuid",
+          "examples": ["21ce842b-4359-402a-9311-973f07d2d253"]
+        },
+        "name": {
+          "description": "The name of the survey.",
+          "type": "string",
+          "examples": ["LMS", "OPN", "RSI", "MBS", "Census", "CCS"]
+        },
+        "metadata": {
+          "description": "Metadata about the survey",
+          "type": "object",
+          "examples": [
+            {
+              "splines": 12,
+              "reticulation": ["foo", "bar"],
+              "gambertron": { "this": "that" }
+            }
+          ]
+        },
+        "sampleSchema": {
+          "description": "The JSON schema that the sample must comply with.",
+          "type": "string",
+          "examples": [
+            "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample_schemas/social/v0.1_DRAFT/socialSample.schema.json"
+          ]
+        }
+      },
+      "required": ["surveyId", "name", "sampleSchema"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["surveyUpdate"],
+  "additionalProperties": false
+}

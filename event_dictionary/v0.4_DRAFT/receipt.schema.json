@@ -1,0 +1,22 @@
+{
+  "$id": "https://ons.gov.uk/receipt.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Receipt",
+  "type": "object",
+  "properties": {
+    "receipt": {
+      "type": "object",
+      "properties": {
+        "qid": {
+          "description": "QID of completed questionnaire.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        }
+      },
+      "required": ["qid"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["receipt"],
+  "additionalProperties": false
+}

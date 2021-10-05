@@ -1,0 +1,22 @@
+{
+  "header": {
+    "version": "v0.3_DRAFT",
+    "topic": "event_update-sample-sensitive",
+    "source": "est dolor",
+    "channel": "RH",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "updateSampleSensitive": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "sampleSensitive": {
+        "sed633": 2088845.1122168303,
+        "eiusmod_0f": -81645276.54805416,
+        "culpa_5f": "pariatur"
+      }
+    }
+  }
+}

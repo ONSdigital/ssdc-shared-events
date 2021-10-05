@@ -1,0 +1,22 @@
+{
+  "$id": "https://ons.gov.uk/deactivateUac.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Deactivate UAC",
+  "type": "object",
+  "properties": {
+    "deactivateUac": {
+      "type": "object",
+      "properties": {
+        "qid": {
+          "description": "QID associated with the UAC which should be deactivated.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        }
+      },
+      "required": ["qid"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["deactivateUac"],
+  "additionalProperties": false
+}

@@ -1,0 +1,56 @@
+{
+  "$id": "https://ons.gov.uk/uacUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UAC Update",
+  "type": "object",
+  "properties": {
+    "uacUpdate": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case which is linked to this UAC/QID pair.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "active": {
+          "description": "True if this UAC can be used to launch EQ.",
+          "type": "boolean",
+          "examples": [true, false]
+        },
+        "uacHash": {
+          "description": "The SHA-256 hash of the UAC.",
+          "type": "string",
+          "examples": [
+            "bad079d8807e416719eca8502ce7b99cf0721a22373b1b6d74b03542dba3bf52"
+          ]
+        },
+        "qid": {
+          "description": "The QID linked to this UAC.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        },
+        "receiptReceived": {
+          "description": "True if completed questionnaire received using this UAC/QID.",
+          "type": "boolean",
+          "examples": [true, false]
+        },
+        "eqLaunched": {
+          "description": "True if EQ has been launched using this UAC.",
+          "type": "boolean",
+          "examples": [true, false]
+        }
+      },
+      "required": [
+        "caseId",
+        "active",
+        "uacHash",
+        "qid",
+        "receiptReceived",
+        "surveyLaunched"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["uacUpdate"],
+  "additionalProperties": false
+}

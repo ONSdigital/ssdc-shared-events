@@ -1,0 +1,99 @@
+{
+  "$id": "https://ons.gov.uk/schoolSample.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "School Sample",
+  "type": "object",
+  "properties": {
+    "sample": {
+      "type": "object",
+      "properties": {
+        "schoolId": {
+          "description": "The ID of the school.",
+          "type": "string",
+          "examples": ["abc123"]
+        },
+        "schoolName": {
+          "description": "The name of the school.",
+          "type": "string",
+          "examples": ["Chesterthorps High School"]
+        },
+        "consentGivenTest": {
+          "description": "Whether or not consent is given for testing.",
+          "type": "string",
+          "examples": ["true", "false"]
+        },
+        "consentGivenSurvey": {
+          "description": "The third line of the address.",
+          "type": "string",
+          "examples": ["Fake Town"]
+        }
+      },
+      "required": ["schoolId", "schoolName", "consentGivenTest", "consentGivenSurvey"],
+      "additionalProperties": false
+    },
+    "sampleSensitive": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "description": "The first name of the parent giving consent.",
+          "type": "string",
+          "examples": ["Fred"]
+        },
+        "lastName": {
+          "description": "The last name of the parent giving consent.",
+          "type": "string",
+          "examples": ["Bloggs"]
+        },
+        "childFirstName": {
+          "description": "The first name of the child participating.",
+          "type": "string",
+          "examples": ["Jo"]
+        },
+        "childMiddleNames": {
+          "description": "The middle names of the child participating.",
+          "type": "string",
+          "examples": ["Rose May"]
+        },
+        "childLastName": {
+          "description": "The last name of the child participating.",
+          "type": "string",
+          "examples": ["Pinker"]
+        },
+        "childDob": {
+          "description": "The date of birth of the child participating.",
+          "type": "string",
+          "examples": ["2001-12-31"]
+        },
+        "additionalInfo": {
+          "description": "Any additional information.",
+          "type": "string",
+          "examples": ["Class 2A"]
+        },
+        "childMobileNumber": {
+          "description": "The mobile number of the child participating.",
+          "type": "string",
+          "examples": ["07123456789"]
+        },
+        "childEmailAddress": {
+          "description": "The email address of the child participating.",
+          "type": "string",
+          "examples": ["jo.rose.may.pinker@domain.com"]
+        },
+        "parentMobileNumber": {
+          "description": "The mobile number of the parent consenting.",
+          "type": "string",
+          "examples": ["07123456789"]
+        },
+        "parentEmailAddress": {
+          "description": "The email address of the parent consenting.",
+          "type": "string",
+          "examples": ["fred.bloggs@domain.com"]
+        }
+      },
+      "required": ["firstName", "lastName", "childFirstName", "childLastName", "childDob", "parentMobileNumber"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["sample", "sampleSensitive"],
+  "additionalProperties": false
+}
