@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_new-case",
-    "source": "esse Excepteur ut sunt",
-    "channel": "RH",
+    "source": "aliqua commodo veniam",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -14,20 +14,20 @@
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sample": {
-        "schoolId": "dummy_by1buxjs5e",
-        "schoolName": "dummy_j74ux8bntj"
+        "schoolId": "dummy_wuti0fu2ap",
+        "schoolName": "dummy_ilqa3fmdny",
+        "consentGivenTest": "dummy_oa0r729tub",
+        "consentGivenSurvey": "dummy_6pkegawft0"
       },
       "sampleSensitive": {
-        "firstName": "dummy_kiq2ros67t",
-        "lastName": "dummy_hl6rpvtyfq",
-        "childFirstName": "dummy_yww9c22a2y",
-        "childMiddleNames": "dummy_olgsd09eom",
-        "childLastName": "dummy_srjzterobo",
-        "childDob": "dummy_v9ty756ov7",
-        "mobileNumber": "dummy_a42nusxtmr",
-        "emailAddress": "dummy_kssd5jyxkw",
-        "consentGivenTest": "dummy_m826hd6y7w",
-        "consentGivenSurvey": "dummy_ya7np6jstg"
+        "firstName": "dummy_sq55h8ynzn",
+        "lastName": "dummy_cz1inwfo3w",
+        "childFirstName": "dummy_weme07uacc",
+        "childMiddleNames": "dummy_1ojszkaxeo",
+        "childLastName": "dummy_j0v6byq2qi",
+        "childDob": "dummy_b49297kzjd",
+        "mobileNumber": "dummy_hvlm1n2mjp",
+        "emailAddress": "dummy_bnd61u4hfz"
       }
     }
   }

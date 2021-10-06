@@ -62,7 +62,7 @@
       - [2.10.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`](#payload_oneOf_i9_surveyUpdate_surveyId)
       - [2.10.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > name`](#payload_oneOf_i9_surveyUpdate_name)
       - [2.10.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > metadata`](#payload_oneOf_i9_surveyUpdate_metadata)
-      - [2.10.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleSchema`](#payload_oneOf_i9_surveyUpdate_sampleSchema)
+      - [2.10.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleDefinition`](#payload_oneOf_i9_surveyUpdate_sampleDefinition)
   - [2.11. Property `Event > payload > oneOf > uacAuthentication.schema.json`](#payload_oneOf_i10)
     - [2.11.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication`](#payload_oneOf_i10_uacAuthentication)
       - [2.11.1.1. Property `Event > payload > oneOf > UAC Authentication > uacAuthentication > qid`](#payload_oneOf_i10_uacAuthentication_qid)
@@ -1015,13 +1015,13 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                       | Pattern | Type   | Deprecated | Definition | Title/Description                                 |
-| -------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------- |
-| + [surveyId](#payload_oneOf_i9_surveyUpdate_surveyId )         | No      | uuid   | No         | -          | The ID of the survey.                             |
-| + [name](#payload_oneOf_i9_surveyUpdate_name )                 | No      | string | No         | -          | The name of the survey.                           |
-| - [metadata](#payload_oneOf_i9_surveyUpdate_metadata )         | No      | object | No         | -          | Metadata about the survey                         |
-| + [sampleSchema](#payload_oneOf_i9_surveyUpdate_sampleSchema ) | No      | string | No         | -          | The JSON schema that the sample must comply with. |
-|                                                                |         |        |            |            |                                                   |
+| Property                                                               | Pattern | Type   | Deprecated | Definition | Title/Description             |
+| ---------------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ----------------------------- |
+| + [surveyId](#payload_oneOf_i9_surveyUpdate_surveyId )                 | No      | uuid   | No         | -          | The ID of the survey.         |
+| + [name](#payload_oneOf_i9_surveyUpdate_name )                         | No      | string | No         | -          | The name of the survey.       |
+| - [metadata](#payload_oneOf_i9_surveyUpdate_metadata )                 | No      | object | No         | -          | Metadata about the survey     |
+| + [sampleDefinition](#payload_oneOf_i9_surveyUpdate_sampleDefinition ) | No      | string | No         | -          | The definition of the sample. |
+|                                                                        |         |        |            |            |                               |
 
 ##### <a name="payload_oneOf_i9_surveyUpdate_surveyId"></a>2.10.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`
 
@@ -1097,19 +1097,19 @@ Must be one of:
 }
 ```
 
-##### <a name="payload_oneOf_i9_surveyUpdate_sampleSchema"></a>2.10.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleSchema`
+##### <a name="payload_oneOf_i9_surveyUpdate_sampleDefinition"></a>2.10.1.4. Property `Event > payload > oneOf > Survey Update > surveyUpdate > sampleDefinition`
 
 | Type                      | `string`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The JSON schema that the sample must comply with.
+**Description:** The definition of the sample.
 
 **Example:** 
 
 ```json
-"https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample_schemas/social/v0.1_DRAFT/socialSample.schema.json"
+"https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/social/v0.1_DRAFT/social.json"
 ```
 
 ### <a name="payload_oneOf_i10"></a>2.11. Property `Event > payload > oneOf > uacAuthentication.schema.json`
@@ -1364,4 +1364,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 16:43:57 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 17:01:27 +0100

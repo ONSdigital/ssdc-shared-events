@@ -24,6 +24,30 @@
     ]
   },
   {
+    "columnName": "consentGivenTest",
+    "rules": [
+      {
+        "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+        "set": [
+          "true",
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "columnName": "consentGivenSurvey",
+    "rules": [
+      {
+        "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+        "set": [
+          "true",
+          "false"
+        ]
+      }
+    ]
+  },
+  {
     "columnName": "firstName",
     "rules": [
       {
@@ -102,32 +126,6 @@
   {
     "columnName": "emailAddress",
     "rules": [],
-    "sensitive": true
-  },
-  {
-    "columnName": "consentGivenTest",
-    "rules": [
-      {
-        "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
-        "set": [
-          "true",
-          "false"
-        ]
-      }
-    ],
-    "sensitive": true
-  },
-  {
-    "columnName": "consentGivenSurvey",
-    "rules": [
-      {
-        "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
-        "set": [
-          "true",
-          "false"
-        ]
-      }
-    ],
     "sensitive": true
   }
 ]

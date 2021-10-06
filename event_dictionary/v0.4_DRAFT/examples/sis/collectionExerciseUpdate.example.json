@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_collection-exercise-update",
-    "source": "esse Excepteur ut sunt",
-    "channel": "RH",
+    "source": "aliqua commodo veniam",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,13 +12,16 @@
   "payload": {
     "collectionExerciseUpdate": {
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "reference": "culpa anim",
+      "reference": "nisi eu tempor commodo cupidatat",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "Excepteur ullamco ut minim",
+      "name": "sunt consequat incididunt adipisicing id",
       "startDate": "1970-01-01T00:00:00.000Z",
       "endDate": "1970-01-01T00:00:00.000Z",
       "metadata": {
-        "est_412": "adipisicing commodo"
+        "proident1b": true,
+        "id_c45": false,
+        "ullamcofb4": true,
+        "Lorem39": true
       }
     }
   }

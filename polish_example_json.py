@@ -9,6 +9,7 @@ def to_camel_case(snake_str):
     return reduce(lambda x, y: x + y.title(), components[1:], components[0])
 
 
+URL_PREFIX = 'https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/'
 events = []
 survey_types = [{'type': 'sis', 'shape': 'sis/v0.1_DRAFT/sis.json'},
                 {'type': 'social', 'shape': 'social/v0.1_DRAFT/social.json'}]
@@ -64,6 +65,10 @@ with open('event.example.json', 'r') as event_file:
 
                 if event_item["event"] == 'updateSampleSensitive':
                     event["payload"]["updateSampleSensitive"]["sampleSensitive"] = fake_sample_sensitive
+
+                if event_item["event"] == 'surveyUpdate':
+                    event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
+                    event["payload"]["surveyUpdate"]["sampleDefinition"] = f'{URL_PREFIX}{survey_type["shape"]}'
 
                 if event_item["event"] == 'collectionExerciseUpdate' and survey_type["type"] == 'social':
                     event["payload"]["collectionExerciseUpdate"] = {

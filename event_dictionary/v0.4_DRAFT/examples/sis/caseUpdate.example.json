@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_case-update",
-    "source": "esse Excepteur ut sunt",
-    "channel": "RH",
+    "source": "aliqua commodo veniam",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -17,8 +17,10 @@
       "invalid": false,
       "refusalReceived": "EXTRAORDINARY_REFUSAL",
       "sample": {
-        "schoolId": "dummy_by1buxjs5e",
-        "schoolName": "dummy_j74ux8bntj"
+        "schoolId": "dummy_wuti0fu2ap",
+        "schoolName": "dummy_ilqa3fmdny",
+        "consentGivenTest": "dummy_oa0r729tub",
+        "consentGivenSurvey": "dummy_6pkegawft0"
       },
       "sampleSensitive": {
         "firstName": "REDACTED",
@@ -28,9 +30,7 @@
         "childLastName": "REDACTED",
         "childDob": "REDACTED",
         "mobileNumber": "REDACTED",
-        "emailAddress": "REDACTED",
-        "consentGivenTest": "REDACTED",
-        "consentGivenSurvey": "REDACTED"
+        "emailAddress": "REDACTED"
       }
     }
   }
