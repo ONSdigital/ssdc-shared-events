@@ -28,11 +28,11 @@
             }
           ]
         },
-        "sampleSchema": {
-          "description": "The JSON schema that the sample must comply with.",
+        "sampleDefinition": {
+          "description": "The definition of the sample.",
           "type": "string",
           "examples": [
-            "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample_schemas/social/v0.1_DRAFT/socialSample.schema.json"
+            "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/social/v0.1_DRAFT/social.json"
           ]
         }
       },
