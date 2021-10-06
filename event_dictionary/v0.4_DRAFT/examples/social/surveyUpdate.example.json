@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "elit",
-    "channel": "RM",
+    "source": "esse Excepteur ut sunt",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,11 +12,8 @@
   "payload": {
     "surveyUpdate": {
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "aliqua in",
-      "sampleSchema": "officia reprehenderit nisi magna proident",
-      "metadata": {
-        "labore_a": "elit"
-      }
+      "name": "qui",
+      "sampleSchema": "ad"
     }
   }
 }

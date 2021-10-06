@@ -23,6 +23,8 @@ npx prettier --write ./*.json
 generate-schema-doc event.schema.json --config template_name=md dictionary.md
 ../../generate_example_json.sh
 mkdir -p examples
+mkdir -p examples/sis
+mkdir -p examples/social
 python ../../polish_example_json.py
 rm *.example.json
 cd ../..
