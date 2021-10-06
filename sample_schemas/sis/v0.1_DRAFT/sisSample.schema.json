@@ -1,7 +1,7 @@
 {
-  "$id": "https://ons.gov.uk/schoolSample.schema.json",
+  "$id": "https://ons.gov.uk/sisSample.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "School Sample",
+  "title": "SIS Sample",
   "type": "object",
   "properties": {
     "sample": {
