@@ -46,6 +46,15 @@
     ]
   },
   {
+    "columnName": "region",
+    "rules": [
+      {
+        "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+        "set": ["E", "W", "N"]
+      }
+    ]
+  },
+  {
     "columnName": "uprn",
     "rules": [
       {
