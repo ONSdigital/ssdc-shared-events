@@ -38,6 +38,15 @@
           "description": "True if EQ has been launched using this UAC.",
           "type": "boolean",
           "examples": [true, false]
+        },
+        "metadata": {
+          "description": "Metadata about the UAC",
+          "type": "object",
+          "examples": [
+            {
+              "wave": 3
+            }
+          ]
         }
       },
       "required": [
