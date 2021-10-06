@@ -49,6 +49,7 @@
     - [2.7.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment`](#payload_oneOf_i6_printFulfilment)
       - [2.7.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`](#payload_oneOf_i6_printFulfilment_caseId)
       - [2.7.1.2. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > packCode`](#payload_oneOf_i6_printFulfilment_packCode)
+      - [2.7.1.3. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > uacMetadata`](#payload_oneOf_i6_printFulfilment_uacMetadata)
   - [2.8. Property `Event > payload > oneOf > receipt.schema.json`](#payload_oneOf_i7)
     - [2.8.1. Property `Event > payload > oneOf > Receipt > receipt`](#payload_oneOf_i7_receipt)
       - [2.8.1.1. Property `Event > payload > oneOf > Receipt > receipt > qid`](#payload_oneOf_i7_receipt_qid)
@@ -841,11 +842,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                  | Pattern | Type   | Deprecated | Definition | Title/Description                                                        |
-| --------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------ |
-| + [caseId](#payload_oneOf_i6_printFulfilment_caseId )     | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted. |
-| + [packCode](#payload_oneOf_i6_printFulfilment_packCode ) | No      | string | No         | -          | Pack code of the product in the product library for print & post.        |
-|                                                           |         |        |            |            |                                                                          |
+| Property                                                        | Pattern | Type   | Deprecated | Definition | Title/Description                                                        |
+| --------------------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------------------------------------ |
+| + [caseId](#payload_oneOf_i6_printFulfilment_caseId )           | No      | uuid   | No         | -          | The ID of the case that is requesting a printed paper item to be posted. |
+| + [packCode](#payload_oneOf_i6_printFulfilment_packCode )       | No      | string | No         | -          | Pack code of the product in the product library for print & post.        |
+| - [uacMetadata](#payload_oneOf_i6_printFulfilment_uacMetadata ) | No      | object | No         | -          | Any metadata needed to be added to UACs created by the fulfilment.       |
+|                                                                 |         |        |            |            |                                                                          |
 
 ##### <a name="payload_oneOf_i6_printFulfilment_caseId"></a>2.7.1.1. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > caseId`
 
@@ -879,6 +881,23 @@ Must be one of:
 
 ```json
 "INFORMATION_BOOKLET"
+```
+
+##### <a name="payload_oneOf_i6_printFulfilment_uacMetadata"></a>2.7.1.3. Property `Event > payload > oneOf > Print Fulfilment > printFulfilment > uacMetadata`
+
+| Type                      | `object`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Any metadata needed to be added to UACs created by the fulfilment.
+
+**Example:** 
+
+```json
+{
+    "wave": 1
+}
 ```
 
 ### <a name="payload_oneOf_i7"></a>2.8. Property `Event > payload > oneOf > receipt.schema.json`
@@ -1345,4 +1364,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 10:12:45 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 13:19:18 +0100

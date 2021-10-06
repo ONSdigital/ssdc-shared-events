@@ -16,6 +16,11 @@
           "description": "Pack code of the product in the product library for print & post.",
           "type": "string",
           "examples": ["REPLACEMENT_UAC_LETTER", "INFORMATION_BOOKLET"]
+        },
+        "uacMetadata": {
+          "description": "Any metadata needed to be added to UACs created by the fulfilment.",
+          "type": "object",
+          "examples": [{ "wave": 1 }]
         }
       },
       "required": ["caseId", "packCode"],
