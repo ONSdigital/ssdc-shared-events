@@ -49,6 +49,11 @@
     "sampleSensitive": {
       "type": "object",
       "properties": {
+        "phoneNumber": {
+          "description": "The phone number of the respondent.",
+          "type": "string",
+          "examples": ["07123456789"]
+        }
       },
       "required": [],
       "additionalProperties": false
