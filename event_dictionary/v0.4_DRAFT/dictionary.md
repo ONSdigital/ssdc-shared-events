@@ -104,7 +104,7 @@
 
 | Property                                      | Pattern | Type             | Deprecated | Definition | Title/Description                                                         |
 | --------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ------------------------------------------------------------------------- |
-| + [version](#header_version )                 | No      | string           | No         | -          | The version of the schema that this message conforms to.                  |
+| + [version](#header_version )                 | No      | string           | No         | -          | The semantic version of the schema that this message conforms to.         |
 | + [topic](#header_topic )                     | No      | enum (of string) | No         | -          | The Google Pub/Sub topic that this event was published to.                |
 | + [source](#header_source )                   | No      | string           | No         | -          | The microservice which published this event.                              |
 | + [channel](#header_channel )                 | No      | enum (of string) | No         | -          | The product which published this event.                                   |
@@ -124,12 +124,12 @@
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The version of the schema that this message conforms to.
+**Description:** The semantic version of the schema that this message conforms to.
 
 **Example:** 
 
 ```json
-"v1.0"
+"1.0.0"
 ```
 
 ### <a name="header_topic"></a>1.3. [Required] Property `Event > header > topic`
@@ -1364,4 +1364,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 13:19:18 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-06 at 14:01:41 +0100

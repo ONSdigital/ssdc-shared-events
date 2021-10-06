@@ -6,8 +6,8 @@
   "properties": {
     "version": {
       "type": "string",
-      "description": "The version of the schema that this message conforms to.",
-      "examples": ["v1.0"]
+      "description": "The semantic version of the schema that this message conforms to.",
+      "examples": ["1.0.0"]
     },
     "topic": {
       "type": "string",
