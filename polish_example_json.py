@@ -75,21 +75,24 @@ with open('event.example.json', 'r') as event_file:
                     event["payload"]["surveyUpdate"]["sampleDefinition"] = shape_file
                     event["payload"]["surveyUpdate"]["sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
 
-                if event_item["event"] == 'collectionExerciseUpdate' and survey_type["type"] == 'social':
-                    event["payload"]["collectionExerciseUpdate"] = {
-                        "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-                        "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-                        "name": "velit",
-                        "reference": "MVP012021",
-                        "startDate": "2021-09-17T23:59:59.999Z",
-                        "endDate": "2021-09-27T23:59:59.999Z",
-                        "metadata": {
-                            "numberOfWaves": "3",
-                            "waveLength": "2",
-                            "cohorts": "3",
-                            "cohortSchedule": "7"
+                if event_item["event"] == 'collectionExerciseUpdate':
+                    if survey_type["type"] == 'social':
+                        event["payload"]["collectionExerciseUpdate"] = {
+                            "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+                            "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+                            "name": "velit",
+                            "reference": "MVP012021",
+                            "startDate": "2021-09-17T23:59:59.999Z",
+                            "endDate": "2021-09-27T23:59:59.999Z",
+                            "metadata": {
+                                "numberOfWaves": "3",
+                                "waveLength": "2",
+                                "cohorts": "3",
+                                "cohortSchedule": "7"
+                            }
                         }
-                    }
+                    elif survey_type["type"] == 'sis':
+                        event["payload"]["collectionExerciseUpdate"]["metadata"] = None
 
                 with open(f'examples/{survey_type["type"]}/{event_item["event"]}.example.json', 'w+') as example_file:
                     json.dump(event, example_file, indent=2)

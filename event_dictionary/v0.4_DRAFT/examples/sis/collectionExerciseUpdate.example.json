@@ -2,7 +2,7 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_collection-exercise-update",
-    "source": "eiusmod in Lorem tempor nisi",
+    "source": "nulla dolore Duis",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,14 +12,12 @@
   "payload": {
     "collectionExerciseUpdate": {
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "reference": "incididunt ut",
+      "reference": "adipisicing cupidatat pariatur sint deserunt",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "aute labore velit",
+      "name": "ut non cupidatat id",
       "startDate": "1970-01-01T00:00:00.000Z",
       "endDate": "1970-01-01T00:00:00.000Z",
-      "metadata": {
-        "nonb2": true
-      }
+      "metadata": null
     }
   }
 }
