@@ -67,8 +67,13 @@ with open('event.example.json', 'r') as event_file:
                     event["payload"]["updateSampleSensitive"]["sampleSensitive"] = fake_sample_sensitive
 
                 if event_item["event"] == 'surveyUpdate':
-                    event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
-                    event["payload"]["surveyUpdate"]["sampleDefinition"] = f'{URL_PREFIX}{survey_type["shape"]}'
+                    if survey_type["type"] == 'social':
+                        event["payload"]["surveyUpdate"]["name"] = "LMS"
+                    else:
+                        event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
+
+                    event["payload"]["surveyUpdate"]["sampleDefinition"] = shape_file
+                    event["payload"]["surveyUpdate"]["sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
 
                 if event_item["event"] == 'collectionExerciseUpdate' and survey_type["type"] == 'social':
                     event["payload"]["collectionExerciseUpdate"] = {

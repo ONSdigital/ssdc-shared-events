@@ -28,12 +28,53 @@
             }
           ]
         },
-        "sampleDefinition": {
-          "description": "The definition of the sample.",
+        "sampleDefinitionUrl": {
+          "description": "The URL of the definition of the sample.",
           "type": "string",
           "examples": [
             "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/social/v0.1_DRAFT/social.json"
           ]
+        },
+        "sampleDefinition": {
+          "description": "The definition of the sample.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "columnName": {
+                "description": "The name of a column in the sample file.",
+                "type": "string",
+                "examples": ["addressLine1", "schoolName"]
+              },
+              "rules": {
+                "description": "The rules that data in sample file column must adhere to.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "className": {
+                      "type": "string",
+                      "description": "The class which implements the rule.",
+                      "enum": [
+                        "uk.gov.ons.ssdc.common.validation.InSetRule",
+                        "uk.gov.ons.ssdc.common.validation.LengthRule",
+                        "uk.gov.ons.ssdc.common.validation.MandatoryRule",
+                        "uk.gov.ons.ssdc.common.validation.RegexRule",
+                        "uk.gov.ons.ssdc.common.validation.UUIDRule"
+                      ]
+                    }
+                  },
+                  "required": ["className"]
+                }
+              },
+              "sensitive": {
+                "description": "Indicates that this sample file column contains personal (PII) sensitive data.",
+                "type": "boolean"
+              }
+            },
+            "required": ["columnName", "rules"],
+            "additionalProperties": false
+          }
         }
       },
       "required": ["surveyId", "name", "sampleDefinition"],
