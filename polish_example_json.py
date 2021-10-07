@@ -1,4 +1,6 @@
 import json
+import random
+import string
 from functools import reduce
 
 
@@ -7,7 +9,10 @@ def to_camel_case(snake_str):
     return reduce(lambda x, y: x + y.title(), components[1:], components[0])
 
 
+URL_PREFIX = 'https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/'
 events = []
+survey_types = [{'type': 'sis', 'shape': 'sis/v0.1_DRAFT/sis.json'},
+                {'type': 'social', 'shape': 'social/v0.1_DRAFT/social.json'}]
 
 with open('eventHeader.schema.json', 'r') as event_header_file:
     event_header = json.load(event_header_file)
@@ -19,64 +24,75 @@ with open('eventHeader.schema.json', 'r') as event_header_file:
 
 with open('event.example.json', 'r') as event_file:
     event = json.load(event_file)
-    event["header"]["version"] = 'v0.3_DRAFT'
+    event["header"]["version"] = '0.4.0-DRAFT'
     event["header"]["originatingUser"] = 'foo.bar@ons.gov.uk'
 
-    for event_item in events:
-        with open(f'{event_item["event"]}.example.json', 'r') as specific_event_file:
-            event["header"]["topic"] = event_item["topic"]
-            event["payload"] = json.load(specific_event_file)
+    for survey_type in survey_types:
+        with open(f"../../sample/{survey_type['shape']}", 'r') as shape_file:
+            shape_file = json.load(shape_file)
+            column_names = []
+            sensitive_column_names = []
 
-            if event_item["event"] == 'caseUpdate':
-                event["payload"]["caseUpdate"]["sample"] = {
-                    "addressLine1": "Flat 987, Magical Apartments",
-                    "addressLine2": "123 Fake Street",
-                    "addressLine3": "Some Suburb",
-                    "townName": "Fake Town",
-                    "postcode": "AB1 2ZX",
-                    "region": "W",
-                    "uprn": "123456789"
-                }
-                event["payload"]["caseUpdate"]["sampleSensitive"] = {
-                    "phoneNumber": "REDACTED"
-                }
+            for shape_config in shape_file:
+                is_sensitive = shape_config.get('sensitive')
+                column_name = shape_config['columnName']
+                if is_sensitive:
+                    sensitive_column_names.append(column_name)
+                else:
+                    column_names.append(column_name)
 
-            if event_item["event"] == 'newCase':
-                event["payload"]["newCase"]["sample"] = {
-                    "schoolId": "abc123",
-                    "schoolName": "Chesterthorps High School",
-                    "consentGivenTest": "true",
-                    "consentGivenSurvey": "true"
-                }
-                event["payload"]["newCase"]["sampleSensitive"] = {
-                    "firstName": "Fred",
-                    "lastName": "Bloggs",
-                    "childFirstName": "Jo",
-                    "childMiddleNames": "Rose May",
-                    "childLastName": "Pinker",
-                    "childDob": "2001-12-31",
-                    "additionalInfo": "Class 2A",
-                    "childMobileNumber": "07123456789",
-                    "childEmailAddress": "jo.rose.may.pinker@domain.com",
-                    "parentMobileNumber": "07123456789",
-                    "parentEmailAddress": "fred.bloggs@domain.com",
-                }
+        fake_sample = {sample_key: f"dummy_{''.join(random.choices(string.ascii_lowercase + string.digits, k=10))}"
+                       for sample_key in column_names}
 
-            if event_item["event"] == 'collectionExerciseUpdate':
-                event["payload"]["collectionExerciseUpdate"] = {
-                    "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-                    "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-                    "name": "velit",
-                    "reference": "MVP012021",
-                    "startDate": "2021-09-17T23:59:59.999Z",
-                    "endDate": "2021-09-27T23:59:59.999Z",
-                    "metadata": {
-                        "numberOfWaves": "3",
-                        "waveLength": "2",
-                        "cohorts": "3",
-                        "cohortSchedule": "7"
-                    }
-                }
+        fake_sample_sensitive = {
+            sample_key: f"dummy_{''.join(random.choices(string.ascii_lowercase + string.digits, k=10))}"
+            for sample_key in sensitive_column_names}
 
-            with open(f'examples/{event_item["event"]}.example.json', 'w+') as example_file:
-                json.dump(event, example_file, indent=2)
+        fake_sample_sensitive_redacted = {sample_key: "REDACTED" for sample_key in sensitive_column_names}
+
+        for event_item in events:
+            with open(f'{event_item["event"]}.example.json', 'r') as specific_event_file:
+                event["header"]["topic"] = event_item["topic"]
+                event["payload"] = json.load(specific_event_file)
+
+                if event_item["event"] == 'caseUpdate':
+                    event["payload"]["caseUpdate"]["sample"] = fake_sample
+                    event["payload"]["caseUpdate"]["sampleSensitive"] = fake_sample_sensitive_redacted
+
+                if event_item["event"] == 'newCase':
+                    event["payload"]["newCase"]["sample"] = fake_sample
+                    event["payload"]["newCase"]["sampleSensitive"] = fake_sample_sensitive
+
+                if event_item["event"] == 'updateSampleSensitive':
+                    event["payload"]["updateSampleSensitive"]["sampleSensitive"] = fake_sample_sensitive
+
+                if event_item["event"] == 'surveyUpdate':
+                    if survey_type["type"] == 'social':
+                        event["payload"]["surveyUpdate"]["name"] = "LMS"
+                    else:
+                        event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
+
+                    event["payload"]["surveyUpdate"]["sampleDefinition"] = shape_file
+                    event["payload"]["surveyUpdate"]["sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
+
+                if event_item["event"] == 'collectionExerciseUpdate':
+                    if survey_type["type"] == 'social':
+                        event["payload"]["collectionExerciseUpdate"] = {
+                            "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+                            "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+                            "name": "velit",
+                            "reference": "MVP012021",
+                            "startDate": "2021-09-17T23:59:59.999Z",
+                            "endDate": "2021-09-27T23:59:59.999Z",
+                            "metadata": {
+                                "numberOfWaves": "3",
+                                "waveLength": "2",
+                                "cohorts": "3",
+                                "cohortSchedule": "7"
+                            }
+                        }
+                    elif survey_type["type"] == 'sis':
+                        event["payload"]["collectionExerciseUpdate"]["metadata"] = None
+
+                with open(f'examples/{survey_type["type"]}/{event_item["event"]}.example.json', 'w+') as example_file:
+                    json.dump(event, example_file, indent=2)

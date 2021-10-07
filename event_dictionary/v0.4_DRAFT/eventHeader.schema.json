@@ -1,0 +1,73 @@
+{
+  "$id": "https://ons.gov.uk/eventHeader.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Event Header",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "The semantic version of the schema that this message conforms to.",
+      "examples": ["1.0.0"]
+    },
+    "topic": {
+      "type": "string",
+      "description": "The Google Pub/Sub topic that this event was published to.",
+      "enum": [
+        "event_case-update",
+        "event_collection-exercise-update",
+        "event_deactivate-uac",
+        "event_eq-launch",
+        "event_invalid-case",
+        "event_new-case",
+        "event_print-fulfilment",
+        "event_receipt",
+        "event_refusal",
+        "event_survey-update",
+        "event_uac-authentication",
+        "event_uac-update",
+        "event_update-sample-sensitive"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "description": "The microservice which published this event.",
+      "examples": ["Case Processor", "EQ Runner"]
+    },
+    "channel": {
+      "description": "The product which published this event.",
+      "type": "string",
+      "enum": ["EQ", "RH", "RM"]
+    },
+    "dateTime": {
+      "description": "When the event happened (this might not be when it was published).",
+      "type": "date-time",
+      "examples": ["2021-08-09T10:55.31.431Z"]
+    },
+    "messageId": {
+      "description": "A unique identifier for this message.",
+      "type": "uuid",
+      "examples": ["ccb71268-1f17-4811-b8f9-d6981a060ce7"]
+    },
+    "correlationId": {
+      "description": "A unique identifier for everything that relates to this event end-to-end.",
+      "type": "uuid",
+      "examples": ["82426ee7-d34a-49e6-8bc5-5cea7c14e735"]
+    },
+    "originatingUser": {
+      "description": "The user that initiated this event, for audit trail.",
+      "type": "string",
+      "examples": ["fred.bloggs@ons.gov.uk"]
+    }
+  },
+  "required": [
+    "version",
+    "topic",
+    "type",
+    "source",
+    "channel",
+    "dateTime",
+    "messageId",
+    "correlationId"
+  ],
+  "additionalProperties": false
+}

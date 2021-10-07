@@ -1,0 +1,86 @@
+{
+  "$id": "https://ons.gov.uk/surveyUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Survey Update",
+  "type": "object",
+  "properties": {
+    "surveyUpdate": {
+      "type": "object",
+      "properties": {
+        "surveyId": {
+          "description": "The ID of the survey.",
+          "type": "uuid",
+          "examples": ["21ce842b-4359-402a-9311-973f07d2d253"]
+        },
+        "name": {
+          "description": "The name of the survey.",
+          "type": "string",
+          "examples": ["LMS", "OPN", "RSI", "MBS", "Census", "CCS"]
+        },
+        "metadata": {
+          "description": "Metadata about the survey",
+          "type": "object",
+          "examples": [
+            {
+              "splines": 12,
+              "reticulation": ["foo", "bar"],
+              "gambertron": { "this": "that" }
+            }
+          ]
+        },
+        "sampleDefinitionUrl": {
+          "description": "The URL of the definition of the sample.",
+          "type": "string",
+          "examples": [
+            "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/social/v0.1_DRAFT/social.json"
+          ]
+        },
+        "sampleDefinition": {
+          "description": "The definition of the sample.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "columnName": {
+                "description": "The name of a column in the sample file.",
+                "type": "string",
+                "examples": ["addressLine1", "schoolName"]
+              },
+              "rules": {
+                "description": "The rules that data in sample file column must adhere to.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "className": {
+                      "type": "string",
+                      "description": "The class which implements the rule.",
+                      "enum": [
+                        "uk.gov.ons.ssdc.common.validation.InSetRule",
+                        "uk.gov.ons.ssdc.common.validation.LengthRule",
+                        "uk.gov.ons.ssdc.common.validation.MandatoryRule",
+                        "uk.gov.ons.ssdc.common.validation.RegexRule",
+                        "uk.gov.ons.ssdc.common.validation.UUIDRule"
+                      ]
+                    }
+                  },
+                  "required": ["className"]
+                }
+              },
+              "sensitive": {
+                "description": "Indicates that this sample file column contains personal (PII) sensitive data.",
+                "type": "boolean"
+              }
+            },
+            "required": ["columnName", "rules"],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": ["surveyId", "name", "sampleDefinition"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["surveyUpdate"],
+  "additionalProperties": false
+}

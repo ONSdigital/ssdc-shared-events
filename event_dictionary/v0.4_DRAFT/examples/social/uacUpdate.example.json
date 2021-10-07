@@ -1,0 +1,27 @@
+{
+  "header": {
+    "version": "0.4.0-DRAFT",
+    "topic": "event_uac-update",
+    "source": "eiusmod in Lorem tempor nisi",
+    "channel": "EQ",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "uacUpdate": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "active": false,
+      "uacHash": "esse aute",
+      "qid": "ipsum",
+      "receiptReceived": true,
+      "metadata": {
+        "Excepteur_e": false,
+        "magna_537": false,
+        "Ut6": 59279918.09707388
+      },
+      "eqLaunched": true
+    }
+  }
+}
