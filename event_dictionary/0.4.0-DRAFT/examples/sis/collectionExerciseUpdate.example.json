@@ -2,7 +2,7 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_collection-exercise-update",
-    "source": "nulla dolore Duis",
+    "source": "in laboris nostrud",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,9 +12,9 @@
   "payload": {
     "collectionExerciseUpdate": {
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "reference": "adipisicing cupidatat pariatur sint deserunt",
+      "reference": "ullamco et elit",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "ut non cupidatat id",
+      "name": "ullamco",
       "startDate": "1970-01-01T00:00:00.000Z",
       "endDate": "1970-01-01T00:00:00.000Z",
       "metadata": null

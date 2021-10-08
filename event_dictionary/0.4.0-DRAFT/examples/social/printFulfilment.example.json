@@ -1,8 +1,8 @@
 {
   "header": {
     "version": "0.4.0-DRAFT",
-    "topic": "event_receipt",
-    "source": "eiusmod in Lorem tempor nisi",
+    "topic": "event_print-fulfilment",
+    "source": "in laboris nostrud",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,8 +10,13 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "receipt": {
-      "qid": "labore in reprehenderit quis tempor"
+    "printFulfilment": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "packCode": "eiusmod do non sit",
+      "uacMetadata": {
+        "ex_1a7": false,
+        "fugiat_0b": 3421447.207264766
+      }
     }
   }
 }

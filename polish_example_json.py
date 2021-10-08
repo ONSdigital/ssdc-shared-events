@@ -11,8 +11,8 @@ def to_camel_case(snake_str):
 
 URL_PREFIX = 'https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/'
 events = []
-survey_types = [{'type': 'sis', 'shape': 'sis/v0.1_DRAFT/sis.json'},
-                {'type': 'social', 'shape': 'social/v0.1_DRAFT/social.json'}]
+survey_types = [{'type': 'sis', 'shape': 'sis/0.1.0-DRAFT/sis.json'},
+                {'type': 'social', 'shape': 'social/0.1.0-DRAFT/social.json'}]
 
 with open('eventHeader.schema.json', 'r') as event_header_file:
     event_header = json.load(event_header_file)
