@@ -2,7 +2,7 @@
   "header": {
     "version": "0.4.0-DRAFT",
     "topic": "event_case-update",
-    "source": "eiusmod in Lorem tempor nisi",
+    "source": "Lorem",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,22 +12,25 @@
   "payload": {
     "caseUpdate": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseRef": "cillum mollit quis in non",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "invalid": true,
-      "refusalReceived": "EXTRAORDINARY_REFUSAL",
+      "invalid": false,
+      "refusalReceived": "SOFT_REFUSAL",
       "sample": {
-        "addressLine1": "dummy_1x3pmrmbpv",
-        "addressLine2": "dummy_px5rq6ks8k",
-        "addressLine3": "dummy_verdbhhdvb",
-        "townName": "dummy_tm9eerhev4",
-        "postcode": "dummy_r6u3zw5zmj",
-        "region": "dummy_gxmh0zmp9z",
-        "uprn": "dummy_se6vorcfe7"
+        "addressLine1": "dummy_csd23q1ats",
+        "addressLine2": "dummy_kvgt5h1c6z",
+        "addressLine3": "dummy_11yp8dp6m6",
+        "townName": "dummy_1onpc4bqia",
+        "postcode": "dummy_medmmcradf",
+        "region": "dummy_zjih3d6hm0",
+        "uprn": "dummy_nuocd5juqj"
       },
       "sampleSensitive": {
         "phoneNumber": "REDACTED"
-      }
+      },
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "lastUpdatedAt": "1970-01-01T00:00:00.000Z"
     }
   }
 }

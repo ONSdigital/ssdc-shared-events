@@ -14,12 +14,15 @@
   - [2.1. Property `Event > payload > oneOf > caseUpdate.schema.json`](#payload_oneOf_i0)
     - [2.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate`](#payload_oneOf_i0_caseUpdate)
       - [2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`](#payload_oneOf_i0_caseUpdate_caseId)
-      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`](#payload_oneOf_i0_caseUpdate_surveyId)
-      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`](#payload_oneOf_i0_caseUpdate_collectionExerciseId)
-      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
-      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
-      - [2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
-      - [2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
+      - [2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > caseRef`](#payload_oneOf_i0_caseUpdate_caseRef)
+      - [2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`](#payload_oneOf_i0_caseUpdate_surveyId)
+      - [2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`](#payload_oneOf_i0_caseUpdate_collectionExerciseId)
+      - [2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`](#payload_oneOf_i0_caseUpdate_invalid)
+      - [2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`](#payload_oneOf_i0_caseUpdate_refusalReceived)
+      - [2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`](#payload_oneOf_i0_caseUpdate_sample)
+      - [2.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`](#payload_oneOf_i0_caseUpdate_sampleSensitive)
+      - [2.1.1.9. Property `Event > payload > oneOf > Case Update > caseUpdate > createdAt`](#payload_oneOf_i0_caseUpdate_createdAt)
+      - [2.1.1.10. Property `Event > payload > oneOf > Case Update > caseUpdate > lastUpdatedAt`](#payload_oneOf_i0_caseUpdate_lastUpdatedAt)
   - [2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`](#payload_oneOf_i1)
     - [2.2.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate`](#payload_oneOf_i1_collectionExerciseUpdate)
       - [2.2.1.1. Property `Event > payload > oneOf > Collection Exercise Update > collectionExerciseUpdate > collectionExerciseId`](#payload_oneOf_i1_collectionExerciseUpdate_collectionExerciseId)
@@ -304,12 +307,15 @@ Must be one of:
 | Property                                                                     | Pattern | Type                       | Deprecated | Definition | Title/Description                                       |
 | ---------------------------------------------------------------------------- | ------- | -------------------------- | ---------- | ---------- | ------------------------------------------------------- |
 | + [caseId](#payload_oneOf_i0_caseUpdate_caseId )                             | No      | uuid                       | No         | -          | The ID of the case.                                     |
+| + [caseRef](#payload_oneOf_i0_caseUpdate_caseRef )                           | No      | string                     | No         | -          | A unique reference number identifying this case.        |
 | + [surveyId](#payload_oneOf_i0_caseUpdate_surveyId )                         | No      | uuid                       | No         | -          | The ID of the survey this case belongs to.              |
 | + [collectionExerciseId](#payload_oneOf_i0_caseUpdate_collectionExerciseId ) | No      | uuid                       | No         | -          | The ID of the collection exercise this case belongs to. |
 | + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                           | No      | boolean                    | No         | -          | This case is not valid.                                 |
 | + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived )           | No      | enum (of string or string) | No         | -          | If and why the case has been refused by the respondent. |
 | + [sample](#payload_oneOf_i0_caseUpdate_sample )                             | No      | object                     | No         | -          | The original sample data.                               |
 | + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive )           | No      | object                     | No         | -          | Redacted Personally Identifiable Information (PII).     |
+| + [createdAt](#payload_oneOf_i0_caseUpdate_createdAt )                       | No      | date-time                  | No         | -          | When the case was first created.                        |
+| + [lastUpdatedAt](#payload_oneOf_i0_caseUpdate_lastUpdatedAt )               | No      | date-time                  | No         | -          | When the case was last updated.                         |
 |                                                                              |         |                            |            |            |                                                         |
 
 ##### <a name="payload_oneOf_i0_caseUpdate_caseId"></a>2.1.1.1. Property `Event > payload > oneOf > Case Update > caseUpdate > caseId`
@@ -327,7 +333,22 @@ Must be one of:
 "bcb61268-1f17-4811-b8f9-e6981a060ce6"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_surveyId"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`
+##### <a name="payload_oneOf_i0_caseUpdate_caseRef"></a>2.1.1.2. Property `Event > payload > oneOf > Case Update > caseUpdate > caseRef`
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** A unique reference number identifying this case.
+
+**Example:** 
+
+```json
+"12345678901"
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_surveyId"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > surveyId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -342,7 +363,7 @@ Must be one of:
 "d62b7263-9943-4607-9d53-087c02002cef"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_collectionExerciseId"></a>2.1.1.3. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`
+##### <a name="payload_oneOf_i0_caseUpdate_collectionExerciseId"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > collectionExerciseId`
 
 | Type                      | `uuid`                                                                    |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -357,7 +378,7 @@ Must be one of:
 "415fe420-80db-4ca6-a577-667fd6ba1463"
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.4. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
+##### <a name="payload_oneOf_i0_caseUpdate_invalid"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > invalid`
 
 | Type                      | `boolean`                                                                 |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -376,7 +397,7 @@ true
 false
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.5. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
+##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
 
 | Type                      | `enum (of string or string)`                                              |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -391,7 +412,7 @@ Must be one of:
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
 
-##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
+##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -411,7 +432,7 @@ Must be one of:
 }
 ```
 
-##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
+##### <a name="payload_oneOf_i0_caseUpdate_sampleSensitive"></a>2.1.1.8. Property `Event > payload > oneOf > Case Update > caseUpdate > sampleSensitive`
 
 | Type                      | `object`                                                                  |
 | ------------------------- | ------------------------------------------------------------------------- |
@@ -429,6 +450,36 @@ Must be one of:
     "FIRST_NAME": "",
     "LAST_NAME": "REDACTED"
 }
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_createdAt"></a>2.1.1.9. Property `Event > payload > oneOf > Case Update > caseUpdate > createdAt`
+
+| Type                      | `date-time`                                                               |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** When the case was first created.
+
+**Example:** 
+
+```json
+"2021-08-09T10:55.31.431Z"
+```
+
+##### <a name="payload_oneOf_i0_caseUpdate_lastUpdatedAt"></a>2.1.1.10. Property `Event > payload > oneOf > Case Update > caseUpdate > lastUpdatedAt`
+
+| Type                      | `date-time`                                                               |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** When the case was last updated.
+
+**Example:** 
+
+```json
+"2021-08-09T10:55.31.431Z"
 ```
 
 ### <a name="payload_oneOf_i1"></a>2.2. Property `Event > payload > oneOf > collectionExerciseUpdate.schema.json`
@@ -1488,4 +1539,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-07 at 08:47:45 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-08 at 16:07:32 +0100

@@ -12,6 +12,11 @@
           "type": "uuid",
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
+        "caseRef": {
+          "description": "A unique reference number identifying this case.",
+          "type": "string",
+          "examples": ["12345678901"]
+        },
         "surveyId": {
           "description": "The ID of the survey this case belongs to.",
           "type": "uuid",
@@ -60,16 +65,29 @@
               "LAST_NAME": "REDACTED"
             }
           ]
+        },
+        "createdAt": {
+          "description": "When the case was first created.",
+          "type": "date-time",
+          "examples": ["2021-08-09T10:55.31.431Z"]
+        },
+        "lastUpdatedAt": {
+          "description": "When the case was last updated.",
+          "type": "date-time",
+          "examples": ["2021-08-09T10:55.31.431Z"]
         }
       },
       "required": [
         "caseId",
+        "caseRef",
         "surveyId",
         "collectionExerciseId",
         "invalid",
         "refusalReceived",
         "sample",
-        "sampleSensitive"
+        "sampleSensitive",
+        "createdAt",
+        "lastUpdatedAt"
       ],
       "additionalProperties": false
     }
