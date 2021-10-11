@@ -1,7 +1,7 @@
 {
   "header": {
-    "version": "0.4.0-DRAFT",
-    "topic": "event_case-update",
+    "version": "0.4.0",
+    "topic": "event_new-case",
     "source": "in laboris nostrud",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
@@ -10,13 +10,9 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "caseUpdate": {
+    "newCase": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "caseRef": "occaecat quis qui",
-      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "invalid": false,
-      "refusalReceived": "SOFT_REFUSAL",
       "sample": {
         "addressLine1": "dummy_luuiozm5os",
         "addressLine2": "dummy_6652t6s64s",
@@ -27,10 +23,8 @@
         "uprn": "dummy_gtwpzjnhzt"
       },
       "sampleSensitive": {
-        "phoneNumber": "REDACTED"
-      },
-      "createdAt": "1970-01-01T00:00:00.000Z",
-      "lastUpdatedAt": "1970-01-01T00:00:00.000Z"
+        "phoneNumber": "dummy_d6wvfq7cpd"
+      }
     }
   }
 }
