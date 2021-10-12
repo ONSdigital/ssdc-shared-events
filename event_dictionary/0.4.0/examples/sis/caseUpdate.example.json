@@ -1,7 +1,7 @@
 {
   "header": {
-    "version": "0.4.0-DRAFT",
-    "topic": "event_new-case",
+    "version": "0.4.0",
+    "topic": "event_case-update",
     "source": "in laboris nostrud",
     "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
@@ -10,9 +10,13 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "newCase": {
+    "caseUpdate": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseRef": "occaecat quis qui",
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "invalid": false,
+      "refusalReceived": "SOFT_REFUSAL",
       "sample": {
         "schoolId": "dummy_gk8tds6rch",
         "schoolName": "dummy_2uhoe5iq3y",
@@ -20,15 +24,17 @@
         "consentGivenSurvey": "dummy_a7c43ebvr7"
       },
       "sampleSensitive": {
-        "firstName": "dummy_kgfc449te6",
-        "lastName": "dummy_c8b5do35jc",
-        "childFirstName": "dummy_ql8tqykel3",
-        "childMiddleNames": "dummy_dhz0ll2nfp",
-        "childLastName": "dummy_7q8vzipzlw",
-        "childDob": "dummy_d4jr4jxnhs",
-        "mobileNumber": "dummy_wpdxl6fcry",
-        "emailAddress": "dummy_jtgjo77870"
-      }
+        "firstName": "REDACTED",
+        "lastName": "REDACTED",
+        "childFirstName": "REDACTED",
+        "childMiddleNames": "REDACTED",
+        "childLastName": "REDACTED",
+        "childDob": "REDACTED",
+        "mobileNumber": "REDACTED",
+        "emailAddress": "REDACTED"
+      },
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "lastUpdatedAt": "1970-01-01T00:00:00.000Z"
     }
   }
 }
