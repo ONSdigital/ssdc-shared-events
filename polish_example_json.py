@@ -48,7 +48,8 @@ with open('event.example.json', 'r') as event_file:
             sample_key: f"dummy_{''.join(random.choices(string.ascii_lowercase + string.digits, k=10))}"
             for sample_key in sensitive_column_names}
 
-        fake_sample_sensitive_redacted = {sample_key: "REDACTED" for sample_key in sensitive_column_names}
+        fake_sample_sensitive_redacted = {
+            sample_key: "REDACTED" for sample_key in sensitive_column_names}
 
         for event_item in events:
             with open(f'{event_item["event"]}.example.json', 'r') as specific_event_file:
@@ -73,7 +74,12 @@ with open('event.example.json', 'r') as event_file:
                         event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
 
                     event["payload"]["surveyUpdate"]["sampleDefinition"] = shape_file
-                    event["payload"]["surveyUpdate"]["sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
+                    event["payload"]["surveyUpdate"][
+                        "sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
+
+                if event_item["event"] == 'uacUpdate':
+                    if survey_type["type"] == 'social':
+                        event["payload"]["uacUpdate"]["metadata"] = {"wave": 3}
 
                 if event_item["event"] == 'collectionExerciseUpdate':
                     if survey_type["type"] == 'social':
