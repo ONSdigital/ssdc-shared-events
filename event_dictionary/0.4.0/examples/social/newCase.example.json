@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0",
     "topic": "event_new-case",
-    "source": "in laboris nostrud",
-    "channel": "EQ",
+    "source": "qui Lorem",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -14,16 +14,23 @@
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sample": {
-        "addressLine1": "dummy_luuiozm5os",
-        "addressLine2": "dummy_6652t6s64s",
-        "addressLine3": "dummy_medmgeby53",
-        "townName": "dummy_kw2qvwujvh",
-        "postcode": "dummy_3hrym52s0a",
-        "region": "dummy_3nb08gt9e8",
-        "uprn": "dummy_gtwpzjnhzt"
+        "questionnaire": "dummy_h9dde7xw8h",
+        "sampleUnitRef": "dummy_lkbwdc08ep",
+        "cohort": "dummy_hnozfem1bd",
+        "addressLine1": "dummy_k5lxs8wizx",
+        "addressLine2": "dummy_xkcek6psr6",
+        "addressLine3": "dummy_kxu7e1bx6d",
+        "townName": "dummy_713w45gtsp",
+        "postcode": "dummy_3azwhiqxld",
+        "country": "dummy_vg3is8ehi9",
+        "gor9d": "dummy_ucsso9e8bd",
+        "laCode": "dummy_7sjljns6cb",
+        "uprn": "dummy_tkk40qnnpa",
+        "uprnLatitude": "dummy_v0di95xo3l",
+        "uprnLongitude": "dummy_p99ayrv8ms"
       },
       "sampleSensitive": {
-        "phoneNumber": "dummy_d6wvfq7cpd"
+        "telNumber": "dummy_6j23scwwn6"
       }
     }
   }
