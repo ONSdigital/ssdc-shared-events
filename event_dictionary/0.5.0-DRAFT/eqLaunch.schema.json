@@ -1,0 +1,22 @@
+{
+  "$id": "https://ons.gov.uk/eqLaunch.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EQ Launch",
+  "type": "object",
+  "properties": {
+    "eqLaunch": {
+      "type": "object",
+      "properties": {
+        "qid": {
+          "description": "QID linked to UAC used to launch EQ.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        }
+      },
+      "required": ["qid"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["eqLaunch"],
+  "additionalProperties": false
+}

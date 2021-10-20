@@ -1,0 +1,31 @@
+{
+  "$id": "https://ons.gov.uk/updateSampleSensitive.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Update Sample Sensitive",
+  "type": "object",
+  "properties": {
+    "updateSampleSensitive": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case which is being updated.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "sampleSensitive": {
+          "description": "Personally Identifiable Information (PII) updates for GDPR compliance.",
+          "type": "object",
+          "examples": [
+            {
+              "EMAIL_ADDRESS": "updated.email@somedomain.com"
+            }
+          ]
+        }
+      },
+      "required": ["caseId", "sampleSensitive"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["updateSampleSensitive"],
+  "additionalProperties": false
+}
