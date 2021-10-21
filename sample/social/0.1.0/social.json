@@ -12,18 +12,6 @@
     ]
   },
   {
-    "columnName": "sampleUnitRef",
-    "rules": [
-      {
-        "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
-      },
-      {
-        "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
-        "maxLength": 5
-      }
-    ]
-  },
-  {
     "columnName": "cohort",
     "rules": [
       {
@@ -81,12 +69,12 @@
       },
       {
         "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
-        "maxLength": 8
+        "maxLength": 9
       },
       {
         "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
-        "expression": "^[a-zA-Z0-9]+$"
-      },
+        "expression": "^[a-zA-Z0-9 ]*$"
+      }
     ]
   },
   {
