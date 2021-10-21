@@ -13,7 +13,7 @@
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
         "sample": {
-          "description": "The sample data.",
+          "description": "The updated sample data.",
           "type": "object",
           "examples": [
             {
