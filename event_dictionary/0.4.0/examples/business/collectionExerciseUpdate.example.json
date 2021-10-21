@@ -1,0 +1,27 @@
+{
+  "header": {
+    "version": "0.4.0",
+    "topic": "event_collection-exercise-update",
+    "source": "exercitation",
+    "channel": "RH",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "collectionExerciseUpdate": {
+      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "reference": "officia magna aliquip",
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "name": "voluptate sit aute",
+      "startDate": "1970-01-01T00:00:00.000Z",
+      "endDate": "1970-01-01T00:00:00.000Z",
+      "metadata": {
+        "mollit_4": "dolore Duis Ut officia",
+        "quis_2f9": true,
+        "commodo_a84": -97220338
+      }
+    }
+  }
+}
