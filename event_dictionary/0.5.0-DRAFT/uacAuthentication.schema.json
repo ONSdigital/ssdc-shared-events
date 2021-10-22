@@ -1,0 +1,22 @@
+{
+  "$id": "https://ons.gov.uk/uacAuthentication.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UAC Authentication",
+  "type": "object",
+  "properties": {
+    "uacAuthentication": {
+      "type": "object",
+      "properties": {
+        "qid": {
+          "description": "QID linked to UAC used to authenticate.",
+          "type": "string",
+          "examples": ["0130000000100142"]
+        }
+      },
+      "required": ["qid"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["uacAuthentication"],
+  "additionalProperties": false
+}

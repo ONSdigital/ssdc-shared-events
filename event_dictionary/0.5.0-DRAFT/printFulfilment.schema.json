@@ -1,0 +1,32 @@
+{
+  "$id": "https://ons.gov.uk/printFulfilment.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Print Fulfilment",
+  "type": "object",
+  "properties": {
+    "printFulfilment": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case that is requesting a printed paper item to be posted.",
+          "type": "uuid",
+          "examples": ["acb61268-1f17-4811-b8f9-d6981a060ce5"]
+        },
+        "packCode": {
+          "description": "Pack code of the product in the product library for print & post.",
+          "type": "string",
+          "examples": ["REPLACEMENT_UAC_LETTER", "INFORMATION_BOOKLET"]
+        },
+        "uacMetadata": {
+          "description": "Any metadata needed to be added to UACs created by the fulfilment.",
+          "type": "object",
+          "examples": [{ "wave": 1 }]
+        }
+      },
+      "required": ["caseId", "packCode"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["printFulfilment"],
+  "additionalProperties": false
+}
