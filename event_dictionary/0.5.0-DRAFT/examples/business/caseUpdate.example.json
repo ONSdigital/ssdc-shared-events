@@ -1,0 +1,54 @@
+{
+  "header": {
+    "version": "0.4.0",
+    "topic": "event_case-update",
+    "source": "consequat ea irure exercitation",
+    "channel": "RM",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "caseUpdate": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseRef": "do sint",
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "invalid": false,
+      "refusalReceived": null,
+      "sample": {
+        "ruref": "dummy_n4cev279ex",
+        "checkletter": "dummy_a813ad134o",
+        "frosic92": "dummy_clxq8d36rp",
+        "rusic92": "dummy_ue8n081ky8",
+        "frosic2007": "dummy_dqdjykwj8w",
+        "rusic2007": "dummy_tekpxi9glt",
+        "froempment": "dummy_g2auu2u685",
+        "frotover": "dummy_i3p2li3t27",
+        "entref": "dummy_30hkjimp7f",
+        "legalstatus": "dummy_lt4prqlle7",
+        "entrepmkr": "dummy_cy3hz4voy5",
+        "region": "dummy_s3mumy1r6z",
+        "birthdate": "dummy_yr74xykykk",
+        "entname1": "dummy_pwj4vt0epr",
+        "entname2": "dummy_2x0qhs511i",
+        "entname3": "dummy_0ssrg9cz3o",
+        "runame1": "dummy_y2hveyt5v8",
+        "runame2": "dummy_qfcxmappmj",
+        "runame3": "dummy_emv6aa2q5i",
+        "tradstyle1": "dummy_v9bkhgvs5q",
+        "tradstyle2": "dummy_v5fkyp30po",
+        "tradstyle3": "dummy_rs1x9yep1t",
+        "seltype": "dummy_r76yr80xnq",
+        "inclexcl": "dummy_n28ak2p8ss",
+        "cell_no": "dummy_sqjiw8mq82",
+        "formtype": "dummy_7yeyptn1w6",
+        "currency": "dummy_px0xcy2cmk"
+      },
+      "sampleSensitive": {},
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "lastUpdatedAt": "1970-01-01T00:00:00.000Z"
+    }
+  }
+}

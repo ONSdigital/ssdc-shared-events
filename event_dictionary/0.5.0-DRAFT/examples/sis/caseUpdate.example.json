@@ -1,8 +1,8 @@
 {
   "header": {
-    "version": "0.5.0-DRAFT",
+    "version": "0.4.0",
     "topic": "event_case-update",
-    "source": "sunt dolore proident",
+    "source": "consequat ea irure exercitation",
     "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,16 +12,16 @@
   "payload": {
     "caseUpdate": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "caseRef": "ad tempor",
+      "caseRef": "do sint",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "invalid": false,
       "refusalReceived": null,
       "sample": {
-        "schoolId": "dummy_1t8dppsdi6",
-        "schoolName": "dummy_8ys86auxq2",
-        "consentGivenTest": "dummy_4g1nz241ns",
-        "consentGivenSurvey": "dummy_bjyv43m8gk"
+        "schoolId": "dummy_vhgqk1rc7h",
+        "schoolName": "dummy_h22dllmgg8",
+        "consentGivenTest": "dummy_zu886w2ta4",
+        "consentGivenSurvey": "dummy_8uw0mcbjuw"
       },
       "sampleSensitive": {
         "firstName": "REDACTED",

@@ -1,8 +1,8 @@
 {
   "header": {
-    "version": "0.5.0-DRAFT",
+    "version": "0.4.0",
     "topic": "event_case-update",
-    "source": "sunt dolore proident",
+    "source": "consequat ea irure exercitation",
     "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,19 +12,19 @@
   "payload": {
     "caseUpdate": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "caseRef": "ad tempor",
+      "caseRef": "do sint",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "invalid": false,
       "refusalReceived": null,
       "sample": {
-        "addressLine1": "dummy_cjpb1s8p7f",
-        "addressLine2": "dummy_51922vokol",
-        "addressLine3": "dummy_x210ppwuhz",
-        "townName": "dummy_u0ixlvjmt1",
-        "postcode": "dummy_w9v2trukyd",
-        "region": "dummy_b4ojzu790h",
-        "uprn": "dummy_ps60opu2fd"
+        "addressLine1": "dummy_6tv4haf372",
+        "addressLine2": "dummy_ltf8yvdqr0",
+        "addressLine3": "dummy_qeaswr6w6e",
+        "townName": "dummy_raq5o42ed5",
+        "postcode": "dummy_l4vd11fr88",
+        "region": "dummy_zilo4i1kik",
+        "uprn": "dummy_w8uvzjsr5q"
       },
       "sampleSensitive": {
         "phoneNumber": "REDACTED"
