@@ -2,8 +2,8 @@
   "header": {
     "version": "0.4.0",
     "topic": "event_refusal",
-    "source": "qui Lorem",
-    "channel": "RH",
+    "source": "do cillum",
+    "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,7 +12,7 @@
   "payload": {
     "refusal": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "type": "EXTRAORDINARY_REFUSAL"
+      "type": "HARD_REFUSAL"
     }
   }
 }
