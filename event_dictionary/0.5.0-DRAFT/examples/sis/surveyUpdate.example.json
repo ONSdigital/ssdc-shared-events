@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "elit Ut pariatur consectetur",
-    "channel": "RM",
+    "source": "ipsum in dolor magna",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -150,95 +150,52 @@
       "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
       "allowedPrintFulfilments": [
         {
-          "packCode": "incididunt veniam cillum dolore",
-          "description": "sit irure in in ipsum",
-          "amet_6_a": 28321826.89663823,
-          "commodo320": 98963145.4110398,
-          "Duisc9": true,
-          "ipsum_6": "occaecat",
-          "amet4": true
-        },
-        {
+          "packCode": "nisi deserunt cupidatat",
+          "description": "sint aute pariatur elit",
           "metadata": {
-            "utb_3": false,
-            "dolorc2_": -25381302,
-            "pariatur_5_e": "consectetur",
-            "esse62": 53742771
-          },
-          "description": "Duis",
-          "packCode": "culpa",
-          "culpa7c": false,
-          "sint92": 93846272.34502584,
-          "sint__": -80706836,
-          "ullamco_28b": -46913236,
-          "mollit_8": "aliquip"
-        },
-        {
-          "description": "exercitation ipsum id",
-          "packCode": "dolor nulla sit culpa",
-          "metadata": {
-            "esse_5d1": 77297937.88585776,
-            "nisif48": false,
-            "dolore__bb": true
-          },
-          "adipisicing_3d9": -72926390,
-          "ut18": -1793354,
-          "sed5c": "proident adipisicing"
+            "et_e": 40030685.204725325
+          }
         }
       ],
-      "metadata": {
-        "adipisicing_c": -23468104.84502986,
-        "dolor3": 17943068.107940927,
-        "irure_5d0": 29919558
-      },
       "allowedSmsFulfilments": [
         {
-          "minim_52": -14469647.248472124,
-          "incididunt_76e": "ex dolor dolore dolor Excepteur",
-          "qui8": 77596635.9837406,
-          "labore7b2": 8052074,
-          "dolor0a": -45114089
-        },
-        {
-          "description": "eiusmod anim Lorem qui aliqua",
-          "packCode": "deserunt sit nisi anim culpa",
+          "packCode": "labore Ut",
+          "description": "ea",
           "metadata": {
-            "quis7": "velit dolore voluptate minim"
+            "voluptate_2ba": false
           }
         },
         {
-          "packCode": "incididunt ullamco dolor",
-          "metadata": {
-            "est7f_": -71219666,
-            "aliquip7f5": false,
-            "Lorem1": 7890892
-          },
-          "description": "qui eu"
+          "packCode": "nisi occaecat in",
+          "description": "voluptate"
         },
         {
+          "packCode": "incididunt proident consequat",
+          "description": "incididunt commodo officia culpa",
           "metadata": {
-            "pariatur_0_2": 22046425.991316587,
-            "incididunt_d": false,
-            "eiusmodd": 46285429,
-            "nostrud_b26": "ex incididunt id",
-            "proident88": true
-          },
-          "description": "Lorem",
-          "packCode": "cupidatat laboris officia nostrud",
-          "nisida": "tempor ut dolor velit",
-          "amet612": 91640540,
-          "ut4": 96393437.3650969,
-          "culpa4": true,
-          "officia_e95": false
+            "id_8c3": true
+          }
         },
         {
+          "packCode": "cillum est",
+          "description": "laboris",
           "metadata": {
-            "ut_70": "veniam"
-          },
-          "packCode": "laborum ipsum aliquip tempor",
-          "description": "in"
+            "ipsum3": "occaecat do consectetur"
+          }
+        },
+        {
+          "packCode": "dolore",
+          "description": "sed commodo est consectetur",
+          "metadata": {
+            "commodo_80": -12578590.52854906,
+            "dolor8_9": "sit",
+            "voluptate515": -57351755.65312076
+          }
         }
-      ]
+      ],
+      "metadata": {
+        "irure6f3": -90426048
+      }
     }
   }
 }

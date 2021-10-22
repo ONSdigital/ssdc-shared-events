@@ -97,7 +97,9 @@
                 "type": "object",
                 "examples": [{ "suitableRegions": ["E", "N"] }]
               }
-            }
+            },
+            "required": ["packCode", "description"],
+            "additionalProperties": false
           }
         },
         "allowedSmsFulfilments": {
@@ -121,7 +123,9 @@
                 "type": "object",
                 "examples": [{ "suitableRegions": ["W"] }]
               }
-            }
+            },
+            "required": ["packCode", "description"],
+            "additionalProperties": false
           }
         }
       },
@@ -129,7 +133,9 @@
         "surveyId",
         "name",
         "sampleDefinition",
-        "sampleDefinitionUrl"
+        "sampleDefinitionUrl",
+        "allowedPrintFulfilments",
+        "allowedSmsFulfilments"
       ],
       "additionalProperties": false
     }

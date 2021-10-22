@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "elit Ut pariatur consectetur",
-    "channel": "RM",
+    "source": "ipsum in dolor magna",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -114,11 +114,6 @@
           }
         }
       ],
-      "metadata": {
-        "adipisicing_c": -23468104.84502986,
-        "dolor3": 17943068.107940927,
-        "irure_5d0": 29919558
-      },
       "allowedSmsFulfilments": [
         {
           "packCode": "replace-uac-en",
@@ -139,7 +134,10 @@
             ]
           }
         }
-      ]
+      ],
+      "metadata": {
+        "irure6f3": -90426048
+      }
     }
   }
 }
