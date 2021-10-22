@@ -1,0 +1,97 @@
+{
+  "$id": "https://ons.gov.uk/caseUpdate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Case Update",
+  "type": "object",
+  "properties": {
+    "caseUpdate": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "caseRef": {
+          "description": "A unique reference number identifying this case.",
+          "type": "string",
+          "examples": ["12345678901"]
+        },
+        "surveyId": {
+          "description": "The ID of the survey this case belongs to.",
+          "type": "uuid",
+          "examples": ["d62b7263-9943-4607-9d53-087c02002cef"]
+        },
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise this case belongs to.",
+          "type": "uuid",
+          "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
+        },
+        "invalid": {
+          "description": "This case is not valid.",
+          "type": "boolean",
+          "examples": [true, false]
+        },
+        "refusalReceived": {
+          "description": "If and why the case has been refused by the respondent.",
+          "type": "string",
+          "enum": [
+            null,
+            "HARD_REFUSAL",
+            "EXTRAORDINARY_REFUSAL",
+            "SOFT_REFUSAL"
+          ]
+        },
+        "sample": {
+          "description": "The original sample data.",
+          "type": "object",
+          "examples": [
+            {
+              "VESSEL_NAME": "HMS Sailalot",
+              "MARINA_BERTH": "101 North",
+              "PONTOON": "West Basin",
+              "MARINA": "Port Hamble"
+            }
+          ]
+        },
+        "sampleSensitive": {
+          "description": "Redacted Personally Identifiable Information (PII).",
+          "type": "object",
+          "examples": [
+            {
+              "PHONE_NUMBER": "",
+              "EMAIL_ADDRESS": "REDACTED",
+              "FIRST_NAME": "",
+              "LAST_NAME": "REDACTED"
+            }
+          ]
+        },
+        "createdAt": {
+          "description": "When the case was first created.",
+          "type": "date-time",
+          "examples": ["2021-08-09T10:55.31.431Z"]
+        },
+        "lastUpdatedAt": {
+          "description": "When the case was last updated.",
+          "type": "date-time",
+          "examples": ["2021-08-09T10:55.31.431Z"]
+        }
+      },
+      "required": [
+        "caseId",
+        "caseRef",
+        "surveyId",
+        "collectionExerciseId",
+        "invalid",
+        "refusalReceived",
+        "sample",
+        "sampleSensitive",
+        "createdAt",
+        "lastUpdatedAt"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["caseUpdate"],
+  "additionalProperties": false
+}

@@ -1,0 +1,63 @@
+{
+  "$id": "https://ons.gov.uk/newCase.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "New Case",
+  "type": "object",
+  "properties": {
+    "newCase": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the new case.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise this new case will belong to.",
+          "type": "uuid",
+          "examples": ["415fe420-80db-4ca6-a577-667fd6ba1463"]
+        },
+        "sample": {
+          "description": "The sample data.",
+          "type": "object",
+          "examples": [
+            {
+              "schoolId": "abc123",
+              "schoolName": "Chesterthorps High School",
+              "consentGivenTest": "true",
+              "consentGivenSurvey": "true"
+            }
+          ]
+        },
+        "sampleSensitive": {
+          "description": "Personally Identifiable Information (PII).",
+          "type": "object",
+          "examples": [
+            {
+              "firstName": "Fred",
+              "lastName": "Bloggs",
+              "childFirstName": "Jo",
+              "childMiddleNames": "Rose May",
+              "childLastName": "Pinker",
+              "childDob": "2001-12-31",
+              "additionalInfo": "Class 2A",
+              "childMobileNumber": "07123456789",
+              "childEmailAddress": "jo.rose.may.pinker@domain.com",
+              "parentMobileNumber": "07123456789",
+              "parentEmailAddress": "fred.bloggs@domain.com"
+            }
+          ]
+        }
+      },
+      "required": [
+        "caseId",
+        "collectionExerciseId",
+        "sample",
+        "sampleSensitive"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": ["newCase"],
+  "additionalProperties": false
+}

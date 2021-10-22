@@ -1,0 +1,36 @@
+{
+  "header": {
+    "version": "0.5.0-DRAFT",
+    "topic": "event_case-update",
+    "source": "sunt dolore proident",
+    "channel": "RM",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "caseUpdate": {
+      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseRef": "ad tempor",
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "invalid": false,
+      "refusalReceived": null,
+      "sample": {
+        "addressLine1": "dummy_cjpb1s8p7f",
+        "addressLine2": "dummy_51922vokol",
+        "addressLine3": "dummy_x210ppwuhz",
+        "townName": "dummy_u0ixlvjmt1",
+        "postcode": "dummy_w9v2trukyd",
+        "region": "dummy_b4ojzu790h",
+        "uprn": "dummy_ps60opu2fd"
+      },
+      "sampleSensitive": {
+        "phoneNumber": "REDACTED"
+      },
+      "createdAt": "1970-01-01T00:00:00.000Z",
+      "lastUpdatedAt": "1970-01-01T00:00:00.000Z"
+    }
+  }
+}
