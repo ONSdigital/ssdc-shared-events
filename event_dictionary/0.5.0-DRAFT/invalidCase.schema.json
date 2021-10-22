@@ -1,0 +1,27 @@
+{
+  "$id": "https://ons.gov.uk/invalidCase.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Invalid Case",
+  "type": "object",
+  "properties": {
+    "invalidCase": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case that is invalid.",
+          "type": "uuid",
+          "examples": ["acb61268-1f17-4811-b8f9-d6981a060ce5"]
+        },
+        "reason": {
+          "description": "The reason why the case is invalid.",
+          "type": "string",
+          "examples": ["The boat has sunk", "Business has gone bankrupt"]
+        }
+      },
+      "required": ["caseId", "reason"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["invalidCase"],
+  "additionalProperties": false
+}

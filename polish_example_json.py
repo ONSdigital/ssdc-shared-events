@@ -65,6 +65,9 @@ with open('event.example.json', 'r') as event_file:
                     event["payload"]["newCase"]["sample"] = fake_sample
                     event["payload"]["newCase"]["sampleSensitive"] = fake_sample_sensitive
 
+                if event_item["event"] == 'updateSample':
+                    event["payload"]["updateSample"]["sample"] = fake_sample
+
                 if event_item["event"] == 'updateSampleSensitive':
                     event["payload"]["updateSampleSensitive"]["sampleSensitive"] = fake_sample_sensitive
 
