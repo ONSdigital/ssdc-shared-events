@@ -135,7 +135,7 @@
     "sensitive": true
   },
   {
-    "columnName": "mobileNumber",
+    "columnName": "parentMobileNumber",
     "rules": [
       {
         "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
@@ -144,7 +144,7 @@
     "sensitive": true
   },
   {
-    "columnName": "emailAddress",
+    "columnName": "parentEmailAddress",
     "rules": [],
     "sensitive": true
   }
