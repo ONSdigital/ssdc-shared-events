@@ -118,6 +118,23 @@
     "sensitive": true
   },
   {
+    "columnName": "additionalInfo",
+    "rules": [
+    ],
+    "sensitive": true
+  },
+  {
+    "columnName": "childMobileNumber",
+    "rules": [
+    ],
+    "sensitive": true
+  },
+  {
+    "columnName": "childEmailAddress",
+    "rules": [],
+    "sensitive": true
+  },
+  {
     "columnName": "mobileNumber",
     "rules": [
       {
