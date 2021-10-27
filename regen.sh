@@ -18,7 +18,7 @@ then
     exit
 fi
 
-cd event_dictionary/0.4.0/
+cd event_dictionary/0.5.0-DRAFT/
 npx prettier --write ./*.json
 generate-schema-doc event.schema.json --config template_name=md dictionary.md
 ../../generate_example_json.sh

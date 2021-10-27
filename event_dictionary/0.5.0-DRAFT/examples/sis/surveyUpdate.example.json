@@ -1,9 +1,9 @@
 {
   "header": {
-    "version": "0.5.0-DRAFT",
+    "version": "0.4.0",
     "topic": "event_survey-update",
-    "source": "sunt dolore proident",
-    "channel": "RM",
+    "source": "occaecat",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -147,7 +147,12 @@
           "sensitive": true
         }
       ],
-      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json"
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
+      "metadata": {
+        "Ut5f8": 60796025,
+        "sedce8": -3976285.406680584,
+        "laborum789": 88629574.11531913
+      }
     }
   }
 }

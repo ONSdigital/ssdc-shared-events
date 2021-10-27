@@ -1509,7 +1509,7 @@ false
 | Property                                            | Pattern | Type   | Deprecated | Definition | Title/Description                          |
 | --------------------------------------------------- | ------- | ------ | ---------- | ---------- | ------------------------------------------ |
 | + [caseId](#payload_oneOf_i12_updateSample_caseId ) | No      | uuid   | No         | -          | The ID of the case which is being updated. |
-| + [sample](#payload_oneOf_i12_updateSample_sample ) | No      | object | No         | -          | The sample data.                           |
+| + [sample](#payload_oneOf_i12_updateSample_sample ) | No      | object | No         | -          | The updated sample data.                   |
 |                                                     |         |        |            |            |                                            |
 
 ##### <a name="payload_oneOf_i12_updateSample_caseId"></a>2.13.1.1. Property `Event > payload > oneOf > Update Sample > updateSample > caseId`
@@ -1534,7 +1534,7 @@ false
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** The sample data.
+**Description:** The updated sample data.
 
 **Example:** 
 
@@ -1606,4 +1606,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-20 at 12:51:54 +0100
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-10-27 at 09:09:35 +0100
