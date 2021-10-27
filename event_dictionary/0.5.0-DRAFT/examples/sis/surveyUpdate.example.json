@@ -1,9 +1,9 @@
 {
   "header": {
-    "version": "0.5.0-DRAFT",
+    "version": "0.4.0",
     "topic": "event_survey-update",
-    "source": "ipsum in dolor magna",
-    "channel": "RH",
+    "source": "occaecat",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -148,53 +148,10 @@
         }
       ],
       "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
-      "allowedPrintFulfilments": [
-        {
-          "packCode": "nisi deserunt cupidatat",
-          "description": "sint aute pariatur elit",
-          "metadata": {
-            "et_e": 40030685.204725325
-          }
-        }
-      ],
-      "allowedSmsFulfilments": [
-        {
-          "packCode": "labore Ut",
-          "description": "ea",
-          "metadata": {
-            "voluptate_2ba": false
-          }
-        },
-        {
-          "packCode": "nisi occaecat in",
-          "description": "voluptate"
-        },
-        {
-          "packCode": "incididunt proident consequat",
-          "description": "incididunt commodo officia culpa",
-          "metadata": {
-            "id_8c3": true
-          }
-        },
-        {
-          "packCode": "cillum est",
-          "description": "laboris",
-          "metadata": {
-            "ipsum3": "occaecat do consectetur"
-          }
-        },
-        {
-          "packCode": "dolore",
-          "description": "sed commodo est consectetur",
-          "metadata": {
-            "commodo_80": -12578590.52854906,
-            "dolor8_9": "sit",
-            "voluptate515": -57351755.65312076
-          }
-        }
-      ],
       "metadata": {
-        "irure6f3": -90426048
+        "Ut5f8": 60796025,
+        "sedce8": -3976285.406680584,
+        "laborum789": 88629574.11531913
       }
     }
   }

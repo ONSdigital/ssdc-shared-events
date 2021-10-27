@@ -1,9 +1,9 @@
 {
   "header": {
-    "version": "0.5.0-DRAFT",
+    "version": "0.4.0",
     "topic": "event_update-sample-sensitive",
-    "source": "sunt dolore proident",
-    "channel": "RM",
+    "source": "occaecat",
+    "channel": "EQ",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -13,14 +13,14 @@
     "updateSampleSensitive": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sampleSensitive": {
-        "firstName": "dummy_jfbnrhr651",
-        "lastName": "dummy_cl82jjevmt",
-        "childFirstName": "dummy_ezbh7vphem",
-        "childMiddleNames": "dummy_yix18lul68",
-        "childLastName": "dummy_k2czl49thq",
-        "childDob": "dummy_6qk11btu4b",
-        "mobileNumber": "dummy_ootici1dpl",
-        "emailAddress": "dummy_z2kcfoxl9q"
+        "firstName": "dummy_w6h86we51p",
+        "lastName": "dummy_y9huqz129k",
+        "childFirstName": "dummy_uwt0b5ico6",
+        "childMiddleNames": "dummy_r4spwgaods",
+        "childLastName": "dummy_grmnbznzvv",
+        "childDob": "dummy_m6echiq7rn",
+        "mobileNumber": "dummy_bw2fsg0ik5",
+        "emailAddress": "dummy_9hn9190yj0"
       }
     }
   }
