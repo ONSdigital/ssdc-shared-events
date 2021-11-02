@@ -75,9 +75,68 @@
             "required": ["columnName", "rules"],
             "additionalProperties": false
           }
+        },
+        "allowedPrintFulfilments": {
+          "description": "Printed fulfilments which are allowed on this survey.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "packCode": {
+                "description": "The pack code of this print fulfilment, used on print fulfilment requests.",
+                "type": "string",
+                "examples": ["REPLACEMENT_UAC_LETTER_ENGLISH"]
+              },
+              "description": {
+                "description": "A human-readable description of the printed fulfilment.",
+                "type": "string",
+                "examples": ["Replacement UAC - English"]
+              },
+              "metadata": {
+                "description": "Any metadata associated with the print fulfilment.",
+                "type": "object",
+                "examples": [{ "suitableRegions": ["E", "N"] }]
+              }
+            },
+            "required": ["packCode", "description"],
+            "additionalProperties": false
+          }
+        },
+        "allowedSmsFulfilments": {
+          "description": "SMS fulfilments which are allowed on this survey.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "packCode": {
+                "description": "The pack code of this SMS fulfilment, used on SMS fulfilment requests.",
+                "type": "string",
+                "examples": ["REPLACEMENT_UAC_SMS_ENGLISH_AND_WELSH"]
+              },
+              "description": {
+                "description": "A human-readable description of the SMS fulfilment.",
+                "type": "string",
+                "examples": ["Replacement UAC - English & Welsh"]
+              },
+              "metadata": {
+                "description": "Any metadata associated with the SMS fulfilment.",
+                "type": "object",
+                "examples": [{ "suitableRegions": ["W"] }]
+              }
+            },
+            "required": ["packCode", "description"],
+            "additionalProperties": false
+          }
         }
       },
-      "required": ["surveyId", "name", "sampleDefinition"],
+      "required": [
+        "surveyId",
+        "name",
+        "sampleDefinition",
+        "sampleDefinitionUrl",
+        "allowedPrintFulfilments",
+        "allowedSmsFulfilments"
+      ],
       "additionalProperties": false
     }
   },

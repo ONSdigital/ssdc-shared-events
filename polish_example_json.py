@@ -73,6 +73,38 @@ with open('event.example.json', 'r') as event_file:
                 if event_item["event"] == 'surveyUpdate':
                     if survey_type["type"] == 'social':
                         event["payload"]["surveyUpdate"]["name"] = "LMS"
+                        event["payload"]["surveyUpdate"]["allowedPrintFulfilments"] = [
+                            {
+                                "packCode": "replace-uac-en",
+                                "description": "Replacement UAC - English",
+                                "metadata": {
+                                    "suitableRegions": ["E", "N"]
+                                }
+                            },
+                            {
+                                "packCode": "replace-uac-cy",
+                                "description": "Replacement UAC - English & Welsh",
+                                "metadata": {
+                                    "suitableRegions": ["W"]
+                                }
+                            }
+                        ]
+                        event["payload"]["surveyUpdate"]["allowedSmsFulfilments"] = [
+                            {
+                                "packCode": "replace-uac-en",
+                                "description": "Replacement UAC - English",
+                                "metadata": {
+                                    "suitableRegions": ["E", "N"]
+                                }
+                            },
+                            {
+                                "packCode": "replace-uac-cy",
+                                "description": "Replacement UAC - English & Welsh",
+                                "metadata": {
+                                    "suitableRegions": ["W"]
+                                }
+                            }
+                        ]
                     else:
                         event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
 
