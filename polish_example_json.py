@@ -105,6 +105,7 @@ with open('event.example.json', 'r') as event_file:
                                 }
                             }
                         ]
+                        event["payload"]["surveyUpdate"]["allowedEmailFulfilments"] = []
                     else:
                         event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
 
