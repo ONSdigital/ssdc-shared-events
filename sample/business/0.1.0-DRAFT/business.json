@@ -1,0 +1,118 @@
+[
+  {
+    "columnName": "ruref",
+    "rules": [
+      {
+        "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+      }
+    ]
+  },
+  {
+    "columnName": "checkletter",
+    "rules": []
+  },
+  {
+    "columnName": "frosic92",
+    "rules": []
+  },
+  {
+    "columnName": "rusic92",
+    "rules": []
+  },
+  {
+    "columnName": "frosic2007",
+    "rules": []
+  },
+  {
+    "columnName": "rusic2007",
+    "rules": []
+  },
+  {
+    "columnName": "froempment",
+    "rules": []
+  },
+  {
+    "columnName": "frotover",
+    "rules": []
+  },
+  {
+    "columnName": "entref",
+    "rules": []
+  },
+  {
+    "columnName": "legalstatus",
+    "rules": []
+  },
+  {
+    "columnName": "entrepmkr",
+    "rules": []
+  },
+  {
+    "columnName": "region",
+    "rules": []
+  },
+  {
+    "columnName": "birthdate",
+    "rules": []
+  },
+  {
+    "columnName": "entname1",
+    "rules": []
+  },
+  {
+    "columnName": "entname2",
+    "rules": []
+  },
+  {
+    "columnName": "entname3",
+    "rules": []
+  },
+  {
+    "columnName": "runame1",
+    "rules": [
+      {
+        "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+      }
+    ]
+  },
+  {
+    "columnName": "runame2",
+    "rules": []
+  },
+  {
+    "columnName": "runame3",
+    "rules": []
+  },
+  {
+    "columnName": "tradstyle1",
+    "rules": []
+  },
+  {
+    "columnName": "tradstyle2",
+    "rules": []
+  },
+  {
+    "columnName": "tradstyle3",
+    "rules": []
+  },
+  {
+    "columnName": "seltype",
+    "rules": []
+  },
+  {
+    "columnName": "inclexcl",
+    "rules": []
+  },
+  {
+    "columnName": "cell_no",
+    "rules": []
+  },
+  {
+    "columnName": "formtype",
+    "rules": []
+  },
+  {
+    "columnName": "currency",
+    "rules": []
+  }
+]

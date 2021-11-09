@@ -1,0 +1,140 @@
+{
+  "header": {
+    "version": "0.5.0-DRAFT",
+    "topic": "event_survey-update",
+    "source": "consequat ea irure exercitation",
+    "channel": "RM",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "surveyUpdate": {
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "name": "BUSINESS",
+      "sampleDefinition": [
+        {
+          "columnName": "ruref",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ]
+        },
+        {
+          "columnName": "checkletter",
+          "rules": []
+        },
+        {
+          "columnName": "frosic92",
+          "rules": []
+        },
+        {
+          "columnName": "rusic92",
+          "rules": []
+        },
+        {
+          "columnName": "frosic2007",
+          "rules": []
+        },
+        {
+          "columnName": "rusic2007",
+          "rules": []
+        },
+        {
+          "columnName": "froempment",
+          "rules": []
+        },
+        {
+          "columnName": "frotover",
+          "rules": []
+        },
+        {
+          "columnName": "entref",
+          "rules": []
+        },
+        {
+          "columnName": "legalstatus",
+          "rules": []
+        },
+        {
+          "columnName": "entrepmkr",
+          "rules": []
+        },
+        {
+          "columnName": "region",
+          "rules": []
+        },
+        {
+          "columnName": "birthdate",
+          "rules": []
+        },
+        {
+          "columnName": "entname1",
+          "rules": []
+        },
+        {
+          "columnName": "entname2",
+          "rules": []
+        },
+        {
+          "columnName": "entname3",
+          "rules": []
+        },
+        {
+          "columnName": "runame1",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ]
+        },
+        {
+          "columnName": "runame2",
+          "rules": []
+        },
+        {
+          "columnName": "runame3",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle1",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle2",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle3",
+          "rules": []
+        },
+        {
+          "columnName": "seltype",
+          "rules": []
+        },
+        {
+          "columnName": "inclexcl",
+          "rules": []
+        },
+        {
+          "columnName": "cell_no",
+          "rules": []
+        },
+        {
+          "columnName": "formtype",
+          "rules": []
+        },
+        {
+          "columnName": "currency",
+          "rules": []
+        }
+      ],
+      "metadata": {
+        "eu_61e": false
+      },
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/business/0.1.0-DRAFT/business.json"
+    }
+  }
+}
