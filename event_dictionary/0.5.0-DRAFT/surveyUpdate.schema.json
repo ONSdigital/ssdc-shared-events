@@ -127,6 +127,32 @@
             "required": ["packCode", "description"],
             "additionalProperties": false
           }
+        },
+        "allowedEmailFulfilments": {
+          "description": "Email fulfilments which are allowed on this survey.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "packCode": {
+                "description": "The pack code of this email fulfilment, used on email fulfilment requests.",
+                "type": "string",
+                "examples": ["NUDGE_EMAIL"]
+              },
+              "description": {
+                "description": "A human-readable description of the email fulfilment.",
+                "type": "string",
+                "examples": ["Nudge email"]
+              },
+              "metadata": {
+                "description": "Any metadata associated with the email fulfilment.",
+                "type": "object",
+                "examples": [{ "suitableRegions": ["E"] }]
+              }
+            },
+            "required": ["packCode", "description"],
+            "additionalProperties": false
+          }
         }
       },
       "required": [
@@ -135,7 +161,8 @@
         "sampleDefinition",
         "sampleDefinitionUrl",
         "allowedPrintFulfilments",
-        "allowedSmsFulfilments"
+        "allowedSmsFulfilments",
+        "allowedEmailFulfilments"
       ],
       "additionalProperties": false
     }

@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "Lorem ullamco voluptate occaecat",
-    "channel": "RM",
+    "source": "aliquip laborum ut labore",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -150,41 +150,88 @@
       "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
       "allowedPrintFulfilments": [
         {
-          "packCode": "ut",
-          "description": "sit labore enim esse"
+          "packCode": "et ea",
+          "description": "sint occaecat amet do",
+          "metadata": {
+            "consequat6cf": -19531218.165913478
+          }
         },
         {
-          "packCode": "minim incididunt cillum",
-          "description": "veniam anim do labore elit",
-          "metadata": {
-            "sit_9_": "ut exercitation in",
-            "officia_919": 910268,
-            "cillum_79": -36486366,
-            "quis_07e": "sint magna enim",
-            "do_c1": true
-          }
+          "packCode": "ex in Excepteur",
+          "description": "ad do deserunt Duis"
         }
       ],
       "allowedSmsFulfilments": [
         {
-          "packCode": "tempor elit nisi",
-          "description": "Lorem ullamco dolore esse reprehenderit",
+          "packCode": "sunt est anim voluptate Duis",
+          "description": "ipsum ullamco eiusmod culpa",
           "metadata": {
-            "et_83b": false
+            "elit_a4": "magna mollit",
+            "reprehenderit4": -93207617,
+            "dolore_eed": false,
+            "in_": -92043438
           }
         },
         {
-          "packCode": "Duis",
-          "description": "in ex",
+          "packCode": "veniam dolore",
+          "description": "do",
           "metadata": {
-            "ipsumb": "do officia labore deserunt sunt",
-            "sit0": true
+            "fugiat_e01": "irure aliqua consequat",
+            "consectetur1": -6765040.522779971,
+            "ipsum_4a7": 83440563.49572363
+          }
+        },
+        {
+          "packCode": "dolore ad",
+          "description": "sit anim sint nulla",
+          "metadata": {
+            "proidentf2_": 75873844.9476664
+          }
+        },
+        {
+          "packCode": "nisi sed",
+          "description": "do culpa",
+          "metadata": {
+            "commodo_1a7": "sed est do amet incididunt"
           }
         }
       ],
+      "allowedEmailFulfilments": [
+        {
+          "packCode": "ut eu enim quis",
+          "description": "amet"
+        },
+        {
+          "packCode": "dolore anim dolor ut occaecat",
+          "description": "officia ut exercitation ut irure",
+          "metadata": {
+            "in_e": false
+          }
+        },
+        {
+          "packCode": "in eu veniam dolor",
+          "description": "mollit tempor Ut",
+          "metadata": {
+            "ex_2": -882822
+          }
+        },
+        {
+          "packCode": "mollit veniam officia est",
+          "description": "voluptate Excepteur dolore consequat",
+          "metadata": {
+            "doloreadc": 52538944.10237852,
+            "irure_d": 35171987.44114417,
+            "fugiat_2": 59129488
+          }
+        },
+        {
+          "packCode": "amet ullamco",
+          "description": "sint eu cupidatat irure proident"
+        }
+      ],
       "metadata": {
-        "eu262": 69777014,
-        "esse_87": 41213870
+        "non_53_": 67664974,
+        "iruref": "reprehenderit commodo"
       }
     }
   }
