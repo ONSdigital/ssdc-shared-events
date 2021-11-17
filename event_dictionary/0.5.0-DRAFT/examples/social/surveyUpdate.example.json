@@ -2,7 +2,7 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "Lorem ullamco voluptate occaecat",
+    "source": "consequat",
     "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -238,9 +238,9 @@
           }
         }
       ],
+      "allowedEmailFulfilments": [],
       "metadata": {
-        "eu262": 69777014,
-        "esse_87": 41213870
+        "anim_81": 48857327
       }
     }
   }

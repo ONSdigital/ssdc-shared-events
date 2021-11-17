@@ -12,6 +12,16 @@
           "type": "uuid",
           "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
         },
+        "collectionExerciseId": {
+          "description": "The ID of the collection exercise which this UAC/QID's case belongs to.",
+          "type": "uuid",
+          "examples": ["b3ef160a-6152-47be-bd20-3604e1387c48"]
+        },
+        "surveyId": {
+          "description": "The ID of the survey which this UAC/QID's case belongs to.",
+          "type": "uuid",
+          "examples": ["ebed1515-fd37-487c-b81a-6a75239aa2d5"]
+        },
         "active": {
           "description": "True if this UAC can be used to launch EQ.",
           "type": "boolean",
@@ -58,6 +68,8 @@
       },
       "required": [
         "caseId",
+        "collectionExerciseId",
+        "surveyId",
         "active",
         "uacHash",
         "qid",
