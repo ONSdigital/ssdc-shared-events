@@ -47,6 +47,13 @@
               "wave": 3
             }
           ]
+        },
+        "collectionInstrumentUrl": {
+          "description": "The URL of the collection instrument (EQ) to launch.",
+          "type": "string",
+          "examples": [
+            "https://raw.githubusercontent.com/ONSdigital/eq-questionnaire-schemas/main/schemas/social/en/social-demo.json"
+          ]
         }
       },
       "required": [
@@ -55,7 +62,8 @@
         "uacHash",
         "qid",
         "receiptReceived",
-        "surveyLaunched"
+        "surveyLaunched",
+        "collectionInstrumentUrl"
       ],
       "additionalProperties": false
     }
