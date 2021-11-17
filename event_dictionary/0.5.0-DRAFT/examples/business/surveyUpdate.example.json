@@ -2,7 +2,7 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "consequat ea irure exercitation",
+    "source": "consequat",
     "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -131,10 +131,44 @@
           "rules": []
         }
       ],
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/business/0.1.0-DRAFT/business.json",
+      "allowedPrintFulfilments": [
+        {
+          "packCode": "quis voluptate elit esse nostrud",
+          "description": "in"
+        },
+        {
+          "packCode": "ex magna",
+          "description": "sint",
+          "metadata": {
+            "eu5": false,
+            "eu__5e": 13041257,
+            "sit_b79": false,
+            "aliqua_e8": true
+          }
+        }
+      ],
+      "allowedSmsFulfilments": [
+        {
+          "packCode": "amet nostrud laboris irure",
+          "description": "exercitation esse dolor",
+          "metadata": {
+            "Excepteur5f": "in consectetur deserunt culpa"
+          }
+        }
+      ],
+      "allowedEmailFulfilments": [
+        {
+          "packCode": "cillum in Ut",
+          "description": "sit ipsum enim quis in",
+          "metadata": {
+            "in1d4": true
+          }
+        }
+      ],
       "metadata": {
-        "eu_61e": false
-      },
-      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/business/0.1.0-DRAFT/business.json"
+        "anim_81": 48857327
+      }
     }
   }
 }

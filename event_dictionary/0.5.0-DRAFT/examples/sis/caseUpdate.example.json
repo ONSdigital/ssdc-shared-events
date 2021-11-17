@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_case-update",
-    "source": "occaecat",
-    "channel": "EQ",
+    "source": "consequat",
+    "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,16 +12,16 @@
   "payload": {
     "caseUpdate": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "caseRef": "Lorem labore",
+      "caseRef": "tempor id minim ad",
       "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
       "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "invalid": true,
+      "invalid": false,
       "refusalReceived": "SOFT_REFUSAL",
       "sample": {
-        "schoolId": "dummy_x01wcycbr0",
-        "schoolName": "dummy_naxbf9c9f2",
-        "consentGivenTest": "dummy_6o48j3irhx",
-        "consentGivenSurvey": "dummy_ezj8g4d7gt"
+        "schoolId": "dummy_vxgfhbi6o7",
+        "schoolName": "dummy_zj0nsdaugk",
+        "consentGivenTest": "dummy_g1vcj0pokp",
+        "consentGivenSurvey": "dummy_smxcxgi973"
       },
       "sampleSensitive": {
         "firstName": "REDACTED",
