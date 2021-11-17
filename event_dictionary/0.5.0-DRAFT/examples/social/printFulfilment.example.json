@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_print-fulfilment",
-    "source": "occaecat",
-    "channel": "EQ",
+    "source": "consequat",
+    "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -12,10 +12,10 @@
   "payload": {
     "printFulfilment": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "packCode": "minim sint velit",
+      "packCode": "in proident minim Lorem ea",
       "uacMetadata": {
-        "eu_c8": -59454413.3612791,
-        "enim_50": true
+        "aliquip_da": 58339647.87965512,
+        "Ut1": false
       }
     }
   }
