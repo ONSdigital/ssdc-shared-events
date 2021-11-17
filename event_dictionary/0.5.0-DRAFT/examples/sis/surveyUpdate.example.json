@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "consequat",
-    "channel": "RM",
+    "source": "Ut fugiat irure",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -150,40 +150,91 @@
       "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
       "allowedPrintFulfilments": [
         {
-          "packCode": "quis voluptate elit esse nostrud",
-          "description": "in"
+          "packCode": "eu",
+          "description": "esse aute dolor amet",
+          "metadata": {
+            "reprehenderit5": -20864205
+          }
         },
         {
-          "packCode": "ex magna",
-          "description": "sint",
+          "packCode": "Ut ad esse velit",
+          "description": "do"
+        },
+        {
+          "packCode": "Excepteur laboris sunt occaecat",
+          "description": "in amet Duis labore",
           "metadata": {
-            "eu5": false,
-            "eu__5e": 13041257,
-            "sit_b79": false,
-            "aliqua_e8": true
+            "Excepteur_b_": -26511989,
+            "culpa_9f6": false
+          }
+        },
+        {
+          "packCode": "elit quis ea reprehenderit",
+          "description": "Excepteur eu in"
+        },
+        {
+          "packCode": "Ut nostrud sunt et dolor",
+          "description": "velit laborum officia",
+          "metadata": {
+            "commodo_c": -66497027.43712904,
+            "culpa_5": 46806331.82171863,
+            "commodo9e": "occaecat",
+            "non7_0": -42467338.464872606,
+            "nulla_9": true
           }
         }
       ],
       "allowedSmsFulfilments": [
         {
-          "packCode": "amet nostrud laboris irure",
-          "description": "exercitation esse dolor",
+          "packCode": "in",
+          "description": "Lorem",
           "metadata": {
-            "Excepteur5f": "in consectetur deserunt culpa"
+            "irure_5c": 20103664.413362533
           }
+        },
+        {
+          "packCode": "ut incididunt",
+          "description": "incididunt qui"
+        },
+        {
+          "packCode": "commodo magna ad",
+          "description": "pariatur",
+          "metadata": {
+            "quis_b4": -26943943.245224044,
+            "incididuntc": true
+          }
+        },
+        {
+          "packCode": "ullamco",
+          "description": "enim proident"
         }
       ],
       "allowedEmailFulfilments": [
         {
-          "packCode": "cillum in Ut",
-          "description": "sit ipsum enim quis in",
+          "packCode": "ut laboris laborum et mollit",
+          "description": "id",
           "metadata": {
-            "in1d4": true
+            "magna4": -22085296.489694923
           }
+        },
+        {
+          "packCode": "ea anim veniam",
+          "description": "exercitation aliquip ullamco amet"
+        },
+        {
+          "packCode": "in",
+          "description": "sit Ut ad Duis veniam",
+          "metadata": {
+            "consectetur5": -567184
+          }
+        },
+        {
+          "packCode": "aliquip deserunt esse eu in",
+          "description": "ullamco"
         }
       ],
       "metadata": {
-        "anim_81": 48857327
+        "animc87": "veniam cupidatat nulla"
       }
     }
   }

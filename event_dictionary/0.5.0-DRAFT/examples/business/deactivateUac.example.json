@@ -2,8 +2,8 @@
   "header": {
     "version": "0.5.0-DRAFT",
     "topic": "event_deactivate-uac",
-    "source": "consequat",
-    "channel": "RM",
+    "source": "Ut fugiat irure",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -11,7 +11,7 @@
   },
   "payload": {
     "deactivateUac": {
-      "qid": "pariatur qui et"
+      "qid": "sunt"
     }
   }
 }

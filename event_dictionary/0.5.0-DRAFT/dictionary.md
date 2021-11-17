@@ -103,6 +103,7 @@
       - [2.12.1.8. Property `Event > payload > oneOf > UAC Update > uacUpdate > receiptReceived`](#payload_oneOf_i11_uacUpdate_receiptReceived)
       - [2.12.1.9. Property `Event > payload > oneOf > UAC Update > uacUpdate > eqLaunched`](#payload_oneOf_i11_uacUpdate_eqLaunched)
       - [2.12.1.10. Property `Event > payload > oneOf > UAC Update > uacUpdate > metadata`](#payload_oneOf_i11_uacUpdate_metadata)
+      - [2.12.1.11. Property `Event > payload > oneOf > UAC Update > uacUpdate > collectionInstrumentUrl`](#payload_oneOf_i11_uacUpdate_collectionInstrumentUrl)
   - [2.13. Property `Event > payload > oneOf > updateSample.schema.json`](#payload_oneOf_i12)
     - [2.13.1. Property `Event > payload > oneOf > Update Sample > updateSample`](#payload_oneOf_i12_updateSample)
       - [2.13.1.1. Property `Event > payload > oneOf > Update Sample > updateSample > caseId`](#payload_oneOf_i12_updateSample_caseId)
@@ -1632,18 +1633,19 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                                                     | Pattern | Type    | Deprecated | Definition | Title/Description                                                       |
-| ---------------------------------------------------------------------------- | ------- | ------- | ---------- | ---------- | ----------------------------------------------------------------------- |
-| + [caseId](#payload_oneOf_i11_uacUpdate_caseId )                             | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.                |
-| + [collectionExerciseId](#payload_oneOf_i11_uacUpdate_collectionExerciseId ) | No      | uuid    | No         | -          | The ID of the collection exercise which this UAC/QID's case belongs to. |
-| + [surveyId](#payload_oneOf_i11_uacUpdate_surveyId )                         | No      | uuid    | No         | -          | The ID of the survey which this UAC/QID's case belongs to.              |
-| + [active](#payload_oneOf_i11_uacUpdate_active )                             | No      | boolean | No         | -          | True if this UAC can be used to launch EQ.                              |
-| + [uacHash](#payload_oneOf_i11_uacUpdate_uacHash )                           | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                            |
-| + [qid](#payload_oneOf_i11_uacUpdate_qid )                                   | No      | string  | No         | -          | The QID linked to this UAC.                                             |
-| + [receiptReceived](#payload_oneOf_i11_uacUpdate_receiptReceived )           | No      | boolean | No         | -          | True if completed questionnaire received using this UAC/QID.            |
-| - [eqLaunched](#payload_oneOf_i11_uacUpdate_eqLaunched )                     | No      | boolean | No         | -          | True if EQ has been launched using this UAC.                            |
-| - [metadata](#payload_oneOf_i11_uacUpdate_metadata )                         | No      | object  | No         | -          | Metadata about the UAC                                                  |
-|                                                                              |         |         |            |            |                                                                         |
+| Property                                                                           | Pattern | Type    | Deprecated | Definition | Title/Description                                                       |
+| ---------------------------------------------------------------------------------- | ------- | ------- | ---------- | ---------- | ----------------------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i11_uacUpdate_caseId )                                   | No      | uuid    | No         | -          | The ID of the case which is linked to this UAC/QID pair.                |
+| + [collectionExerciseId](#payload_oneOf_i11_uacUpdate_collectionExerciseId )       | No      | uuid    | No         | -          | The ID of the collection exercise which this UAC/QID's case belongs to. |
+| + [surveyId](#payload_oneOf_i11_uacUpdate_surveyId )                               | No      | uuid    | No         | -          | The ID of the survey which this UAC/QID's case belongs to.              |
+| + [active](#payload_oneOf_i11_uacUpdate_active )                                   | No      | boolean | No         | -          | True if this UAC can be used to launch EQ.                              |
+| + [uacHash](#payload_oneOf_i11_uacUpdate_uacHash )                                 | No      | string  | No         | -          | The SHA-256 hash of the UAC.                                            |
+| + [qid](#payload_oneOf_i11_uacUpdate_qid )                                         | No      | string  | No         | -          | The QID linked to this UAC.                                             |
+| + [receiptReceived](#payload_oneOf_i11_uacUpdate_receiptReceived )                 | No      | boolean | No         | -          | True if completed questionnaire received using this UAC/QID.            |
+| - [eqLaunched](#payload_oneOf_i11_uacUpdate_eqLaunched )                           | No      | boolean | No         | -          | True if EQ has been launched using this UAC.                            |
+| - [metadata](#payload_oneOf_i11_uacUpdate_metadata )                               | No      | object  | No         | -          | Metadata about the UAC                                                  |
+| + [collectionInstrumentUrl](#payload_oneOf_i11_uacUpdate_collectionInstrumentUrl ) | No      | string  | No         | -          | The URL of the collection instrument (EQ) to launch.                    |
+|                                                                                    |         |         |            |            |                                                                         |
 
 ##### <a name="autogenerated_heading_8"></a>2.12.1.1. The following properties are required
 * surveyLaunched
@@ -1797,6 +1799,21 @@ false
 }
 ```
 
+##### <a name="payload_oneOf_i11_uacUpdate_collectionInstrumentUrl"></a>2.12.1.11. Property `Event > payload > oneOf > UAC Update > uacUpdate > collectionInstrumentUrl`
+
+| Type                      | `string`                                                                  |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** The URL of the collection instrument (EQ) to launch.
+
+**Example:** 
+
+```json
+"https://raw.githubusercontent.com/ONSdigital/eq-questionnaire-schemas/main/schemas/social/en/social-demo.json"
+```
+
 ### <a name="payload_oneOf_i12"></a>2.13. Property `Event > payload > oneOf > updateSample.schema.json`
 
 | Type                      | `object`                                                                  |
@@ -1917,4 +1934,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-11-17 at 11:55:18 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2021-11-17 at 11:57:32 +0000
