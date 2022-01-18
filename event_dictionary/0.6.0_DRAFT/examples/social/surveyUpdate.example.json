@@ -1,0 +1,247 @@
+{
+  "header": {
+    "version": "0.5.0",
+    "topic": "event_survey-update",
+    "source": "Ut fugiat irure",
+    "channel": "RH",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "surveyUpdate": {
+      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "name": "LMS",
+      "sampleDefinition": [
+        {
+          "columnName": "questionnaire",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 3
+            }
+          ]
+        },
+        {
+          "columnName": "sampleUnitRef",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 5
+            }
+          ]
+        },
+        {
+          "columnName": "cohort",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 3
+            }
+          ]
+        },
+        {
+          "columnName": "addressLine1",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ]
+        },
+        {
+          "columnName": "addressLine2",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ]
+        },
+        {
+          "columnName": "addressLine3",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ]
+        },
+        {
+          "columnName": "townName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ]
+        },
+        {
+          "columnName": "postcode",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 9
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
+              "expression": "^[a-zA-Z0-9 ]*$"
+            }
+          ]
+        },
+        {
+          "columnName": "region",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+              "set": [
+                "E",
+                "W",
+                "N"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "gor9d",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 9
+            }
+          ]
+        },
+        {
+          "columnName": "laCode",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 9
+            }
+          ]
+        },
+        {
+          "columnName": "uprn",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 12
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
+              "expression": "^[0-9]*$"
+            }
+          ]
+        },
+        {
+          "columnName": "uprnLatitude",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
+              "expression": "^(\\+|-)?(?:90(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+            }
+          ]
+        },
+        {
+          "columnName": "uprnLongitude",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
+              "expression": "^(\\+|-)?(?:180(?:(?:\\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\\.[0-9]{1,6})?))$"
+            }
+          ]
+        },
+        {
+          "columnName": "phoneNumber",
+          "sensitive": true,
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.RegexRule",
+              "expression": "^[0-9]+$|^$"
+            }
+          ]
+        }
+      ],
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/social/0.1.0/social.json",
+      "allowedPrintFulfilments": [
+        {
+          "packCode": "replace-uac-en",
+          "description": "Replacement UAC - English",
+          "metadata": {
+            "suitableRegions": [
+              "E",
+              "N"
+            ]
+          }
+        },
+        {
+          "packCode": "replace-uac-cy",
+          "description": "Replacement UAC - English & Welsh",
+          "metadata": {
+            "suitableRegions": [
+              "W"
+            ]
+          }
+        }
+      ],
+      "allowedSmsFulfilments": [
+        {
+          "packCode": "replace-uac-en",
+          "description": "Replacement UAC - English",
+          "metadata": {
+            "suitableRegions": [
+              "E",
+              "N"
+            ]
+          }
+        },
+        {
+          "packCode": "replace-uac-cy",
+          "description": "Replacement UAC - English & Welsh",
+          "metadata": {
+            "suitableRegions": [
+              "W"
+            ]
+          }
+        }
+      ],
+      "allowedEmailFulfilments": [],
+      "metadata": {
+        "animc87": "veniam cupidatat nulla"
+      }
+    }
+  }
+}
