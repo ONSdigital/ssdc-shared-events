@@ -1,8 +1,8 @@
 {
   "header": {
-    "version": "0.5.0",
+    "version": "0.6.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "Ut fugiat irure",
+    "source": "deserunt anim",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -240,7 +240,7 @@
       ],
       "allowedEmailFulfilments": [],
       "metadata": {
-        "animc87": "veniam cupidatat nulla"
+        "sunt_bd_": 48514596
       }
     }
   }

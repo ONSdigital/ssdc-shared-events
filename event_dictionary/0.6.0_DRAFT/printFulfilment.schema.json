@@ -21,6 +21,11 @@
           "description": "Any metadata needed to be added to UACs created by the fulfilment.",
           "type": "object",
           "examples": [{ "wave": 1 }]
+        },
+        "personalisation": {
+          "description": "Values to be included in the fulfilment personalisation template.",
+          "type": "object",
+          "examples": [{ "firstName": "Joe", "lastName": "Bloggs" }]
         }
       },
       "required": ["caseId", "packCode"],

@@ -115,7 +115,9 @@ with open('event.example.json', 'r') as event_file:
                         "sampleDefinitionUrl"] = f'{URL_PREFIX}{survey_type["shape"]}'
 
                 if event_item["event"] == 'uacUpdate':
+
                     if survey_type["type"] == 'social':
+                        # For social surveys we intend to use UAC metadata for tracking waves
                         event["payload"]["uacUpdate"]["metadata"] = {"wave": 3}
 
                 if event_item["event"] == 'collectionExerciseUpdate':
@@ -136,6 +138,12 @@ with open('event.example.json', 'r') as event_file:
                         }
                     elif survey_type["type"] == 'sis':
                         event["payload"]["collectionExerciseUpdate"]["metadata"] = None
+
+                if event_item["event"] == 'printFulfilment':
+                    event["payload"]["printFulfilment"]["personalisation"] = {
+                        "firstName": "Joe",
+                        "lastName": "Bloggs",
+                    }
 
                 with open(f'examples/{survey_type["type"]}/{event_item["event"]}.example.json', 'w+') as example_file:
                     json.dump(event, example_file, indent=2)

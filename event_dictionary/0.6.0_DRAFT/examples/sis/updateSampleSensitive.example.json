@@ -1,8 +1,8 @@
 {
   "header": {
-    "version": "0.5.0",
+    "version": "0.6.0-DRAFT",
     "topic": "event_update-sample-sensitive",
-    "source": "Ut fugiat irure",
+    "source": "deserunt anim",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -13,14 +13,14 @@
     "updateSampleSensitive": {
       "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
       "sampleSensitive": {
-        "firstName": "dummy_8rb50ijzip",
-        "lastName": "dummy_rexibx28l7",
-        "childFirstName": "dummy_3q6k6mbwcn",
-        "childMiddleNames": "dummy_3fpyxm94rb",
-        "childLastName": "dummy_7frpiv5819",
-        "childDob": "dummy_b3sy0jn5zm",
-        "mobileNumber": "dummy_wejuxocpcj",
-        "emailAddress": "dummy_jq8d483wwd"
+        "firstName": "dummy_45ybznteah",
+        "lastName": "dummy_1a6dbwm6x6",
+        "childFirstName": "dummy_zyfaw83hrz",
+        "childMiddleNames": "dummy_j4bibb8mkl",
+        "childLastName": "dummy_b48e3cwpnu",
+        "childDob": "dummy_01px16270q",
+        "mobileNumber": "dummy_k7awjrnpsp",
+        "emailAddress": "dummy_7njt7meqre"
       }
     }
   }
