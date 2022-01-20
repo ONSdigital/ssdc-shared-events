@@ -19,7 +19,7 @@ then
 fi
 
 # This must be kept up to date with the current "work in progress" draft directory
-pushd event_dictionary/0.6.0_DRAFT/ || exit
+pushd event_dictionary/0.6.0-DRAFT/ || exit
 
 npx prettier --write ./*.json
 generate-schema-doc event.schema.json --config template_name=md dictionary.md
