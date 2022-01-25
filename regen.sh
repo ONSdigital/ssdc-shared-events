@@ -18,7 +18,9 @@ then
     exit
 fi
 
-cd event_dictionary/0.6.0-DRAFT/
+# This must be kept up to date with the current "work in progress" draft directory
+pushd event_dictionary/0.6.0-DRAFT/ || exit
+
 npx prettier --write ./*.json
 generate-schema-doc event.schema.json --config template_name=md dictionary.md
 ../../generate_example_json.sh
@@ -28,4 +30,5 @@ mkdir -p examples/social
 mkdir -p examples/business
 python ../../polish_example_json.py
 rm *.example.json
-cd ../..
+
+popd

@@ -1,0 +1,34 @@
+{
+  "$id": "https://ons.gov.uk/updateSample.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Update Sample",
+  "type": "object",
+  "properties": {
+    "updateSample": {
+      "type": "object",
+      "properties": {
+        "caseId": {
+          "description": "The ID of the case which is being updated.",
+          "type": "uuid",
+          "examples": ["bcb61268-1f17-4811-b8f9-e6981a060ce6"]
+        },
+        "sample": {
+          "description": "The updated sample data.",
+          "type": "object",
+          "examples": [
+            {
+              "schoolId": "abc123",
+              "schoolName": "Chesterthorps High School",
+              "consentGivenTest": "true",
+              "consentGivenSurvey": "true"
+            }
+          ]
+        }
+      },
+      "required": ["caseId", "sample"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["updateSample"],
+  "additionalProperties": false
+}
