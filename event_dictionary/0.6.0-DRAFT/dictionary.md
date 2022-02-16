@@ -1063,12 +1063,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                            | Pattern | Type             | Deprecated | Definition | Title/Description                         |
-| --------------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ----------------------------------------- |
-| + [caseId](#payload_oneOf_i8_refusal_caseId )       | No      | uuid             | No         | -          | The ID of the case that is being refused. |
-| + [type](#payload_oneOf_i8_refusal_type )           | No      | enum (of string) | No         | -          | The type of the refusal.                  |
-| - [eraseData](#payload_oneOf_i8_refusal_eraseData ) | No      | boolean          | No         | -          | Data erasure request has been received    |
-|                                                     |         |                  |            |            |                                           |
+| Property                                            | Pattern | Type             | Deprecated | Definition | Title/Description                                         |
+| --------------------------------------------------- | ------- | ---------------- | ---------- | ---------- | --------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i8_refusal_caseId )       | No      | uuid             | No         | -          | The ID of the case that is being refused.                 |
+| + [type](#payload_oneOf_i8_refusal_type )           | No      | enum (of string) | No         | -          | The type of the refusal.                                  |
+| - [eraseData](#payload_oneOf_i8_refusal_eraseData ) | No      | boolean          | No         | -          | Optional flag for data erasure request, defaults to false |
+|                                                     |         |                  |            |            |                                                           |
 
 ##### <a name="payload_oneOf_i8_refusal_caseId"></a>2.9.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`
 
@@ -1107,7 +1107,7 @@ Must be one of:
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
 
-**Description:** Data erasure request has been received
+**Description:** Optional flag for data erasure request, defaults to false
 
 **Examples:** 
 
@@ -1976,4 +1976,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-16 at 10:50:48 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-16 at 14:14:26 +0000

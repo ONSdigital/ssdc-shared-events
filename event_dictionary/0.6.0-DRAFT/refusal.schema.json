@@ -23,7 +23,7 @@
           ]
         },
         "eraseData": {
-          "description": "Data erasure request has been received",
+          "description": "Optional flag for data erasure request, defaults to false",
           "type": "boolean",
           "examples": [true, false]
         }
