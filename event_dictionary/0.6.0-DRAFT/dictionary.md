@@ -61,6 +61,7 @@
     - [2.9.1. Property `Event > payload > oneOf > Refusal > refusal`](#payload_oneOf_i8_refusal)
       - [2.9.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`](#payload_oneOf_i8_refusal_caseId)
       - [2.9.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`](#payload_oneOf_i8_refusal_type)
+      - [2.9.1.3. Property `Event > payload > oneOf > Refusal > refusal > eraseData`](#payload_oneOf_i8_refusal_eraseData)
   - [2.10. Property `Event > payload > oneOf > surveyUpdate.schema.json`](#payload_oneOf_i9)
     - [2.10.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate`](#payload_oneOf_i9_surveyUpdate)
       - [2.10.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`](#payload_oneOf_i9_surveyUpdate_surveyId)
@@ -1062,11 +1063,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                      | Pattern | Type             | Deprecated | Definition | Title/Description                         |
-| --------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ----------------------------------------- |
-| + [caseId](#payload_oneOf_i8_refusal_caseId ) | No      | uuid             | No         | -          | The ID of the case that is being refused. |
-| + [type](#payload_oneOf_i8_refusal_type )     | No      | enum (of string) | No         | -          | The type of the refusal.                  |
-|                                               |         |                  |            |            |                                           |
+| Property                                            | Pattern | Type             | Deprecated | Definition | Title/Description                         |
+| --------------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ----------------------------------------- |
+| + [caseId](#payload_oneOf_i8_refusal_caseId )       | No      | uuid             | No         | -          | The ID of the case that is being refused. |
+| + [type](#payload_oneOf_i8_refusal_type )           | No      | enum (of string) | No         | -          | The type of the refusal.                  |
+| - [eraseData](#payload_oneOf_i8_refusal_eraseData ) | No      | boolean          | No         | -          | Data erasure request has been received    |
+|                                                     |         |                  |            |            |                                           |
 
 ##### <a name="payload_oneOf_i8_refusal_caseId"></a>2.9.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`
 
@@ -1096,6 +1098,26 @@ Must be one of:
 * "HARD_REFUSAL"
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
+* "WITHDRAWAL_REFUSAL"
+
+##### <a name="payload_oneOf_i8_refusal_eraseData"></a>2.9.1.3. Property `Event > payload > oneOf > Refusal > refusal > eraseData`
+
+| Type                      | `boolean`                                                                 |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Data erasure request has been received
+
+**Examples:** 
+
+```json
+true
+```
+
+```json
+false
+```
 
 ### <a name="payload_oneOf_i9"></a>2.10. Property `Event > payload > oneOf > surveyUpdate.schema.json`
 
@@ -1954,4 +1976,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-01-20 at 08:29:38 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-16 at 10:50:48 +0000

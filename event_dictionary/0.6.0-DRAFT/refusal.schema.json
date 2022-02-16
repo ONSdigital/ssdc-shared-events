@@ -15,7 +15,17 @@
         "type": {
           "type": "string",
           "description": "The type of the refusal.",
-          "enum": ["HARD_REFUSAL", "EXTRAORDINARY_REFUSAL", "SOFT_REFUSAL"]
+          "enum": [
+            "HARD_REFUSAL",
+            "EXTRAORDINARY_REFUSAL",
+            "SOFT_REFUSAL",
+            "WITHDRAWAL_REFUSAL"
+          ]
+        },
+        "eraseData": {
+          "description": "Data erasure request has been received",
+          "type": "boolean",
+          "examples": [true, false]
         }
       },
       "required": ["caseId", "type"],
