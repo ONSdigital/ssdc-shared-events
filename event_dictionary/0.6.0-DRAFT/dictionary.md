@@ -437,6 +437,7 @@ Must be one of:
 * "HARD_REFUSAL"
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
+* "WITHDRAWAL_REFUSAL"
 
 ##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
 
@@ -1976,4 +1977,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-16 at 14:14:26 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-17 at 12:03:15 +0000
