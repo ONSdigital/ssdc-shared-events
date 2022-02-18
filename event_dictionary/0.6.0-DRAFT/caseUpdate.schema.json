@@ -39,7 +39,8 @@
             null,
             "HARD_REFUSAL",
             "EXTRAORDINARY_REFUSAL",
-            "SOFT_REFUSAL"
+            "SOFT_REFUSAL",
+            "WITHDRAWAL_REFUSAL"
           ]
         },
         "sample": {
