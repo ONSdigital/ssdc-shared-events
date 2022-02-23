@@ -1485,21 +1485,6 @@ Must be one of:
 "cy"
 ```
 
-**Examples:** 
-
-```json
-[
-    "en"
-]
-```
-
-```json
-[
-    "en",
-    "cy"
-]
-```
-
 **Example:** 
 
 ```json
@@ -1639,20 +1624,6 @@ Must be one of:
 "cy"
 ```
 
-**Examples:** 
-
-```json
-[
-    "en"
-]
-```
-
-```json
-[
-    "cy"
-]
-```
-
 **Example:** 
 
 ```json
@@ -1790,20 +1761,6 @@ Must be one of:
 
 ```json
 "cy"
-```
-
-**Examples:** 
-
-```json
-[
-    "en"
-]
-```
-
-```json
-[
-    "cy"
-]
 ```
 
 **Example:** 
@@ -2184,4 +2141,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-23 at 09:47:26 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-23 at 09:56:00 +0000
