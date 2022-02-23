@@ -2,7 +2,7 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "Lorem commodo enim",
+    "source": "et tempor",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,18 +10,27 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "collectionExerciseUpdate": {
-      "collectionExerciseId": "ecd1e9c2-0e20-4b20-a214-f5b35457a664",
-      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "name": "velit",
-      "reference": "MVP012021",
-      "startDate": "2021-09-17T23:59:59.999Z",
-      "endDate": "2021-09-27T23:59:59.999Z",
-      "metadata": {
-        "numberOfWaves": "3",
-        "waveLength": "2",
-        "cohorts": "3",
-        "cohortSchedule": "7"
+    "newCase": {
+      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
+      "sample": {
+        "questionnaire": "dummy_v8mivr3o6a",
+        "sampleUnitRef": "dummy_c8dn1sxpsy",
+        "cohort": "dummy_ud6topep6q",
+        "addressLine1": "dummy_gclgiokjbu",
+        "addressLine2": "dummy_dl3wjkx5cc",
+        "addressLine3": "dummy_sw3rygb0sy",
+        "townName": "dummy_61s7nz12b1",
+        "postcode": "dummy_4clpf3n0h6",
+        "region": "dummy_0c893u1nsf",
+        "gor9d": "dummy_ndip07wrx0",
+        "laCode": "dummy_9uv511yjdh",
+        "uprn": "dummy_t59efd4dhn",
+        "uprnLatitude": "dummy_ge72p80a60",
+        "uprnLongitude": "dummy_cbtz3e0yk4"
+      },
+      "sampleSensitive": {
+        "phoneNumber": "dummy_pn3cx7t3ay"
       }
     }
   }

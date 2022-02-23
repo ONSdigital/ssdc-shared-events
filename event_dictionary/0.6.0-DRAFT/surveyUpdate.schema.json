@@ -106,24 +106,10 @@
               },
               "metadata": {
                 "description": "Any metadata associated with the print fulfilment.",
-                "type": "object",
-                "additionalProperties": true,
-                "required": ["languages"],
-                "properties": {
-                  "languages": {
-                    "description": "Language(s) of the sent material",
-                    "type": "array",
-                    "minItems": 1,
-                    "uniqueItems": true,
-                    "items": {
-                      "type": "string",
-                      "examples": ["en", "cy"]
-                    }
-                  }
-                }
+                "type": "object"
               }
             },
-            "required": ["packCode", "description", "metadata"],
+            "required": ["packCode", "description"],
             "additionalProperties": false
           }
         },
@@ -157,24 +143,10 @@
               },
               "metadata": {
                 "description": "Any metadata associated with the SMS fulfilment.",
-                "type": "object",
-                "additionalProperties": true,
-                "required": ["languages"],
-                "properties": {
-                  "languages": {
-                    "description": "Language(s) of the sent material",
-                    "type": "array",
-                    "minItems": 1,
-                    "uniqueItems": true,
-                    "items": {
-                      "type": "string",
-                      "examples": ["en", "cy"]
-                    }
-                  }
-                }
+                "type": "object"
               }
             },
-            "required": ["packCode", "description", "metadata"],
+            "required": ["packCode", "description"],
             "additionalProperties": false
           }
         },
@@ -208,24 +180,10 @@
               },
               "metadata": {
                 "description": "Any metadata associated with the email fulfilment.",
-                "type": "object",
-                "additionalProperties": true,
-                "required": ["languages"],
-                "properties": {
-                  "languages": {
-                    "description": "Language(s) of the sent material",
-                    "type": "array",
-                    "minItems": 1,
-                    "uniqueItems": true,
-                    "items": {
-                      "type": "string",
-                      "examples": ["en", "cy"]
-                    }
-                  }
-                }
+                "type": "object"
               }
             },
-            "required": ["packCode", "description", "metadata"],
+            "required": ["packCode", "description"],
             "additionalProperties": false
           }
         }
