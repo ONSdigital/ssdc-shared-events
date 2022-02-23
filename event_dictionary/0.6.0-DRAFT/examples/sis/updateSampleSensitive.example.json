@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_update-sample-sensitive",
-    "source": "cupidatat aute eiusmod dolore deserunt",
-    "channel": "RM",
+    "source": "amet elit est esse",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -13,14 +13,14 @@
     "updateSampleSensitive": {
       "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
       "sampleSensitive": {
-        "firstName": "dummy_zt7djhygqq",
-        "lastName": "dummy_ajhjm4b04x",
-        "childFirstName": "dummy_z2e42175z7",
-        "childMiddleNames": "dummy_dvas222d2e",
-        "childLastName": "dummy_2xsu9iu3z3",
-        "childDob": "dummy_taizv0cykz",
-        "mobileNumber": "dummy_7zohuv3na6",
-        "emailAddress": "dummy_l6r355z65g"
+        "firstName": "dummy_zoy2tk3st0",
+        "lastName": "dummy_7e3y0nwc4i",
+        "childFirstName": "dummy_7bpyae627w",
+        "childMiddleNames": "dummy_8ooz3ki5nj",
+        "childLastName": "dummy_hp30hsk20x",
+        "childDob": "dummy_ehatznul10",
+        "mobileNumber": "dummy_wf01b02g1t",
+        "emailAddress": "dummy_9rwib5f0m2"
       }
     }
   }

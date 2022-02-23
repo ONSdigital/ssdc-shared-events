@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_case-update",
-    "source": "cupidatat aute eiusmod dolore deserunt",
-    "channel": "RM",
+    "source": "amet elit est esse",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -16,12 +16,12 @@
       "surveyId": "d62b7263-9943-4607-9d53-087c02002cef",
       "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
       "invalid": false,
-      "refusalReceived": null,
+      "refusalReceived": "HARD_REFUSAL",
       "sample": {
-        "schoolId": "dummy_pe6ql7db7t",
-        "schoolName": "dummy_cbnrcqfib5",
-        "consentGivenTest": "dummy_sikbefigx2",
-        "consentGivenSurvey": "dummy_wnr69rbegr"
+        "schoolId": "dummy_iqlhgpe45r",
+        "schoolName": "dummy_6ltlrjkos6",
+        "consentGivenTest": "dummy_7s6eold7ql",
+        "consentGivenSurvey": "dummy_y18tqf82bn"
       },
       "sampleSensitive": {
         "firstName": "REDACTED",
