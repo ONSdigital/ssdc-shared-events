@@ -28,7 +28,7 @@ mkdir -p examples
 mkdir -p examples/sis
 mkdir -p examples/social
 mkdir -p examples/business
-python ../../polish_example_json.py
+pipenv run python ../../polish_example_json.py
 rm *.example.json
 
 popd
