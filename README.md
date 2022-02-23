@@ -23,7 +23,7 @@ You'll find a JSON example of every event type with a `.example.json` suffix, in
 
 The examples are machine-generated, so the values might not make sense... they're just random placeholders, so that the message structure can be understood. You should refer to the [Event Dictionary](event_dictionary/0.5.0/dictionary.md) for the specifics on particular JSON properties.
 
-##  How to Format, Validate the Schema and Re-Generate the Documentation & Example JSON
+## How to Format, Validate the Schema and Re-Generate the Documentation & Example JSON
 In a hurry? Just run `./regen.sh`
 
 Formatting is done in the correct version directory by running (requires NPM installed): `npx prettier --write ./*.json`

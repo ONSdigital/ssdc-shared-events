@@ -12,9 +12,9 @@ then
     exit
 fi
 
-if ! command -v python3 &> /dev/null
+if ! command -v pipenv &> /dev/null
 then
-    echo "command 'python3' could not be found. Did you forget to install it?"
+    echo "command 'pipenv' could not be found. Did you forget to install it?"
     exit
 fi
 
@@ -24,11 +24,14 @@ pushd event_dictionary/0.6.0-DRAFT/ || exit
 npx prettier --write ./*.json
 generate-schema-doc event.schema.json --config template_name=md dictionary.md
 ../../generate_example_json.sh
+
+echo "Generating polished example events"
 mkdir -p examples
 mkdir -p examples/sis
 mkdir -p examples/social
 mkdir -p examples/business
+
 pipenv run python ../../polish_example_json.py
 rm *.example.json
 
-popd
+popd || exit

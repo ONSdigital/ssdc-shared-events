@@ -2,39 +2,198 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_case-update",
-    "source": "amet elit est esse",
-    "channel": "RH",
+    "source": "officia qui",
+    "channel": "RM",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "caseUpdate": {
-      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
-      "caseRef": "12345678901",
-      "surveyId": "d62b7263-9943-4607-9d53-087c02002cef",
-      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
-      "invalid": false,
-      "refusalReceived": "HARD_REFUSAL",
-      "sample": {
-        "schoolId": "dummy_iqlhgpe45r",
-        "schoolName": "dummy_6ltlrjkos6",
-        "consentGivenTest": "dummy_7s6eold7ql",
-        "consentGivenSurvey": "dummy_y18tqf82bn"
-      },
-      "sampleSensitive": {
-        "firstName": "REDACTED",
-        "lastName": "REDACTED",
-        "childFirstName": "REDACTED",
-        "childMiddleNames": "REDACTED",
-        "childLastName": "REDACTED",
-        "childDob": "REDACTED",
-        "mobileNumber": "REDACTED",
-        "emailAddress": "REDACTED"
-      },
-      "createdAt": "2021-08-09T10:55.31.431Z",
-      "lastUpdatedAt": "2021-08-09T10:55.31.431Z"
+    "surveyUpdate": {
+      "surveyId": "21ce842b-4359-402a-9311-973f07d2d253",
+      "name": "SIS",
+      "sampleDefinition": [
+        {
+          "columnName": "schoolId",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 11
+            }
+          ]
+        },
+        {
+          "columnName": "schoolName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 100
+            }
+          ]
+        },
+        {
+          "columnName": "consentGivenTest",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+              "set": [
+                "true",
+                "false"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "consentGivenSurvey",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.InSetRule",
+              "set": [
+                "true",
+                "false"
+              ]
+            }
+          ]
+        },
+        {
+          "columnName": "firstName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "lastName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "childFirstName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "childMiddleNames",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.LengthRule",
+              "maxLength": 60
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "childLastName",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "childDob",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            },
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.ISODateRule"
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "mobileNumber",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ],
+          "sensitive": true
+        },
+        {
+          "columnName": "emailAddress",
+          "rules": [],
+          "sensitive": true
+        }
+      ],
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
+      "allowedPrintFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Letter",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "allowedSmsFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC SMS",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "allowedEmailFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Email",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "metadata": {
+        "splines": 12,
+        "reticulation": [
+          "foo",
+          "bar"
+        ],
+        "gambertron": {
+          "this": "that"
+        }
+      }
     }
   }
 }
