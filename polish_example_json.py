@@ -89,39 +89,39 @@ for survey_type in survey_types:
         if event_item["event"] == 'surveyUpdate':
             if survey_type["type"] == 'social':
                 event["payload"]["surveyUpdate"]["name"] = "LMS"
-                event["payload"]["surveyUpdate"]["allowedPrintFulfilments"] = [
-                    {
-                        "packCode": "replace-uac-en",
-                        "description": "Replacement UAC - English",
-                        "metadata": {
-                            "suitableRegions": ["E", "N"]
-                        }
-                    },
-                    {
-                        "packCode": "replace-uac-cy",
-                        "description": "Replacement UAC - English & Welsh",
-                        "metadata": {
-                            "suitableRegions": ["W"]
-                        }
-                    }
-                ]
-                event["payload"]["surveyUpdate"]["allowedSmsFulfilments"] = [
-                    {
-                        "packCode": "replace-uac-en",
-                        "description": "Replacement UAC - English",
-                        "metadata": {
-                            "suitableRegions": ["E", "N"]
-                        }
-                    },
-                    {
-                        "packCode": "replace-uac-cy",
-                        "description": "Replacement UAC - English & Welsh",
-                        "metadata": {
-                            "suitableRegions": ["W"]
-                        }
-                    }
-                ]
-                event["payload"]["surveyUpdate"]["allowedEmailFulfilments"] = []
+                # event["payload"]["surveyUpdate"]["allowedPrintFulfilments"] = [
+                #     {
+                #         "packCode": "replace-uac-en",
+                #         "description": "Replacement UAC - English",
+                #         "metadata": {
+                #             "suitableRegions": ["E", "N"]
+                #         }
+                #     },
+                #     {
+                #         "packCode": "replace-uac-cy",
+                #         "description": "Replacement UAC - English & Welsh",
+                #         "metadata": {
+                #             "suitableRegions": ["W"]
+                #         }
+                #     }
+                # ]
+                # event["payload"]["surveyUpdate"]["allowedSmsFulfilments"] = [
+                #     {
+                #         "packCode": "replace-uac-en",
+                #         "description": "Replacement UAC - English",
+                #         "metadata": {
+                #             "suitableRegions": ["E", "N"]
+                #         }
+                #     },
+                #     {
+                #         "packCode": "replace-uac-cy",
+                #         "description": "Replacement UAC - English & Welsh",
+                #         "metadata": {
+                #             "suitableRegions": ["W"]
+                #         }
+                #     }
+                # ]
+                # event["payload"]["surveyUpdate"]["allowedEmailFulfilments"] = []
             else:
                 event["payload"]["surveyUpdate"]["name"] = survey_type["type"].upper()
 
@@ -152,12 +152,6 @@ for survey_type in survey_types:
                 }
             elif survey_type["type"] == 'sis':
                 event["payload"]["collectionExerciseUpdate"]["metadata"] = None
-
-        # if event_item["event"] == 'printFulfilment':
-        #     event["payload"]["printFulfilment"]["personalisation"] = {
-        #         "firstName": "Joe",
-        #         "lastName": "Bloggs",
-        #     }
 
         polished_example_file = CWD.joinpath('examples', survey_type["type"], f'{event_item["event"]}.example.json')
         polished_example_file.write_text(json.dumps(event, indent=2))

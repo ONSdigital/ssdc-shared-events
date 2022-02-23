@@ -18,25 +18,27 @@ def polish_json_examples(example_json: Dict, schema: Dict) -> Dict:
         # If given an object then recursively step into the properties
         return polish_json_examples(example_json, schema['properties'])
 
-    for key, value in example_json.items():
-        if key.startswith('$'):
-            # $ prefix indicates a JSON schema parameter, ignore it
+    for key, example_value in example_json.items():
+        if key.startswith('$') or not (key_schema := schema.get(key)):
+            # $ prefix indicates a JSON schema parameter or no reference to this key in the schema, ignore it
             continue
 
-        key_schema = schema.get(key, {})
-        if schema_examples := key_schema.get('examples'):
+        if (schema_examples := key_schema.get('examples')) and (example_value not in schema_examples):
             # If the schema provides examples and the existing example JSON does not adhere,
             # then replace with a choice of schema example values
-            if value not in schema_examples:
-                polished_example_json[key] = random.choice(schema_examples)
+            # if value not in schema_examples:
+            polished_example_json[key] = random.choice(schema_examples)
 
         elif key_schema.get('type') == 'array':
             # Recursively step through arrays. Note that if an example for the entire array is supplied,
-            # then examples for individual items will be ignored
-            polished_example_json[key] = [polish_json_examples(i, key_schema.get('items', {})) for i in value]
+            # then examples for individual items will be ignored. It may be preferable to provide an entire example
+            # array instead as building examples for individual example items may not respect restrictions on the
+            # array as a whole such as uniqueness of elements
+            polished_example_json[key] = [polish_json_examples(i, key_schema.get('items', {})) for i in example_value]
 
         elif key_schema.get('type') == 'object':
-            # Recursively step into sub objects
-            polished_example_json[key] = polish_json_examples(value, key_schema['properties'])
+            # Recursively step into sub objects. Note that if an example for the entire sub object is provided then
+            # that will be used and examples within the sub object will be ignored.
+            polished_example_json[key] = polish_json_examples(example_value, key_schema.get('properties', {}))
 
     return polished_example_json

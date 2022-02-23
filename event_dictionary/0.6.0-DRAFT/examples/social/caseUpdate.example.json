@@ -1,0 +1,43 @@
+{
+  "header": {
+    "version": "0.6.0-DRAFT",
+    "topic": "event_case-update",
+    "source": "veniam labore",
+    "channel": "RM",
+    "dateTime": "1970-01-01T00:00:00.000Z",
+    "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
+    "originatingUser": "foo.bar@ons.gov.uk"
+  },
+  "payload": {
+    "caseUpdate": {
+      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "caseRef": "12345678901",
+      "surveyId": "d62b7263-9943-4607-9d53-087c02002cef",
+      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
+      "invalid": false,
+      "refusalReceived": "SOFT_REFUSAL",
+      "sample": {
+        "questionnaire": "dummy_m3b51t4dm4",
+        "sampleUnitRef": "dummy_f0tsx2lryi",
+        "cohort": "dummy_k5nsfnw3nw",
+        "addressLine1": "dummy_yff9mh6h9p",
+        "addressLine2": "dummy_w7v3noj03z",
+        "addressLine3": "dummy_wsxyr3g91j",
+        "townName": "dummy_0ie2tfcau2",
+        "postcode": "dummy_2l76s6vjzf",
+        "region": "dummy_fjwz22a1r3",
+        "gor9d": "dummy_b30gbqlxdh",
+        "laCode": "dummy_j115pm40iw",
+        "uprn": "dummy_3fz0hyu4ns",
+        "uprnLatitude": "dummy_ffnjuqst4u",
+        "uprnLongitude": "dummy_0am90p37yj"
+      },
+      "sampleSensitive": {
+        "phoneNumber": "REDACTED"
+      },
+      "createdAt": "2021-08-09T10:55.31.431Z",
+      "lastUpdatedAt": "2021-08-09T10:55.31.431Z"
+    }
+  }
+}

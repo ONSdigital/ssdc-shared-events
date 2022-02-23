@@ -79,30 +79,18 @@
         "allowedPrintFulfilments": {
           "description": "Printed fulfilments which are allowed on this survey.",
           "type": "array",
-          "examples": [
-            [
-              {
-                "packCode": "REPLACEMENT_UAC",
-                "description": "Replacement UAC Letter",
-                "metadata": {
-                  "languages": ["en"],
-                  "foo": "bar"
-                }
-              }
-            ]
-          ],
           "items": {
             "type": "object",
             "properties": {
               "packCode": {
                 "description": "The pack code of this print fulfilment, used on print fulfilment requests.",
                 "type": "string",
-                "examples": ["REPLACEMENT_UAC_CY_AND_EN"]
+                "examples": ["REPLACEMENT_UAC_LETTER_ENGLISH"]
               },
               "description": {
                 "description": "A human-readable description of the printed fulfilment.",
                 "type": "string",
-                "examples": ["Replacement UAC - Welsh and English"]
+                "examples": ["Replacement UAC - English"]
               },
               "metadata": {
                 "description": "Any metadata associated with the print fulfilment.",
@@ -131,18 +119,6 @@
         "allowedSmsFulfilments": {
           "description": "SMS fulfilments which are allowed on this survey.",
           "type": "array",
-          "examples": [
-            [
-              {
-                "packCode": "REPLACEMENT_UAC",
-                "description": "Replacement UAC SMS",
-                "metadata": {
-                  "languages": ["en"],
-                  "foo": "bar"
-                }
-              }
-            ]
-          ],
           "items": {
             "type": "object",
             "properties": {
@@ -159,42 +135,16 @@
               "metadata": {
                 "description": "Any metadata associated with the SMS fulfilment.",
                 "type": "object",
-                "additionalProperties": true,
-                "required": ["languages"],
-                "properties": {
-                  "languages": {
-                    "description": "Language(s) of the sent material",
-                    "type": "array",
-                    "minItems": 1,
-                    "uniqueItems": true,
-                    "examples": [["en"], ["cy"]],
-                    "items": {
-                      "type": "string",
-                      "examples": ["en", "cy"]
-                    }
-                  }
-                }
+                "examples": [{ "suitableRegions": ["W"] }]
               }
             },
-            "required": ["packCode", "description", "metadata"],
+            "required": ["packCode", "description"],
             "additionalProperties": false
           }
         },
         "allowedEmailFulfilments": {
           "description": "Email fulfilments which are allowed on this survey.",
           "type": "array",
-          "examples": [
-            [
-              {
-                "packCode": "REPLACEMENT_UAC",
-                "description": "Replacement UAC Email",
-                "metadata": {
-                  "languages": ["en"],
-                  "foo": "bar"
-                }
-              }
-            ]
-          ],
           "items": {
             "type": "object",
             "properties": {
@@ -211,24 +161,10 @@
               "metadata": {
                 "description": "Any metadata associated with the email fulfilment.",
                 "type": "object",
-                "additionalProperties": true,
-                "required": ["languages"],
-                "properties": {
-                  "languages": {
-                    "description": "Language(s) of the sent material",
-                    "type": "array",
-                    "minItems": 1,
-                    "uniqueItems": true,
-                    "examples": [["en"], ["cy"]],
-                    "items": {
-                      "type": "string",
-                      "examples": ["en", "cy"]
-                    }
-                  }
-                }
+                "examples": [{ "suitableRegions": ["E"] }]
               }
             },
-            "required": ["packCode", "description", "metadata"],
+            "required": ["packCode", "description"],
             "additionalProperties": false
           }
         }
