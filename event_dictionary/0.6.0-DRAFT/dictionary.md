@@ -61,6 +61,7 @@
     - [2.9.1. Property `Event > payload > oneOf > Refusal > refusal`](#payload_oneOf_i8_refusal)
       - [2.9.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`](#payload_oneOf_i8_refusal_caseId)
       - [2.9.1.2. Property `Event > payload > oneOf > Refusal > refusal > type`](#payload_oneOf_i8_refusal_type)
+      - [2.9.1.3. Property `Event > payload > oneOf > Refusal > refusal > eraseData`](#payload_oneOf_i8_refusal_eraseData)
   - [2.10. Property `Event > payload > oneOf > surveyUpdate.schema.json`](#payload_oneOf_i9)
     - [2.10.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate`](#payload_oneOf_i9_surveyUpdate)
       - [2.10.1.1. Property `Event > payload > oneOf > Survey Update > surveyUpdate > surveyId`](#payload_oneOf_i9_surveyUpdate_surveyId)
@@ -442,6 +443,7 @@ Must be one of:
 * "HARD_REFUSAL"
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
+* "WITHDRAWAL_REFUSAL"
 
 ##### <a name="payload_oneOf_i0_caseUpdate_sample"></a>2.1.1.7. Property `Event > payload > oneOf > Case Update > caseUpdate > sample`
 
@@ -1068,11 +1070,12 @@ Must be one of:
 | **Additional properties** | [[Not allowed]](# "Additional Properties not allowed.") |
 |                           |                                                         |
 
-| Property                                      | Pattern | Type             | Deprecated | Definition | Title/Description                         |
-| --------------------------------------------- | ------- | ---------------- | ---------- | ---------- | ----------------------------------------- |
-| + [caseId](#payload_oneOf_i8_refusal_caseId ) | No      | uuid             | No         | -          | The ID of the case that is being refused. |
-| + [type](#payload_oneOf_i8_refusal_type )     | No      | enum (of string) | No         | -          | The type of the refusal.                  |
-|                                               |         |                  |            |            |                                           |
+| Property                                            | Pattern | Type             | Deprecated | Definition | Title/Description                                         |
+| --------------------------------------------------- | ------- | ---------------- | ---------- | ---------- | --------------------------------------------------------- |
+| + [caseId](#payload_oneOf_i8_refusal_caseId )       | No      | uuid             | No         | -          | The ID of the case that is being refused.                 |
+| + [type](#payload_oneOf_i8_refusal_type )           | No      | enum (of string) | No         | -          | The type of the refusal.                                  |
+| - [eraseData](#payload_oneOf_i8_refusal_eraseData ) | No      | boolean          | No         | -          | Optional flag for data erasure request, defaults to false |
+|                                                     |         |                  |            |            |                                                           |
 
 ##### <a name="payload_oneOf_i8_refusal_caseId"></a>2.9.1.1. Property `Event > payload > oneOf > Refusal > refusal > caseId`
 
@@ -1102,6 +1105,26 @@ Must be one of:
 * "HARD_REFUSAL"
 * "EXTRAORDINARY_REFUSAL"
 * "SOFT_REFUSAL"
+* "WITHDRAWAL_REFUSAL"
+
+##### <a name="payload_oneOf_i8_refusal_eraseData"></a>2.9.1.3. Property `Event > payload > oneOf > Refusal > refusal > eraseData`
+
+| Type                      | `boolean`                                                                 |
+| ------------------------- | ------------------------------------------------------------------------- |
+| **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
+|                           |                                                                           |
+
+**Description:** Optional flag for data erasure request, defaults to false
+
+**Examples:** 
+
+```json
+true
+```
+
+```json
+false
+```
 
 ### <a name="payload_oneOf_i9"></a>2.10. Property `Event > payload > oneOf > surveyUpdate.schema.json`
 
@@ -2161,4 +2184,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-23 at 09:41:34 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-23 at 09:47:26 +0000
