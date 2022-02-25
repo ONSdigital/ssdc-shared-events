@@ -2,7 +2,7 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_case-update",
-    "source": "et tempor",
+    "source": "ad consectetur",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,25 +10,31 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "newCase": {
+    "caseUpdate": {
       "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "caseRef": "12345678901",
+      "surveyId": "d62b7263-9943-4607-9d53-087c02002cef",
       "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
+      "invalid": false,
+      "refusalReceived": "EXTRAORDINARY_REFUSAL",
       "sample": {
-        "schoolId": "dummy_yhktb9qe66",
-        "schoolName": "dummy_k5pwc91rw7",
-        "consentGivenTest": "dummy_ydcl4laq6y",
-        "consentGivenSurvey": "dummy_ydkmqmyb9q"
+        "schoolId": "dummy_2rz879w0t8",
+        "schoolName": "dummy_jhq6stxqxd",
+        "consentGivenTest": "dummy_0w9rgqi7vl",
+        "consentGivenSurvey": "dummy_euexyx3g96"
       },
       "sampleSensitive": {
-        "firstName": "dummy_q9lotl1xns",
-        "lastName": "dummy_i8zhg27dhi",
-        "childFirstName": "dummy_e5edhiwyj0",
-        "childMiddleNames": "dummy_gndessf90z",
-        "childLastName": "dummy_3zidxws6mb",
-        "childDob": "dummy_04355d66h6",
-        "mobileNumber": "dummy_4kon8a3utv",
-        "emailAddress": "dummy_2lj16r97tg"
-      }
+        "firstName": "REDACTED",
+        "lastName": "REDACTED",
+        "childFirstName": "REDACTED",
+        "childMiddleNames": "REDACTED",
+        "childLastName": "REDACTED",
+        "childDob": "REDACTED",
+        "mobileNumber": "REDACTED",
+        "emailAddress": "REDACTED"
+      },
+      "createdAt": "2021-08-09T10:55.31.431Z",
+      "lastUpdatedAt": "2021-08-09T10:55.31.431Z"
     }
   }
 }

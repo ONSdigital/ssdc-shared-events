@@ -2,7 +2,7 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_case-update",
-    "source": "et tempor",
+    "source": "ad consectetur",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,28 +10,34 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "newCase": {
+    "caseUpdate": {
       "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "caseRef": "12345678901",
+      "surveyId": "d62b7263-9943-4607-9d53-087c02002cef",
       "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
+      "invalid": false,
+      "refusalReceived": "EXTRAORDINARY_REFUSAL",
       "sample": {
-        "questionnaire": "dummy_v8mivr3o6a",
-        "sampleUnitRef": "dummy_c8dn1sxpsy",
-        "cohort": "dummy_ud6topep6q",
-        "addressLine1": "dummy_gclgiokjbu",
-        "addressLine2": "dummy_dl3wjkx5cc",
-        "addressLine3": "dummy_sw3rygb0sy",
-        "townName": "dummy_61s7nz12b1",
-        "postcode": "dummy_4clpf3n0h6",
-        "region": "dummy_0c893u1nsf",
-        "gor9d": "dummy_ndip07wrx0",
-        "laCode": "dummy_9uv511yjdh",
-        "uprn": "dummy_t59efd4dhn",
-        "uprnLatitude": "dummy_ge72p80a60",
-        "uprnLongitude": "dummy_cbtz3e0yk4"
+        "questionnaire": "dummy_b54f0vn4dq",
+        "sampleUnitRef": "dummy_jiu0fzi0jz",
+        "cohort": "dummy_mhc42tkv0t",
+        "addressLine1": "dummy_sach7g3smn",
+        "addressLine2": "dummy_tbfqdcdn8y",
+        "addressLine3": "dummy_yvngypomfk",
+        "townName": "dummy_tdg4lcv1ts",
+        "postcode": "dummy_cmreeulamu",
+        "region": "dummy_ym3gz45zui",
+        "gor9d": "dummy_exl99rink5",
+        "laCode": "dummy_3pw8qyrvhj",
+        "uprn": "dummy_g75wz77ow7",
+        "uprnLatitude": "dummy_7u8gekbmgy",
+        "uprnLongitude": "dummy_wt7p269pep"
       },
       "sampleSensitive": {
-        "phoneNumber": "dummy_pn3cx7t3ay"
-      }
+        "phoneNumber": "REDACTED"
+      },
+      "createdAt": "2021-08-09T10:55.31.431Z",
+      "lastUpdatedAt": "2021-08-09T10:55.31.431Z"
     }
   }
 }

@@ -2,7 +2,7 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_uac-update",
-    "source": "et tempor",
+    "source": "ad consectetur",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,24 +10,18 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "newCase": {
+    "uacUpdate": {
       "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
-      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
-      "sample": {
-        "schoolId": "dummy_yhktb9qe66",
-        "schoolName": "dummy_k5pwc91rw7",
-        "consentGivenTest": "dummy_ydcl4laq6y",
-        "consentGivenSurvey": "dummy_ydkmqmyb9q"
-      },
-      "sampleSensitive": {
-        "firstName": "dummy_q9lotl1xns",
-        "lastName": "dummy_i8zhg27dhi",
-        "childFirstName": "dummy_e5edhiwyj0",
-        "childMiddleNames": "dummy_gndessf90z",
-        "childLastName": "dummy_3zidxws6mb",
-        "childDob": "dummy_04355d66h6",
-        "mobileNumber": "dummy_4kon8a3utv",
-        "emailAddress": "dummy_2lj16r97tg"
+      "collectionExerciseId": "b3ef160a-6152-47be-bd20-3604e1387c48",
+      "surveyId": "ebed1515-fd37-487c-b81a-6a75239aa2d5",
+      "active": true,
+      "uacHash": "bad079d8807e416719eca8502ce7b99cf0721a22373b1b6d74b03542dba3bf52",
+      "qid": "0130000000100142",
+      "receiptReceived": false,
+      "collectionInstrumentUrl": "https://raw.githubusercontent.com/ONSdigital/eq-questionnaire-schemas/main/schemas/social/en/social-demo.json",
+      "eqLaunched": true,
+      "metadata": {
+        "wave": 3
       }
     }
   }

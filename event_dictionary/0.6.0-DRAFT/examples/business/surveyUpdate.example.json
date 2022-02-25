@@ -2,7 +2,7 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "et tempor",
+    "source": "ad consectetur",
     "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -10,39 +10,174 @@
     "originatingUser": "foo.bar@ons.gov.uk"
   },
   "payload": {
-    "newCase": {
-      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
-      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
-      "sample": {
-        "ruref": "dummy_pxl0y4r7p5",
-        "checkletter": "dummy_vc5f322n8m",
-        "frosic92": "dummy_lyy0rrg7jm",
-        "rusic92": "dummy_v6y4kkt3mf",
-        "frosic2007": "dummy_wb8mmrir2d",
-        "rusic2007": "dummy_t0o5ispxbj",
-        "froempment": "dummy_c2fh01ij6y",
-        "frotover": "dummy_ymjb2s6h34",
-        "entref": "dummy_7wujgcu4pr",
-        "legalstatus": "dummy_zce317s2jb",
-        "entrepmkr": "dummy_nn36prkbz3",
-        "region": "dummy_gvz0z1dn9l",
-        "birthdate": "dummy_scnrar2ia0",
-        "entname1": "dummy_0ew2vpnfqq",
-        "entname2": "dummy_5o9vsuy3s4",
-        "entname3": "dummy_qmv01rdx9a",
-        "runame1": "dummy_z964tm4akg",
-        "runame2": "dummy_7hzwmgkyfg",
-        "runame3": "dummy_x684ep8gcr",
-        "tradstyle1": "dummy_enwyiiaxfu",
-        "tradstyle2": "dummy_me05d0ftut",
-        "tradstyle3": "dummy_r08wqti8rz",
-        "seltype": "dummy_kcbz4a2rbb",
-        "inclexcl": "dummy_byhsjowt06",
-        "cell_no": "dummy_nl9h9dw7pb",
-        "formtype": "dummy_zpr2jkd2d9",
-        "currency": "dummy_i4d3ndyfgj"
-      },
-      "sampleSensitive": {}
+    "surveyUpdate": {
+      "surveyId": "21ce842b-4359-402a-9311-973f07d2d253",
+      "name": "BUSINESS",
+      "sampleDefinition": [
+        {
+          "columnName": "ruref",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ]
+        },
+        {
+          "columnName": "checkletter",
+          "rules": []
+        },
+        {
+          "columnName": "frosic92",
+          "rules": []
+        },
+        {
+          "columnName": "rusic92",
+          "rules": []
+        },
+        {
+          "columnName": "frosic2007",
+          "rules": []
+        },
+        {
+          "columnName": "rusic2007",
+          "rules": []
+        },
+        {
+          "columnName": "froempment",
+          "rules": []
+        },
+        {
+          "columnName": "frotover",
+          "rules": []
+        },
+        {
+          "columnName": "entref",
+          "rules": []
+        },
+        {
+          "columnName": "legalstatus",
+          "rules": []
+        },
+        {
+          "columnName": "entrepmkr",
+          "rules": []
+        },
+        {
+          "columnName": "region",
+          "rules": []
+        },
+        {
+          "columnName": "birthdate",
+          "rules": []
+        },
+        {
+          "columnName": "entname1",
+          "rules": []
+        },
+        {
+          "columnName": "entname2",
+          "rules": []
+        },
+        {
+          "columnName": "entname3",
+          "rules": []
+        },
+        {
+          "columnName": "runame1",
+          "rules": [
+            {
+              "className": "uk.gov.ons.ssdc.common.validation.MandatoryRule"
+            }
+          ]
+        },
+        {
+          "columnName": "runame2",
+          "rules": []
+        },
+        {
+          "columnName": "runame3",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle1",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle2",
+          "rules": []
+        },
+        {
+          "columnName": "tradstyle3",
+          "rules": []
+        },
+        {
+          "columnName": "seltype",
+          "rules": []
+        },
+        {
+          "columnName": "inclexcl",
+          "rules": []
+        },
+        {
+          "columnName": "cell_no",
+          "rules": []
+        },
+        {
+          "columnName": "formtype",
+          "rules": []
+        },
+        {
+          "columnName": "currency",
+          "rules": []
+        }
+      ],
+      "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/business/0.1.0-DRAFT/business.json",
+      "allowedPrintFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Letter",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "allowedSmsFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC SMS",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "allowedEmailFulfilments": [
+        {
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Email",
+          "metadata": {
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
+          }
+        }
+      ],
+      "metadata": {
+        "splines": 12,
+        "reticulation": [
+          "foo",
+          "bar"
+        ],
+        "gambertron": {
+          "this": "that"
+        }
+      }
     }
   }
 }

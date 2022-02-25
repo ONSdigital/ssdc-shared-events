@@ -16,23 +16,11 @@ CURRENT_DRAFT_PATH = EVENT_DICTIONARY_PATH.joinpath(CURRENT_DRAFT_VERSION)
 
 
 def main():
+    # First prepare the example events with examples they provide in their schemas
     replace_random_data_with_schema_examples()
+
+    # Then generate specifically tailored examples for each example survey type
     generate_survey_specific_example_events()
-
-
-def replace_random_data_with_schema_examples():
-    # Replace each event's random data with choices of examples in the schema where provided
-
-    json_schema_files = {schema_file.name.split('.')[0]: schema_file
-                         for schema_file in CURRENT_DRAFT_PATH.glob('*.schema.json')}
-    json_example_files = CURRENT_DRAFT_PATH.glob('*.example.json')
-
-    for json_example_file in json_example_files:
-        schema_name = json_example_file.name.split('.')[0]
-        schema = json.loads(json_schema_files[schema_name].read_text())
-        json_example = json.loads(json_example_file.read_text())
-        polished_json_example = polish_json_examples(json_example, schema)
-        json_example_file.write_text(json.dumps(polished_json_example, indent=2))
 
 
 def generate_survey_specific_example_events():
@@ -47,16 +35,17 @@ def generate_survey_specific_example_events():
             'event': to_camel_case(topic.replace("event_", ""))
         })
 
-    event = json.loads(CURRENT_DRAFT_PATH.joinpath('event.example.json').read_text())
-    event["header"]["version"] = CURRENT_DRAFT_VERSION
-    event["header"]["originatingUser"] = 'foo.bar@ons.gov.uk'
+    event_template = json.loads(CURRENT_DRAFT_PATH.joinpath('event.example.json').read_text())
+    event_template["header"]["version"] = CURRENT_DRAFT_VERSION
+    event_template["header"]["originatingUser"] = 'foo.bar@ons.gov.uk'
 
     for survey_type in EXAMPLE_SURVEY_TYPES:
         survey_shape = json.loads(PROJECT_ROOT.joinpath('sample', survey_type['shape']).read_text())
         fake_sample, fake_sample_sensitive, fake_sample_sensitive_redacted = generate_fake_sample_data(survey_shape)
 
         for event_item in events:
-            event_type = tuple(event["payload"].keys())[0]
+            event_type = event_item["event"]
+            event = event_template.copy()
             event["payload"] = json.loads(CURRENT_DRAFT_PATH.joinpath(f'{event_type}.example.json').read_text())
             event["header"]["topic"] = event_item["topic"]
 
@@ -111,6 +100,21 @@ def generate_survey_specific_example_events():
             polished_example_file = CURRENT_DRAFT_PATH.joinpath('examples', survey_type["type"],
                                                                 f'{event_item["event"]}.example.json')
             polished_example_file.write_text(json.dumps(event, indent=2))
+
+
+def replace_random_data_with_schema_examples():
+    # Replace each event's random data with choices of examples in the schema where provided
+
+    json_schema_files = {schema_file.name.split('.')[0]: schema_file
+                         for schema_file in CURRENT_DRAFT_PATH.glob('*.schema.json')}
+    json_example_files = CURRENT_DRAFT_PATH.glob('*.example.json')
+
+    for json_example_file in json_example_files:
+        schema_name = json_example_file.name.split('.')[0]
+        schema = json.loads(json_schema_files[schema_name].read_text())
+        json_example = json.loads(json_example_file.read_text())
+        polished_json_example = polish_json_examples(json_example, schema)
+        json_example_file.write_text(json.dumps(polished_json_example, indent=2))
 
 
 def polish_json_examples(example_json: Dict, schema: Dict) -> Dict:
