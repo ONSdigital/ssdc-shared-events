@@ -16,7 +16,9 @@ CURRENT_DRAFT_PATH = EVENT_DICTIONARY_PATH.joinpath(CURRENT_DRAFT_VERSION)
 
 
 def main():
+
     # First prepare the example events with examples they provide in their schemas
+    # TODO - JSON Schema Faker can do this, but the CLI currently presents no way to config it.
     replace_random_data_with_schema_examples()
 
     # Then generate specifically tailored examples for each example survey type
