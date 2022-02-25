@@ -32,6 +32,6 @@ mkdir -p examples/social
 mkdir -p examples/business
 
 pipenv run python ../../polish_example_json.py
-rm *.example.json
+rm ./*.example.json
 
 popd || exit
