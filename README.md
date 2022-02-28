@@ -31,11 +31,21 @@ Install python dependencies, including json-schema-for-humans by running (requir
 Install fake-schema-cli by running (requires NPM installed): `npm install -g fake-schema-cli`
 
 ### Regenerate all examples
-To regenerate all examples and the schema dictionary, run `./regen.sh`
-This is useful for populating a new draft version for the first time, for example.
+Ensure the `CURRENT_DRAFT_VERSION` in `regen.sh` and `polish_example_json.py` is up-to-date.
 
-### Regenerate select examples
-To regenerate specific examples, pass in those target file names to the script like so: `./regen.sh <example1.schema.json> <example2.schema.json> ...`
+To regenerate all examples and the schema dictionary, from the project root run 
+```shell
+./regen.sh
+```
+This is useful for populating a new draft version for the first time, for example. Ensure you have updated the 
+
+### Regenerate specific examples
+Ensure the `CURRENT_DRAFT_VERSION` in `regen.sh` and `polish_example_json.py` is up-to-date.
+
+To regenerate specific examples, pass in those target file names to the script like so: 
+```shell
+./regen.sh <example1.schema.json> <example2.schema.json> ...
+```
 This will regenerate the entire schema dictionary but only the specific example json files required (plus the `event.example.json` example since it depends on all other event types).
 
 e.g. If you have made a change to the draft `caseUpdate` schema then you only need to run `./regen.sh caseUpdate.schema.json`.
