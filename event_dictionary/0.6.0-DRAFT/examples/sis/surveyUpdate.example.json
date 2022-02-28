@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_survey-update",
-    "source": "non pariatur elit officia sed",
-    "channel": "RM",
+    "source": "ad consectetur",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -11,7 +11,7 @@
   },
   "payload": {
     "surveyUpdate": {
-      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "surveyId": "21ce842b-4359-402a-9311-973f07d2d253",
       "name": "SIS",
       "sampleDefinition": [
         {
@@ -150,48 +150,49 @@
       "sampleDefinitionUrl": "https://raw.githubusercontent.com/ONSdigital/ssdc-shared-events/main/sample/sis/0.1.0-DRAFT/sis.json",
       "allowedPrintFulfilments": [
         {
-          "packCode": "in Ut ut in",
-          "description": "veniam Duis anim ex",
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Letter",
           "metadata": {
-            "quisaf": 24544085.818817243,
-            "adipisicing_8ee": -18705927.232777596,
-            "sit_d0": false
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
           }
         }
       ],
       "allowedSmsFulfilments": [
         {
-          "packCode": "esse id sed dolore non",
-          "description": "Excepteur anim",
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC SMS",
           "metadata": {
-            "anim_81a": 29911860,
-            "labored_6": -50816427
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
           }
         }
       ],
       "allowedEmailFulfilments": [
         {
-          "packCode": "tempor eiusmod",
-          "description": "veniam sint dolore dolore",
+          "packCode": "REPLACEMENT_UAC",
+          "description": "Replacement UAC Email",
           "metadata": {
-            "doc": -41290612.89418892
+            "languages": [
+              "en"
+            ],
+            "foo": "bar"
           }
-        },
-        {
-          "packCode": "Duis ut cupidatat",
-          "description": "eu labore",
-          "metadata": {
-            "aute_c": 33967340
-          }
-        },
-        {
-          "packCode": "do consectetur minim",
-          "description": "veniam magna culpa nisi in"
         }
       ],
       "metadata": {
-        "id_31": -65164462.80945587,
-        "irure_b": "veniam velit aute quis"
+        "splines": 12,
+        "reticulation": [
+          "foo",
+          "bar"
+        ],
+        "gambertron": {
+          "this": "that"
+        }
       }
     }
   }

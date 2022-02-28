@@ -79,23 +79,34 @@
         "allowedPrintFulfilments": {
           "description": "Printed fulfilments which are allowed on this survey.",
           "type": "array",
+          "examples": [
+            [
+              {
+                "packCode": "REPLACEMENT_UAC",
+                "description": "Replacement UAC Letter",
+                "metadata": {
+                  "languages": ["en"],
+                  "foo": "bar"
+                }
+              }
+            ]
+          ],
           "items": {
             "type": "object",
             "properties": {
               "packCode": {
                 "description": "The pack code of this print fulfilment, used on print fulfilment requests.",
                 "type": "string",
-                "examples": ["REPLACEMENT_UAC_LETTER_ENGLISH"]
+                "examples": ["REPLACEMENT_UAC_CY_AND_EN"]
               },
               "description": {
                 "description": "A human-readable description of the printed fulfilment.",
                 "type": "string",
-                "examples": ["Replacement UAC - English"]
+                "examples": ["Replacement UAC - Welsh and English"]
               },
               "metadata": {
                 "description": "Any metadata associated with the print fulfilment.",
-                "type": "object",
-                "examples": [{ "suitableRegions": ["E", "N"] }]
+                "type": "object"
               }
             },
             "required": ["packCode", "description"],
@@ -105,6 +116,18 @@
         "allowedSmsFulfilments": {
           "description": "SMS fulfilments which are allowed on this survey.",
           "type": "array",
+          "examples": [
+            [
+              {
+                "packCode": "REPLACEMENT_UAC",
+                "description": "Replacement UAC SMS",
+                "metadata": {
+                  "languages": ["en"],
+                  "foo": "bar"
+                }
+              }
+            ]
+          ],
           "items": {
             "type": "object",
             "properties": {
@@ -120,8 +143,7 @@
               },
               "metadata": {
                 "description": "Any metadata associated with the SMS fulfilment.",
-                "type": "object",
-                "examples": [{ "suitableRegions": ["W"] }]
+                "type": "object"
               }
             },
             "required": ["packCode", "description"],
@@ -131,6 +153,18 @@
         "allowedEmailFulfilments": {
           "description": "Email fulfilments which are allowed on this survey.",
           "type": "array",
+          "examples": [
+            [
+              {
+                "packCode": "REPLACEMENT_UAC",
+                "description": "Replacement UAC Email",
+                "metadata": {
+                  "languages": ["en"],
+                  "foo": "bar"
+                }
+              }
+            ]
+          ],
           "items": {
             "type": "object",
             "properties": {
@@ -146,8 +180,7 @@
               },
               "metadata": {
                 "description": "Any metadata associated with the email fulfilment.",
-                "type": "object",
-                "examples": [{ "suitableRegions": ["E"] }]
+                "type": "object"
               }
             },
             "required": ["packCode", "description"],

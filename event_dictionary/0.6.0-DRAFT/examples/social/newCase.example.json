@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_new-case",
-    "source": "non pariatur elit officia sed",
-    "channel": "RM",
+    "source": "ad consectetur",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -11,26 +11,26 @@
   },
   "payload": {
     "newCase": {
-      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "collectionExerciseId": "415fe420-80db-4ca6-a577-667fd6ba1463",
       "sample": {
-        "questionnaire": "dummy_y42wptksdc",
-        "sampleUnitRef": "dummy_137koavsyq",
-        "cohort": "dummy_28ozcq9qik",
-        "addressLine1": "dummy_73d04ywvs6",
-        "addressLine2": "dummy_0s4w1ra9jx",
-        "addressLine3": "dummy_1ur5lbklpb",
-        "townName": "dummy_f5bun2rf0l",
-        "postcode": "dummy_2wazkps3rn",
-        "region": "dummy_1yy5mj7s51",
-        "gor9d": "dummy_zhnazl1x62",
-        "laCode": "dummy_mlfm4jcu85",
-        "uprn": "dummy_jbbdtimno8",
-        "uprnLatitude": "dummy_qz4ayzuy0g",
-        "uprnLongitude": "dummy_veey6nbb1q"
+        "questionnaire": "dummy_b54f0vn4dq",
+        "sampleUnitRef": "dummy_jiu0fzi0jz",
+        "cohort": "dummy_mhc42tkv0t",
+        "addressLine1": "dummy_sach7g3smn",
+        "addressLine2": "dummy_tbfqdcdn8y",
+        "addressLine3": "dummy_yvngypomfk",
+        "townName": "dummy_tdg4lcv1ts",
+        "postcode": "dummy_cmreeulamu",
+        "region": "dummy_ym3gz45zui",
+        "gor9d": "dummy_exl99rink5",
+        "laCode": "dummy_3pw8qyrvhj",
+        "uprn": "dummy_g75wz77ow7",
+        "uprnLatitude": "dummy_7u8gekbmgy",
+        "uprnLongitude": "dummy_wt7p269pep"
       },
       "sampleSensitive": {
-        "phoneNumber": "dummy_ulq0u1ej5o"
+        "phoneNumber": "dummy_749xikadqt"
       }
     }
   }

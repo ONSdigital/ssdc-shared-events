@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_uac-update",
-    "source": "non pariatur elit officia sed",
-    "channel": "RM",
+    "source": "ad consectetur",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -11,19 +11,17 @@
   },
   "payload": {
     "uacUpdate": {
-      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "collectionExerciseId": "3883af91-0052-4497-9805-3238544fcf8a",
-      "surveyId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
+      "collectionExerciseId": "b3ef160a-6152-47be-bd20-3604e1387c48",
+      "surveyId": "ebed1515-fd37-487c-b81a-6a75239aa2d5",
       "active": true,
-      "uacHash": "dolor occaecat Excepteur",
-      "qid": "magna",
-      "receiptReceived": true,
-      "collectionInstrumentUrl": "est elit id reprehenderit proident",
+      "uacHash": "bad079d8807e416719eca8502ce7b99cf0721a22373b1b6d74b03542dba3bf52",
+      "qid": "0130000000100142",
+      "receiptReceived": false,
+      "collectionInstrumentUrl": "https://raw.githubusercontent.com/ONSdigital/eq-questionnaire-schemas/main/schemas/social/en/social-demo.json",
       "eqLaunched": true,
       "metadata": {
-        "commodo_d6": "non ex et commodo",
-        "occaecat1": true,
-        "magna_939": -24648936
+        "wave": 3
       }
     }
   }

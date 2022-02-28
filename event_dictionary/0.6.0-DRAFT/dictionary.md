@@ -337,7 +337,7 @@ Must be one of:
 | + [surveyId](#payload_oneOf_i0_caseUpdate_surveyId )                         | No      | uuid                     | No         | -          | The ID of the survey this case belongs to.              |
 | + [collectionExerciseId](#payload_oneOf_i0_caseUpdate_collectionExerciseId ) | No      | uuid                     | No         | -          | The ID of the collection exercise this case belongs to. |
 | + [invalid](#payload_oneOf_i0_caseUpdate_invalid )                           | No      | boolean                  | No         | -          | This case is not valid.                                 |
-| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived )           | No      | enum (of null or string) | No         | -          | If and why the case has been refused by the respondent. |
+| + [refusalReceived](#payload_oneOf_i0_caseUpdate_refusalReceived )           | No      | enum (of string or null) | No         | -          | If and why the case has been refused by the respondent. |
 | + [sample](#payload_oneOf_i0_caseUpdate_sample )                             | No      | object                   | No         | -          | The original sample data.                               |
 | + [sampleSensitive](#payload_oneOf_i0_caseUpdate_sampleSensitive )           | No      | object                   | No         | -          | Redacted Personally Identifiable Information (PII).     |
 | + [createdAt](#payload_oneOf_i0_caseUpdate_createdAt )                       | No      | date-time                | No         | -          | When the case was first created.                        |
@@ -425,7 +425,7 @@ false
 
 ##### <a name="payload_oneOf_i0_caseUpdate_refusalReceived"></a>2.1.1.6. Property `Event > payload > oneOf > Case Update > caseUpdate > refusalReceived`
 
-| Type                      | `enum (of null or string)`                                                |
+| Type                      | `enum (of string or null)`                                                |
 | ------------------------- | ------------------------------------------------------------------------- |
 | **Additional properties** | [[Any type: allowed]](# "Additional Properties of any type are allowed.") |
 |                           |                                                                           |
@@ -1406,7 +1406,7 @@ Must be one of:
 **Example:** 
 
 ```json
-"REPLACEMENT_UAC_LETTER_ENGLISH"
+"REPLACEMENT_UAC_CY_AND_EN"
 ```
 
 ##### <a name="payload_oneOf_i9_surveyUpdate_allowedPrintFulfilments_items_description"></a>2.10.1.6.1.2. Property `Event > payload > oneOf > Survey Update > surveyUpdate > allowedPrintFulfilments > allowedPrintFulfilments items > description`
@@ -1421,7 +1421,7 @@ Must be one of:
 **Example:** 
 
 ```json
-"Replacement UAC - English"
+"Replacement UAC - Welsh and English"
 ```
 
 ##### <a name="payload_oneOf_i9_surveyUpdate_allowedPrintFulfilments_items_metadata"></a>2.10.1.6.1.3. Property `Event > payload > oneOf > Survey Update > surveyUpdate > allowedPrintFulfilments > allowedPrintFulfilments items > metadata`
@@ -1436,12 +1436,18 @@ Must be one of:
 **Example:** 
 
 ```json
-{
-    "suitableRegions": [
-        "E",
-        "N"
-    ]
-}
+[
+    {
+        "packCode": "REPLACEMENT_UAC",
+        "description": "Replacement UAC Letter",
+        "metadata": {
+            "languages": [
+                "en"
+            ],
+            "foo": "bar"
+        }
+    }
+]
 ```
 
 ##### <a name="payload_oneOf_i9_surveyUpdate_allowedSmsFulfilments"></a>2.10.1.7. Property `Event > payload > oneOf > Survey Update > surveyUpdate > allowedSmsFulfilments`
@@ -1523,11 +1529,18 @@ Must be one of:
 **Example:** 
 
 ```json
-{
-    "suitableRegions": [
-        "W"
-    ]
-}
+[
+    {
+        "packCode": "REPLACEMENT_UAC",
+        "description": "Replacement UAC SMS",
+        "metadata": {
+            "languages": [
+                "en"
+            ],
+            "foo": "bar"
+        }
+    }
+]
 ```
 
 ##### <a name="payload_oneOf_i9_surveyUpdate_allowedEmailFulfilments"></a>2.10.1.8. Property `Event > payload > oneOf > Survey Update > surveyUpdate > allowedEmailFulfilments`
@@ -1609,11 +1622,18 @@ Must be one of:
 **Example:** 
 
 ```json
-{
-    "suitableRegions": [
-        "E"
-    ]
-}
+[
+    {
+        "packCode": "REPLACEMENT_UAC",
+        "description": "Replacement UAC Email",
+        "metadata": {
+            "languages": [
+                "en"
+            ],
+            "foo": "bar"
+        }
+    }
+]
 ```
 
 ### <a name="payload_oneOf_i10"></a>2.11. Property `Event > payload > oneOf > uacAuthentication.schema.json`
@@ -1977,4 +1997,4 @@ false
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-17 at 12:03:15 +0000
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2022-02-25 at 12:14:11 +0000

@@ -2,8 +2,8 @@
   "header": {
     "version": "0.6.0-DRAFT",
     "topic": "event_update-sample",
-    "source": "non pariatur elit officia sed",
-    "channel": "RM",
+    "source": "ad consectetur",
+    "channel": "RH",
     "dateTime": "1970-01-01T00:00:00.000Z",
     "messageId": "3883af91-0052-4497-9805-3238544fcf8a",
     "correlationId": "3883af91-0052-4497-9805-3238544fcf8a",
@@ -11,12 +11,12 @@
   },
   "payload": {
     "updateSample": {
-      "caseId": "3883af91-0052-4497-9805-3238544fcf8a",
+      "caseId": "bcb61268-1f17-4811-b8f9-e6981a060ce6",
       "sample": {
-        "schoolId": "dummy_jafpk3z33f",
-        "schoolName": "dummy_u6haeq4qdl",
-        "consentGivenTest": "dummy_tshho4nlaq",
-        "consentGivenSurvey": "dummy_p7a611ri50"
+        "schoolId": "dummy_2rz879w0t8",
+        "schoolName": "dummy_jhq6stxqxd",
+        "consentGivenTest": "dummy_0w9rgqi7vl",
+        "consentGivenSurvey": "dummy_euexyx3g96"
       }
     }
   }
