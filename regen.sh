@@ -8,7 +8,7 @@ fi
 pushd event_dictionary/0.6.0-DRAFT/ || exit
 
 npx prettier --write ./*.json
-pipenv run generate-schema-doc event.schema.json --config template_name=md_nested dictionary.md
+pipenv run generate-schema-doc event.schema.json --config template_name=md dictionary.md
 
 ../../generate_example_json.sh "$@"
 
