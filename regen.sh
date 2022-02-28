@@ -6,23 +6,11 @@ then
     exit
 fi
 
-if ! command -v generate-schema-doc &> /dev/null
-then
-    echo "command 'generate-schema-doc' could not be found. Did you forget to install it?"
-    exit
-fi
-
-if ! command -v pipenv &> /dev/null
-then
-    echo "command 'pipenv' could not be found. Did you forget to install it?"
-    exit
-fi
-
 # This must be kept up to date with the current "work in progress" draft directory
 pushd event_dictionary/0.6.0-DRAFT/ || exit
 
 npx prettier --write ./*.json
-generate-schema-doc event.schema.json --config template_name=md dictionary.md
+pipenv run generate-schema-doc event.schema.json --config template_name=md dictionary.md
 ../../generate_example_json.sh
 
 echo "Generating polished example events"
