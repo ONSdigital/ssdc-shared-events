@@ -3,7 +3,7 @@ import random
 import string
 from functools import reduce
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Iterable
 
 CURRENT_DRAFT_VERSION = '0.6.0-DRAFT'
 EXAMPLE_SURVEY_TYPES = [{'type': 'sis', 'shape': 'sis/0.1.0-DRAFT/sis.json'},
@@ -16,25 +16,33 @@ CURRENT_DRAFT_PATH = EVENT_DICTIONARY_PATH.joinpath(CURRENT_DRAFT_VERSION)
 
 
 def main():
+    unpolished_example_files = list(CURRENT_DRAFT_PATH.glob("*.example.json"))
+    schema_files = list(CURRENT_DRAFT_PATH.glob('*.schema.json'))
 
     # First prepare the example events with examples they provide in their schemas
     # TODO - JSON Schema Faker can do this, but the CLI currently presents no way to config it.
-    replace_random_data_with_schema_examples()
+    replace_random_data_with_schema_examples(unpolished_example_files, schema_files)
 
     # Then generate specifically tailored examples for each example survey type
-    generate_survey_specific_example_events()
+    generate_survey_specific_example_events(unpolished_example_files)
 
 
-def generate_survey_specific_example_events():
+def generate_survey_specific_example_events(unpolished_example_files: Iterable[Path]):
     # Generate fully formed examples of each event type for each example survey
     # Also replace random/generic example data with specifically tailored, hardcoded examples where required
 
     event_header = json.loads(CURRENT_DRAFT_PATH.joinpath('eventHeader.schema.json').read_text())
+    event_name_to_topic_name = {to_camel_case(topic.replace("event_", "")): topic for topic in
+                                event_header['properties']['topic']['enum']}
+
     events = []
-    for topic in event_header['properties']['topic']['enum']:
+    for unpolished_example_file in unpolished_example_files:
+        event_name = unpolished_example_file.name.split('.')[0]
+        if event_name in {'event', 'eventHeader'}:
+            continue
         events.append({
-            'topic': topic,
-            'event': to_camel_case(topic.replace("event_", ""))
+            'topic': event_name_to_topic_name[event_name],
+            'event': event_name
         })
 
     event_template = json.loads(CURRENT_DRAFT_PATH.joinpath('event.example.json').read_text())
@@ -104,16 +112,14 @@ def generate_survey_specific_example_events():
             polished_example_file.write_text(json.dumps(event, indent=2))
 
 
-def replace_random_data_with_schema_examples():
+def replace_random_data_with_schema_examples(unpolished_example_files: Iterable[Path], schema_files: Iterable[Path]):
     # Replace each event's random data with choices of examples in the schema where provided
 
-    json_schema_files = {schema_file.name.split('.')[0]: schema_file
-                         for schema_file in CURRENT_DRAFT_PATH.glob('*.schema.json')}
-    json_example_files = CURRENT_DRAFT_PATH.glob('*.example.json')
+    schema_name_to_schema_file = {schema_file.name.split('.')[0]: schema_file for schema_file in schema_files}
 
-    for json_example_file in json_example_files:
+    for json_example_file in unpolished_example_files:
         schema_name = json_example_file.name.split('.')[0]
-        schema = json.loads(json_schema_files[schema_name].read_text())
+        schema = json.loads(schema_name_to_schema_file[schema_name].read_text())
         json_example = json.loads(json_example_file.read_text())
         polished_json_example = polish_json_examples(json_example, schema)
         json_example_file.write_text(json.dumps(polished_json_example, indent=2))
