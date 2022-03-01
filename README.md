@@ -37,7 +37,7 @@ To regenerate all examples and the schema dictionary, from the project root run
 ```shell
 ./regen.sh
 ```
-This is useful for populating a new draft version for the first time, for example. Ensure you have updated the 
+This is useful for populating a new draft version for the first time, for example.
 
 ### Regenerate specific examples
 Ensure the `CURRENT_DRAFT_VERSION` in `regen.sh` and `polish_example_json.py` is up-to-date.

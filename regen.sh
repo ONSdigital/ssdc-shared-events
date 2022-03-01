@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if ! command -v npx &>/dev/null; then
   echo "command 'npx' could not be found. Did you forget to install NodeJS?"
   exit
