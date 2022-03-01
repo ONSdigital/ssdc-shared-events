@@ -22,7 +22,7 @@ for schema_file in ./*.schema.json; do
 
   sed -f ../../replace_unknown_json_schema_types.sed < "$schema_file" > "tmp_for_json_generate/$schema_file"
   example_file_name=${schema_file/.schema.json/.example.json}
-  fake-schema "tmp_for_json_generate/$schema_file" >"tmp_for_json_generate/$example_file_name"
+  fake-schema "tmp_for_json_generate/$schema_file" > "tmp_for_json_generate/$example_file_name"
 done
 
 # The "event" schema depends on the other schemas it contains so it must be generated last, after all the other

@@ -44,11 +44,14 @@ Ensure the `CURRENT_DRAFT_VERSION` in `regen.sh` and `polish_example_json.py` is
 
 To regenerate specific examples, pass in those target file names to the script like so: 
 ```shell
-./regen.sh <example1.schema.json> <example2.schema.json> ...
+./regen.sh [schema_file...]
 ```
 This will regenerate the entire schema dictionary but only the specific example json files required (plus the `event.example.json` example since it depends on all other event types).
 
-e.g. If you have made a change to the draft `caseUpdate` schema then you only need to run `./regen.sh caseUpdate.schema.json`.
+e.g. If you have made a change to the draft `caseUpdate` and `uacUpdate` schemas then you only need to run 
+```shell
+./regen.sh caseUpdate.schema.json uacUpdate.schema.json
+```
 
 ### Formatting
-Formatting the schemas is done in the correct version directory by running (requires NPM and prettier installed): `npx prettier --write <CURRENT_DRAFT_VERSION>/*.json`
+Formatting the schemas is done in the correct version directory by running (requires NPM and prettier installed): `npx prettier --write ./*.json`
