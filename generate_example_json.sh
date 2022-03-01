@@ -12,12 +12,12 @@ fi
 rm -rf tmp_for_json_generate/* || true
 mkdir -p tmp_for_json_generate
 
+# Due to dependencies in the schemas, we must regenerate them all at this stage, even if we are targeting specific schemas
 for schema_file in ./*.schema.json; do
-  # Due to dependencies in the schemas, we must regenerate them all, even if we are targeting specific schemas
 
+  # The "event" schema will surely fail if we try it here due to interdependencies, we will come back and run it last
   if [[ "$schema_file" == "./event.schema.json" ]]; then
     continue
-    # The "event schema will surely fail if we try it here due to interdependencies, we will come back and run it last
   fi
 
   sed -f ../../replace_unknown_json_schema_types.sed < "$schema_file" > "tmp_for_json_generate/$schema_file"
@@ -33,8 +33,8 @@ pushd tmp_for_json_generate || exit
 fake-schema "./event.schema.json" > "./event.example.json"
 popd || exit
 
+# Finally, copy out only the targeted example files, plus the "event" schema
 for schema_file in "${TARGET_SCHEMA_FILES[@]}"; do
-  # Copy out only the targeted example files
   example_file_name=${schema_file/.schema.json/.example.json}
   cp "tmp_for_json_generate/$example_file_name" .
 done

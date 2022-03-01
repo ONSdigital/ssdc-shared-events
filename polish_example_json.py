@@ -20,7 +20,7 @@ def main():
     schema_files = list(CURRENT_DRAFT_PATH.glob('*.schema.json'))
 
     # First prepare the example events with examples they provide in their schemas
-    # TODO - JSON Schema Faker can do this, but the CLI currently presents no way to config it.
+    # TODO - JSON Schema Faker can do this, but the CLI currently presents no way to configure it.
     replace_random_data_with_schema_examples(unpolished_example_files, schema_files)
 
     # Then generate specifically tailored examples for each example survey type
