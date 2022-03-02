@@ -1,5 +1,4 @@
 #!/bin/bash
-shopt -s nullglob
 
 if [ $# -ge 1 ]; then
   TARGET_SCHEMA_FILES=( "$@" )
