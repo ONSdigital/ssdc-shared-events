@@ -5,9 +5,9 @@ if ! command -v npx &>/dev/null; then
   exit
 fi
 
+# This must be kept up to date with the current "work in progress" draft directory
 CURRENT_DRAFT_VERSION="0.6.0-DRAFT"
 
-# This must be kept up to date with the current "work in progress" draft directory
 pushd event_dictionary/$CURRENT_DRAFT_VERSION/ || exit
 
 npx prettier --write ./*.json
