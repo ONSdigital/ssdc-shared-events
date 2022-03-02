@@ -132,7 +132,7 @@ def polish_json_examples(example_json: Dict, schema: Dict) -> Dict:
 
     When it comes to arrays and sub objects, if an entire example object is provided it will be used, otherwise we
     will recursively step through looking for examples within. It may be preferable to provide an example for an
-    entire object or array to make sure the it conforms to restrictions such as uniqueness where randomly choosing
+    entire object or array to make sure it conforms to restrictions such as uniqueness where randomly choosing
     individual examples may not.
 
     :param example_json: Dictionary parsed example JSON with dummy data to be replaced
